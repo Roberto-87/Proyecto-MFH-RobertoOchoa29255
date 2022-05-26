@@ -17,9 +17,10 @@
     position: sticky;
     top:0;
     z-index:30; 
-    height: 45px;
+    height: 55px;
     margin-bottom: 10px;
-   
+    padding-top: 5px;
+ 
 }
 
 
@@ -79,7 +80,7 @@
       
    z-index:0; 
    position: sticky;
-   top:15px;
+   top:55px;
    display: flex;
    justify-content: center;
    margin-bottom: 35px;
@@ -283,8 +284,21 @@
     align-items: center;
     margin-top: 15px;
     border-top: solid rgb(219, 212, 212) 1px;
+    transition: all 1s;
   
 }
+
+.container-novedades:hover .parrafo-novedades,
+.container-novedades:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.parrafo-novedades {
+    transition: all 1s;
+}
+
+
+
 
 .second, .fourth {
     display: flex;
@@ -406,8 +420,8 @@
 .container-li:hover .imagenes-tienda,
 .container-li:hover .descripcion,
 .container-li:hover {
-    background-color: #f7f7f9;
-    transition: all 0.1s;
+    background-color: rgb(234, 234, 234);
+    transition: all .5s;
 }
 
 
