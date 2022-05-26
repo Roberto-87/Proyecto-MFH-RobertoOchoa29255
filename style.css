@@ -1,0 +1,458 @@
+/*--------------- estructura común a todas las páginas---------------------------------  */
+ *{
+
+    background-color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+
+}
+
+.caja-logo-enlaces {
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    grid-template-rows: 70%;
+    position: sticky;
+    top:0;
+    z-index:30; 
+    height: 45px;
+    margin-bottom: 10px;
+   
+}
+
+
+
+.enlaces {
+  transition: all 0.3s;
+  color: rgb(178, 178, 178);
+
+}
+
+.enlaces:hover {
+  color: black;
+}
+
+
+.caja1-logo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    flex-direction: row;
+}
+
+
+
+.enlaces-container {
+     margin-top: 20px;
+    margin-left:-30x;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 13px;
+       
+}
+
+/*---------------  fin estructura común a todas las páginas---------------------------------  */
+
+/* --------------------Galería-------------------------------------------------------------- */
+
+.ul-container {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows:1.5fr;  
+    margin-left:-50px;
+    margin-top: -16px;
+    width: 100%;
+
+}
+
+.li-img-container img {
+   width: 40%;
+   /* margin-left: 100px;
+   margin-top: 20px; */
+ 
+}
+
+
+.li-img-container {
+      
+   z-index:0; 
+   position: sticky;
+   top:15px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 35px;
+   transition: 2s all;
+     
+ }
+
+
+.p-epigrafe {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom:30px;
+
+ }
+
+
+ /*------------------------fin GALERIA-------------------------------------------------------*/
+
+/*-------------------------BIOGRAFIA-------------------------------------------------------- */
+
+
+.container-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+
+
+
+.container-biografia {
+      margin: 0px 20px;
+      position: sticky;
+      top: 6px;
+      margin-left: 2px;
+
+           
+ }
+
+
+/*-------------------------fin BIOGRAFIA----------------------------------------------------- */
+
+/*------------------------ CONTACTO--------------------------------------------------------- */
+
+.container-contacto {
+   height:100%;
+   padding: 10px;
+   padding-top: 20px;
+   display: grid;
+   grid-template-columns:  0.4fr 0.5fr;
+   grid-template-rows: 450px;
+  
+}
+
+.imagen-container-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+.contacto {
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  
+
+  }
+
+.contacto a {
+    color: black;
+}
+
+ .vector-mail, .vector-whatsapp, .vector-instagram {
+  
+    margin: 15px;
+}
+
+.imagen-contacto {
+    width: 99%;
+  
+
+}
+
+
+.vector-instagram {
+    padding-right: 35px;
+    width: 7px;
+}
+
+
+.link-basilio-contacto {
+    margin-top:20px;
+    margin-right: 50px;
+  
+
+
+}
+
+.caja1, .caja2, .caja3 {
+    margin-right: 10px;
+} 
+
+.cajaSpanVisita span {
+    font-size: 1.5rem;
+    display: inline-block;
+    animation: moveLink 3s infinite;
+    color: grey;
+
+}
+
+.caja1 {
+    transition:linear;
+
+}
+
+.caja2 {
+    transition:ease-in;
+}
+
+.caja3 {
+    transition: ease-in-out;
+}
+
+@keyframes moveLink {
+   0% {
+    transform: translatex(35%);
+    color: transparent;
+   }
+   10% {
+       color: transparent;
+   }
+   25% {
+    /* text-shadow:0 20px 20px  #701d1d ; */
+    color:black
+   }
+   50% {
+    /* text-shadow:20 0px 30px #080808 ; */
+    color:black
+   }
+   100% {
+       transform: translate(-35%);
+       color: grey
+
+   }
+}
+
+.cajaSpanVisita span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.cajaSpanVisita span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+.cajaSpanVisita span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.cajaSpanVisita span:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.cajaSpanVisita span:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.cajaSpanVisita span:nth-child(7) {
+    animation-delay: 0.4s;
+}
+
+
+
+/*----------------------fin CONTACTO--------------------------------------------------------- */
+
+
+ /*---------------------- NOVEDADES---------------------------------------------------------- */
+
+
+ .container-article {
+     padding: 5px;
+     width: 95%;
+     display: grid;
+     grid-template-columns: 1.5fr;
+     grid-template-rows: repeat(4, .3fr);
+     margin-left: 15px;
+ }
+
+
+.novedades-imagenes {
+    width: 30%;
+    display: flex;
+   
+
+}
+
+.container-novedades {
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-top: solid rgb(219, 212, 212) 1px;
+  
+}
+
+.second, .fourth {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imagen2{
+    width: 20%;
+}
+
+.container-novedades p {
+    padding-left:  10px;
+    padding-right: 10px;
+}
+
+.container-imagenes-taller {
+    display: grid;
+    grid-template-columns: 1fr;
+   
+}
+
+ /*-------------------fin NOVEDADES---------------------------------------------------------- */
+
+ /*------------------------------ TALLER----------------------------------------------------- */
+
+ .container-imagenes-taller article img{
+     width: 100%;
+    margin-top: -10px;
+
+ }
+
+ .container-imagenes-taller article {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: 100%;
+
+ }
+
+
+ .link-basilio {
+     color: gray;
+     padding: 10px;
+     padding-left: 25px;
+     display: grid;
+     position: relative;
+     bottom:100px;
+          /* background-image: url("imagenes/imagenes taller/imagenTaller1.jpg") ; */
+     display: flex;
+    width: 25%;
+    align-items: center;
+
+ }
+
+
+ 
+ .link-basilio:hover {
+    animation:animaLinkBasilio 2s infinite;
+    color: black;
+  
+       
+}
+
+@keyframes animaLinkBasilio {
+    0% {
+    border-top: 2px gray solid;
+     
+    }
+
+    25% {   
+    border-right: 2px gray solid;
+
+    }
+    
+    50% {
+    border-bottom:2px gray solid;
+
+    }
+
+    100% {
+       border-top: 2px gray solid;
+       border-right: 2px gray solid;
+       border-bottom: 2px gray solid;
+       border-left:  2px gray solid;
+
+    } 
+}
+
+    /* border: 0.1px rgb(214, 200, 200) solid;
+    padding: 5px;
+    border-top: 0.1px rgb(214, 200, 200) solid;
+    padding: 5px; */
+
+/*------------------------fin TALLER----------------------------------------------------- */
+
+  /*-------------------------- Tienda---------------------------------------------------- */
+
+.container-tienda {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 90px repeat(4, 0.6fr);
+    gap: 15px;
+    margin-top: 0px;
+    color: gray;
+
+        
+
+}
+/* 
+.imagenes-tienda:hover {
+    transform: scale(1.04); 
+} */
+
+.container-li {
+    cursor: pointer;
+} 
+
+.container-li:hover .imagenes-tienda,
+.container-li:hover .descripcion,
+.container-li:hover {
+    background-color: #f7f7f9;
+    transition: all 0.1s;
+}
+
+
+.imagenes-tienda {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+  
+     
+}
+
+.container-li {
+    border: solid 1px  rgb(219, 210, 210);
+
+}
+
+.container-li a {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.container-busqueda {
+    grid-row:1/4;
+   
+}
+.container-busqueda p, .lupa {
+    position: sticky;
+    top:100px;
+}
+
+.boton-buscar {
+    color: gray;
+}
+
+.boton-buscar:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.lupa   {
+    width:12px;
+    margin-left: 5px;
+}
+  /*--------------------------fin Tienda---------------------------------------------------- */
+
+
