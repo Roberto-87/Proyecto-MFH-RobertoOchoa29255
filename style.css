@@ -129,6 +129,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 50%;
+ 
    
 }
 
@@ -140,9 +141,10 @@
 
 .caja-logos {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.1fr;
     grid-template-rows: 0.3fr;
     margin-top: 20%;
+    margin-left: 94%;
    
            
 }
@@ -152,21 +154,22 @@
     border-radius: 2px black solid;
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(238, 236, 236);
+  
+}
+
+
+
+.logo {
+   margin: 3%;
+   width: 30px;  
 }
 
 
 .vector-mail {
-    width: 20px; 
+    width: 23px; 
     margin: 5px;
+
  }
-
-.logo {
-   margin: 5%;
-   background-color:  rgb(238, 236, 236);
-
-}
-
 
 /* .container-logos-contacto {
     display: grid;
