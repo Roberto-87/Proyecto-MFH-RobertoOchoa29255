@@ -124,14 +124,145 @@
 
 /*------------------------ CONTACTO--------------------------------------------------------- */
 
+
+.conteiner-logos-imagen{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50%;
+   
+}
+
+
+.imagen-contacto {
+    width:80%;
+    
+}
+
+.caja-logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr;
+    margin-top: 20%;
+   
+           
+}
+
+
+.container-vector {
+    border-radius: 2px black solid;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(238, 236, 236);
+}
+
+
+.vector-mail {
+    width: 20px; 
+    margin: 5px;
+ }
+
+.logo {
+   margin: 5%;
+   background-color:  rgb(238, 236, 236);
+
+}
+
+
+/* .container-logos-contacto {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+
+.imagen-container{
+    grid-column: 2/3;
+    width: 90%;
+    margin-left: 150px;
+}
+
+
+
+ */
+
+
+
+/* 
+
+
+.container-logos-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+   
+}
+
+
+.caja-logos {
+    display: grid;
+    grid-template-columns: 20px;
+    grid-template-rows:100px;
+
+  
+
+
+
+
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+
+.logos-contacto-grid {
+    display: grid;
+    grid-template-columns: 0.3fr;
+    grid-template-rows: 0.3fr; 
+
+.div-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logos-contacto-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+/* 
+    /* width: 100%;
+} 
+}
+.logos-contacto-flex {
+    display: flex;
+    align-items:center;
+ }
+
+.imagen-container {
+    display: grid;
+    grid-template-rows: 100fr;
+    grid-template-columns:.5fr;
+    margin-left: 30%;
+    margin-bottom: 20%;
+}
+
+
+
+/*
 .container-contacto {
-   height:100%;
    padding: 10px;
    padding-top: 20px;
    display: grid;
-   grid-template-columns:  0.4fr 0.5fr;
-   grid-template-rows: 450px;
-  
+   grid-template-columns: 1fr;
+   grid-template-rows: 100px;
+    
 }
 
 .imagen-container-contacto {
@@ -142,30 +273,49 @@
 }
 
 .contacto {
-    color: black;
-    width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-  
-
+    margin: 60px auto;
   }
 
 .contacto a {
     color: black;
 }
 
- .vector-mail, .vector-whatsapp, .vector-instagram {
-  
-    margin: 15px;
+
+
+
+.imagenContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .imagen-contacto {
-    width: 99%;
-  
-
+    width: 55%;
+ 
 }
 
+
+
+.container-iconos-link {
+    display: grid;
+    grid-template-columns: 0.4;
+    grid-template-rows: 100px;
+}
+
+.Container-iconos-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    bottom: 120px;
+    
+}
 
 .vector-instagram {
     padding-right: 35px;
@@ -174,9 +324,7 @@
 
 
 .link-basilio-contacto {
-    margin-top:20px;
-    margin-right: 50px;
-  
+    font-size: 0.1rem;
 
 
 }
@@ -215,11 +363,11 @@
        color: transparent;
    }
    25% {
-    /* text-shadow:0 20px 20px  #701d1d ; */
+    /* text-shadow:0 20px 20px  #701d1d ; 
     color:black
    }
    50% {
-    /* text-shadow:20 0px 30px #080808 ; */
+    /* text-shadow:20 0px 30px #080808 ; 
     color:black
    }
    100% {
