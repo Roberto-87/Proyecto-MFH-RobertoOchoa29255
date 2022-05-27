@@ -17,22 +17,32 @@
     position: sticky;
     top:0;
     z-index:30; 
-    height: 45px;
+    height: 55px;
     margin-bottom: 10px;
-   
+    padding-top: 5px;
+ 
 }
 
 
-
 .enlaces {
-  transition: all 0.3s;
+  transition: all 0.1s;
   color: rgb(178, 178, 178);
+  
 
 }
 
 .enlaces:hover {
   color: black;
+
+
 }
+
+.enlaces:hover,
+.enlaces:hover .enlace1 {
+    font-size: 1.05em;
+  
+  }
+
 
 
 .caja1-logo {
@@ -79,7 +89,7 @@
       
    z-index:0; 
    position: sticky;
-   top:15px;
+   top:55px;
    display: flex;
    justify-content: center;
    margin-bottom: 35px;
@@ -123,135 +133,134 @@
 
 /*------------------------ CONTACTO--------------------------------------------------------- */
 
-.container-contacto {
-   height:100%;
-   padding: 10px;
-   padding-top: 20px;
-   display: grid;
-   grid-template-columns:  0.4fr 0.5fr;
-   grid-template-rows: 450px;
+
+.conteiner-logos-imagen{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows:50%;
+    
+ 
+}
+
+
+.imagen-contacto {
+    width:90%
+      
+}
+
+.caja-logos {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 0.5fr;
+    margin-top: 10%;
+    margin-left: 95%;
+        
+}
+
+.container-vector {
+    display: flex;
+    justify-content: center;
+    
   
 }
 
-.imagen-container-contacto {
+
+.logo {
+   margin: 3%;
+   width: 20px;  
+}
+
+
+.vector-mail {
+    width: 15px; 
+    margin: 5px;
+
+ }
+
+
+.container-link-basilio {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    margin-right: 120px;
+    margin-top: -18.5%;
+    width: 90%;
    
 }
 
-.contacto {
-    color: black;
-    width: 100%;
+.container-palabra {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+}   
+
+.container-link-basilio:hover {
+    cursor: pointer;
+      
+}   
+   
+ .container-palabra-basilio{
+    margin-right: 5px;
+    
+
+}
+
+
+.container-link-basilio span {
+    background-color: rgb(140, 140, 168);
+    padding: 10px;
+    animation: changeColor 3s infinite; 
   
-
-  }
-
-.contacto a {
-    color: black;
-}
-
- .vector-mail, .vector-whatsapp, .vector-instagram {
-  
-    margin: 15px;
-}
-
-.imagen-contacto {
-    width: 99%;
-  
-
+ 
 }
 
 
-.vector-instagram {
-    padding-right: 35px;
-    width: 7px;
-}
-
-
-.link-basilio-contacto {
-    margin-top:20px;
-    margin-right: 50px;
-  
-
-
-}
-
-.caja1, .caja2, .caja3 {
-    margin-right: 10px;
-} 
-
-.cajaSpanVisita span {
-    font-size: 1.5rem;
-    display: inline-block;
-    animation: moveLink 3s infinite;
-    color: grey;
-
-}
-
-.caja1 {
-    transition:linear;
-
-}
-
-.caja2 {
-    transition:ease-in;
-}
-
-.caja3 {
-    transition: ease-in-out;
-}
-
-@keyframes moveLink {
+@keyframes changeColor {
    0% {
-    transform: translatex(35%);
-    color: transparent;
+       color: transparent;
+       background-color: #292929;
+       transition: ease;
+
+  
    }
    10% {
-       color: transparent;
+       color: rgb(228, 224, 224);
+       background-color: #030118;
+       transition: ease-in-out;
+      
+
+     
    }
+
    25% {
-    /* text-shadow:0 20px 20px  #701d1d ; */
-    color:black
+       color: rgb(140, 140, 168);
+       background-color: rgb(139, 111, 111);
+       transition: linear;
+
+      
+   }
+
+   30% {
+    background-color: rgb(85, 81, 81);
+    color: rgb(189, 189, 255);
+    transition: ease;
+         
+
    }
    50% {
-    /* text-shadow:20 0px 30px #080808 ; */
-    color:black
+
+      color: rgb(140, 140, 168);
+      background-color: rgb(5, 4, 4);
+      transition: ease-in-out;
+       
    }
    100% {
-       transform: translate(-35%);
-       color: grey
+    background-color: rgb(29, 214, 199);
+     color: rgb(248, 229, 229);
+     transition: linear;
+     border-radius: 30%;
+     
 
    }
 }
-
-.cajaSpanVisita span:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-.cajaSpanVisita span:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-.cajaSpanVisita span:nth-child(4) {
-    animation-delay: 0.3s;
-}
-
-.cajaSpanVisita span:nth-child(5) {
-    animation-delay: 0.2s;
-}
-
-.cajaSpanVisita span:nth-child(6) {
-    animation-delay: 0.3s;
-}
-
-.cajaSpanVisita span:nth-child(7) {
-    animation-delay: 0.4s;
-}
-
 
 
 /*----------------------fin CONTACTO--------------------------------------------------------- */
@@ -283,8 +292,21 @@
     align-items: center;
     margin-top: 15px;
     border-top: solid rgb(219, 212, 212) 1px;
+    transition: all 1s;
   
 }
+
+.container-novedades:hover .parrafo-novedades,
+.container-novedades:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.parrafo-novedades {
+    transition: all 1s;
+}
+
+
+
 
 .second, .fourth {
     display: flex;
@@ -406,8 +428,8 @@
 .container-li:hover .imagenes-tienda,
 .container-li:hover .descripcion,
 .container-li:hover {
-    background-color: #f7f7f9;
-    transition: all 0.1s;
+    background-color: rgb(234, 234, 234);
+    transition: all .5s;
 }
 
 
