@@ -1,7 +1,7 @@
 /*--------------- estructura común a todas las páginas---------------------------------  */
  *{
 
-    background-color: #ffffff;
+    background-color: #fff9f9;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
     list-style: none;
@@ -10,7 +10,7 @@
 
 }
 
-.caja-logo-enlaces {
+/* .caja-logo-enlaces {
     display: grid;
     grid-template-columns: .2fr 1fr;
     grid-template-rows: 70%;
@@ -21,47 +21,37 @@
     margin-bottom: 10px;
     padding-top: 5px;
  
-}
+} */
 
 
 .enlaces {
   transition: all 0.1s;
-  color: rgb(178, 178, 178);
-  
-
+  display: flex;
+  justify-content: flex-end;
 }
 
-.enlaces:hover {
-  color: black;
-
-
+.nombre {
+    font-size: 1em;
 }
 
-.enlaces:hover,
-.enlaces:hover .enlace1 {
-    font-size: 1.05em;
-  
-  }
-
-
-
-.caja1-logo {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    flex-direction: row;
-}
-
-
-
-.enlaces-container {
-     margin-top: 20px;
-    margin-left:-30x;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 13px;
+.enlaces {
+    font-size: 0.8em;
+    color: rgb(138, 138, 138);
        
 }
+
+.nav-link:hover {
+    color: black;
+}
+
+.navbar {
+    padding: 2px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+
 
 /*---------------  fin estructura común a todas las páginas---------------------------------  */
 
@@ -77,13 +67,20 @@
 
 }
 
-.li-img-container img {
-   width: 40%;
+.img {
+   width: 42%;
    /* margin-left: 100px;
    margin-top: 20px; */
  
 }
 
+.img03 {
+    width: 35%;
+}
+
+.img04, .img07 {
+    width: 60%;
+}
 
 .li-img-container {
       
@@ -102,8 +99,8 @@
     display: flex;
     align-items: flex-end;
     margin-bottom:30px;
+}
 
- }
 
 
  /*------------------------fin GALERIA-------------------------------------------------------*/
@@ -115,17 +112,14 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
+    font-size: 0.8em;
 }
 
 
 
 .container-biografia {
-      margin: 0px 20px;
-      position: sticky;
-      top: 6px;
-      margin-left: 2px;
-
-           
+    margin-left: -4px;
+       
  }
 
 
