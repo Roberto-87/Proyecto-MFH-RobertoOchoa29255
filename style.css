@@ -86,7 +86,7 @@
 
 .carrousel-2020 {
     position:sticky;
-     top: 40px;
+     top: 15px;
      
 
 }
@@ -436,6 +436,7 @@
 
 .container-tienda {
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 
