@@ -1,13 +1,12 @@
 /*--------------- estructura común a todas las páginas---------------------------------  */
  *{
 
-    background-color: #fff9f9;
+    background-color: #ffffff;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
     list-style: none;
     text-decoration: none;
     margin: 0;
-
 }
 
 /* .caja-logo-enlaces {
@@ -28,14 +27,15 @@
   transition: all 0.1s;
   display: flex;
   justify-content: flex-end;
+  
 }
 
 .nombre {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .enlaces {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: rgb(138, 138, 138);
        
 }
@@ -57,6 +57,10 @@
 
 /* --------------------Galería-------------------------------------------------------------- */
 
+.main-galeria {
+    scroll-behavior: smooth;
+}
+
 .ul-container {
     display: grid;
     grid-template-columns: 1.5fr;
@@ -71,8 +75,29 @@
    width: 42%;
    /* margin-left: 100px;
    margin-top: 20px; */
- 
+   
+ }
+
+.carrousel-2022 {
+    position: sticky;
+    top: 40px;
+    
 }
+
+.carrousel-2020 {
+    position:sticky;
+     top: 40px;
+     
+
+}
+
+.carrousel-2018 {
+    position:sticky;
+     top: 40px;
+    
+
+}
+
 
 .img03 {
     width: 35%;
@@ -102,7 +127,6 @@
 }
 
 
-
  /*------------------------fin GALERIA-------------------------------------------------------*/
 
 /*-------------------------BIOGRAFIA-------------------------------------------------------- */
@@ -119,9 +143,10 @@
 
 .container-biografia {
     margin-left: -4px;
+    position: sticky;
+    top: 30px;
        
  }
-
 
 /*-------------------------fin BIOGRAFIA----------------------------------------------------- */
 
@@ -400,16 +425,20 @@
   /*-------------------------- Tienda---------------------------------------------------- */
 
 .container-tienda {
-    display: grid;
+    /* display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 90px repeat(4, 0.6fr);
+    grid-template-columns: 90px repeat(4, 0.6fr); */
     gap: 15px;
     margin-top: 0px;
     color: gray;
 
-        
-
 }
+
+.container-tienda {
+    margin-bottom: 15px;
+}
+
+
 /* 
 .imagenes-tienda:hover {
     transform: scale(1.04); 

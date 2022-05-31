@@ -29,26 +29,25 @@
 
     <!-----------------------------Nav---------------------------------------------------->
 
-    <nav class="navbar navbar-expand-lg bg-light ">
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand nombre" href="#carouselExampleFade">María Ferrari Hardoy</a>
+        <a class="navbar-brand nombre" href="">María Ferrari Hardoy</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
        <div class="enlaces">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-9">
-            <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="Index.html">Galería</a>
-            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              </a>
+              <a class="nav-link dropdown-toggle galery" href="Index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Galería </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">2022</a></li>
-                <li><a class="dropdown-item" href="#carousel-02">2019-2020</a></li>
-                <li><a class="dropdown-item" href="#carousel-03">2018</a></li>
-              </ul>
+                <li><a class="dropdown-item" href="#carousel-02">2019-2020</a>
+                </li>
+                <li><a class="dropdown-item" href="#carousel-03">2018</a>
+                </li>
+                </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="biografia.html">Biografía</a>
@@ -77,9 +76,10 @@
     <!------------------------------ fin Nav --------------------------------------------------------------------------->
     
     <!----------------------galería de imagenes------------------------------------------------->
-    <main>
-      <section>
-             <article>
+    <main class="main-galeria">             <!--------- imagenes 2022 -------------->
+
+      <section class="bc-carrouse2020">
+             <article class="carrousel-2022">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active d-flex justify-content-center">
@@ -100,14 +100,18 @@
                     <span class="carousel-control-prev-icon btn btn-dark" aria-hidden="true"></span>
                     <span></span>
                   </button>
-                  <button class="carousel-control-next me-5" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span class="carousel-control-next-icon btn btn-dark" aria-hidden="true"></span>
                     <span class="buttonColor"></span>
                   </button>
                 </div>
             </article>
 
-            <article>
+            <!--------- fin imagenes 2022 -------------->
+
+            <!--------- imagenes 2019-2020 -------------->
+
+            <article class="carrousel-2020">
               <div id="carousel-02" class="carousel slide carousel-fade" data-bs-ride="carousel-02">
                 <div class="carousel-inner">
                   <div class="carousel-item active d-flex justify-content-center">
@@ -140,8 +144,13 @@
               </div>
            </article>     
 
-           <article>
-            <div id="carousel-03" class="carousel slide carousel-fade" data-bs-ride="carousel-03">
+           <!--------- fin imagenes 2019-2020 -------------->
+
+           <!--------- imagenes 2018 -------------->
+
+         <article class="carrousel-2018">
+         
+             <div id="carousel-03" class="carousel slide carousel-fade" data-bs-ride="carousel-03">
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <img class="img03" src="imagenes/2018/img1-2018.jpg" class="d-block" alt="imagen1-2018">
@@ -173,34 +182,12 @@
                 <span class="carousel-control-next-icon btn btn-dark" aria-hidden="true"></span>
                 <span class="visually-hidden"></span>
               </button>
+                         
             </div>
-         </article>
+         </article> -->
+
+         <!--------- fin imagenes 2018 -------------->
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
        </section>   
     </main> 
     
