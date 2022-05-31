@@ -7,10 +7,9 @@
     list-style: none;
     text-decoration: none;
     margin: 0;
-
 }
 
-.caja-logo-enlaces {
+/* .caja-logo-enlaces {
     display: grid;
     grid-template-columns: .2fr 1fr;
     grid-template-rows: 70%;
@@ -21,51 +20,46 @@
     margin-bottom: 10px;
     padding-top: 5px;
  
-}
+} */
 
 
 .enlaces {
   transition: all 0.1s;
-  color: rgb(178, 178, 178);
+  display: flex;
+  justify-content: flex-end;
   
-
 }
 
-.enlaces:hover {
-  color: black;
-
-
+.nombre {
+    font-size: 1.5em;
 }
 
-.enlaces:hover,
-.enlaces:hover .enlace1 {
-    font-size: 1.05em;
-  
-  }
-
-
-
-.caja1-logo {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    flex-direction: row;
-}
-
-
-
-.enlaces-container {
-     margin-top: 20px;
-    margin-left:-30x;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 13px;
+.enlaces {
+    font-size: 0.9em;
+    color: rgb(138, 138, 138);
        
 }
+
+.nav-link:hover {
+    color: black;
+}
+
+.navbar {
+    padding: 2px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+
 
 /*---------------  fin estructura común a todas las páginas---------------------------------  */
 
 /* --------------------Galería-------------------------------------------------------------- */
+
+.main-galeria {
+    scroll-behavior: smooth;
+}
 
 .ul-container {
     display: grid;
@@ -77,13 +71,41 @@
 
 }
 
-.li-img-container img {
-   width: 40%;
+.img {
+   width: 42%;
    /* margin-left: 100px;
    margin-top: 20px; */
- 
+   
+ }
+
+.carrousel-2022 {
+    position: sticky;
+    top: 40px;
+    
 }
 
+.carrousel-2020 {
+    position:sticky;
+     top: 40px;
+     
+
+}
+
+.carrousel-2018 {
+    position:sticky;
+     top: 40px;
+    
+
+}
+
+
+.img03 {
+    width: 35%;
+}
+
+.img04, .img07 {
+    width: 60%;
+}
 
 .li-img-container {
       
@@ -102,8 +124,7 @@
     display: flex;
     align-items: flex-end;
     margin-bottom:30px;
-
- }
+}
 
 
  /*------------------------fin GALERIA-------------------------------------------------------*/
@@ -115,19 +136,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
+    font-size: 0.8em;
 }
 
 
 
 .container-biografia {
-      margin: 0px 20px;
-      position: sticky;
-      top: 6px;
-      margin-left: 2px;
-
-           
+    margin-left: -4px;
+    position: sticky;
+    top: 30px;
+       
  }
-
 
 /*-------------------------fin BIOGRAFIA----------------------------------------------------- */
 
@@ -406,16 +425,20 @@
   /*-------------------------- Tienda---------------------------------------------------- */
 
 .container-tienda {
-    display: grid;
+    /* display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 90px repeat(4, 0.6fr);
+    grid-template-columns: 90px repeat(4, 0.6fr); */
     gap: 15px;
     margin-top: 0px;
     color: gray;
 
-        
-
 }
+
+.container-tienda {
+    margin-bottom: 15px;
+}
+
+
 /* 
 .imagenes-tienda:hover {
     transform: scale(1.04); 
