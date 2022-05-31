@@ -81,23 +81,22 @@
 .carrousel-2022 {
     position: sticky;
     top: 40px;
+  
     
 }
 
 .carrousel-2020 {
     position:sticky;
      top: 15px;
-     
-
+ 
 }
 
 .carrousel-2018 {
     position:sticky;
      top: 40px;
+   
     
-
 }
-
 
 .img03 {
     width: 35%;
@@ -125,6 +124,7 @@
     align-items: flex-end;
     margin-bottom:30px;
 }
+
 
 
  /*------------------------fin GALERIA-------------------------------------------------------*/
