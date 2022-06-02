@@ -1,7 +1,7 @@
 /*--------------- estructura común a todas las páginas---------------------------------  */
  *{
 
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
     list-style: none;
@@ -151,21 +151,129 @@
 
 /*------------------------ CONTACTO--------------------------------------------------------- */
 
+.contenedor-formulario1, .contenedor-formulario2 {
+    width: 70%;
+}
 
-.conteiner-logos-imagen{
+.container-logos {
+    width: 80%;
+              
+}
+
+    
+.container-contacto {
+   margin-top: 15%;
+   width: 90%;
+   margin-left: 15px;
+
+}
+
+.body-contacto {
+    background-image: url("imagenes/imagenes taller/imagenTaller2.jpg"), url("imagenes/imagenes taller/imagenTaller1.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: -60% 40%;
+  
+}
+
+.boton-enviar {
+    border:1px solid white;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.boton-enviar:hover {
+    background-color: gray;
+    border:2px solid gray;
+    color: #ffffff;
+}
+
+
+.boton-enviar:active {
+    background-color:rgb(255, 255, 255);
+    border:2px solid rgb(255, 255, 255);
+    color:gray;
+} 
+
+.logo {
+    width: 60px;
+}
+    
+.container-contacto2 {
+    transition: all 2s;
+}
+
+.container-contacto2:hover {
+    transform: translatey(30px);
+  
+}
+    /* margin-top: 0px;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    position: fixed;
+    top: 10px;
+    background-size: 50%;
+    background-repeat: no-repeat, no-repeat; */
+   
+
+
+
+/* .contacto-foto2 {
+    width: 50%;
+}
+ */
+
+ /* .container-vector {
+    z-index:1;
+    background-color: gray;
+    width: 80%;
+    background: url("imagenes/imagenes taller/imagenTaller2.jpg") repeat center right;
+    background-size:cover;
+    display: flex;
+    background-position: left top;
+    margin-right: 60%;
+    position: absolute;
+    left: 120PX;
+    background-color: #b9b9b9;
+
+
+} 
+
+.container-contacto-foto2 {
+    margin-left: 50%;
+    margin-top: 0;
+} */
+
+
+/* .container-form {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    width: 100%;
+
+    top: 10px;
+    z-index: 0;
+} */
+
+
+
+
+
+/* .conteiner-logos-imagen{
     display: grid;
     grid-template-columns: 40% 50%;
     grid-template-rows:50%;
     
  
-}
+} */
 
 
-.imagen-contacto {
-    width:90%
-      
-}
 
+/*
 .caja-logos {
     display: grid;
     grid-template-columns: 50%;
@@ -223,13 +331,12 @@
 
 
 .container-link-basilio span {
-    background-color: rgb(140, 140, 168);
     padding: 10px;
-    animation: changeColor 3s infinite; 
+     animation: changeColor 3s infinite;  */
   
  
-}
 
+/* 
 
 @keyframes changeColor {
    0% {
@@ -278,7 +385,7 @@
      
 
    }
-}
+} */
 
 
 /*----------------------fin CONTACTO--------------------------------------------------------- */
@@ -293,10 +400,12 @@
 
 .container-novedades {
     margin-bottom: 50px;
+    margin-left: 10px;
 }
 
 .container-novedades h4 {
     color: rgb(206, 204, 204);
+    
 }
 
 .row {
@@ -305,7 +414,7 @@
 
 
 
-.nav-item{
+.nav-item-novedades{
     background-color:#b9b9b9 !important; 
     border-radius: 60px;
     display: flex;
@@ -313,8 +422,9 @@
     position:sticky;
     top:46px;
     color: black !important;
-   
+  
 }
+
 
 #navbar-example2 {
     border-radius: 5px;
@@ -323,8 +433,23 @@
     position:sticky;
     top:46px;
     margin-left: -20px;
-
+ 
 }
+
+.novedades-p-titulo4 {
+    margin-bottom: 50%;
+}
+
+.nav {
+    transition: all 2s;
+}
+
+.nav-link:active {
+    background-color: #ffffff;
+    color: black !important;
+}
+
+
 
 
 
@@ -388,22 +513,27 @@
 
  /*------------------------------ TALLER----------------------------------------------------- */
 
- .container-imagenes-taller article img{
-     width: 100%;
-    margin-top: -10px;
 
- }
 
- .container-imagenes-taller article {
+
+
+ .formulario-contacto {
+    margin-top: 120px;
+    position: absolute;
+    top: 50%;
+
+ }   
+
+ /* .container-imagenes-taller article {
     display: flex;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 45%);
     grid-template-rows: 100%;
 
- }
+ } */
 
-
+/*
  .link-basilio {
      color: gray;
      padding: 10px;
@@ -411,7 +541,7 @@
      display: grid;
      position: relative;
      bottom:100px;
-          /* background-image: url("imagenes/imagenes taller/imagenTaller1.jpg") ; */
+          /* background-image: url("imagenes/imagenes taller/imagenTaller1.jpg") ; 
      display: flex;
     width: 25%;
     align-items: center;
@@ -452,7 +582,7 @@
     } 
 }
 
-    /* border: 0.1px rgb(214, 200, 200) solid;
+     border: 0.1px rgb(214, 200, 200) solid;
     padding: 5px;
     border-top: 0.1px rgb(214, 200, 200) solid;
     padding: 5px; */
