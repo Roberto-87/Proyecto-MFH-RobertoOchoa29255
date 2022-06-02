@@ -139,6 +139,27 @@
 
 
 
+.solo-exhibitions {
+    position:sticky;
+    top:50px;
+    z-index: 2;
+    width: 100%;
+    padding: 40px;
+
+}
+
+.prueba {
+    transition: all 5s;
+}
+
+.container-education {
+    position: sticky;
+    top:50px;
+    z-index: 1;
+    width: 100%;
+
+}
+
 .container-biografia {
     margin-left:15px;
     margin-bottom: 25px;
@@ -164,15 +185,16 @@
 .container-contacto {
    margin-top: 15%;
    width: 90%;
-   margin-left: 15px;
+   margin-left: 40px;
 
 }
 
 .body-contacto {
     background-image: url("imagenes/imagenes taller/imagenTaller2.jpg"), url("imagenes/imagenes taller/imagenTaller1.jpg");
     background-repeat: no-repeat, repeat;
-    background-position: -60% 40%;
-  
+    background-position: center;
+    background-size: 45%;
+     
 }
 
 .boton-enviar {
@@ -206,7 +228,7 @@
 }
 
 .container-contacto2:hover {
-    transform: translatey(30px);
+    transform: translatey(-10%);
   
 }
     /* margin-top: 0px;
@@ -398,6 +420,7 @@
     justify-content:flex-end;
 }
 
+
 .container-novedades {
     margin-bottom: 50px;
     margin-left: 10px;
@@ -416,7 +439,7 @@
 
 .nav-item-novedades{
     background-color:#b9b9b9 !important; 
-    border-radius: 60px;
+    border-radius: 20px;
     display: flex;
     justify-content: flex-start !important;
     position:sticky;
@@ -599,6 +622,11 @@
     margin-top: 0px;
     color: gray;
 
+}
+
+.body-tienda {
+    background-color: #e9e0e0;
+    
 }
 
 .container-tienda {
