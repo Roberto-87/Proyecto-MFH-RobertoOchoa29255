@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="style.css">  
         <title>Maria Ferrari Hardoy- Artista Visual</title>
         <link rel="shortcut icon" href="candle-svgrepo-com (1).svg" type="image/x-icon">
+         <!-- Libreria AOS -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
    
 <body>
@@ -29,7 +31,7 @@
        
    
  <!-----------------------------Nav---------------------------------------------------->
-
+ 
  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand nombre" href="Index.html">Maria Ferrari Hardoy</a>
@@ -38,22 +40,22 @@
       </button>
       <div class="collapse navbar-collapse  enlaces" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item ">
+          <li class="nav-item-bio">
             <a class="nav-link active" aria-current="page" href="Index.html">Galería</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item-bio">
             <a class="nav-link" href="biografia.html">Biografia</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item-bio">
             <a class="nav-link" href="novedades.html">Novedades</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item-bio">
             <a class="nav-link" href="taller.html">Taller</a>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <li class="nav-item-bio">
             <a class="nav-link" href="tienda.html">Tienda</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item-bio">
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
          </ul>
@@ -65,23 +67,55 @@
 
     <!-- Biografía -->
           
-   <section class="container-article">
-       <article class="container-biografia">
+      
+    <section class="container-article d-flex justify-content-center">
+     
+       <article class="container-biografia ">
+        <div data-aos="fade-up" class="div-born">
              <p class="biografia">
         Born in Buenos Aires, Argentina <br>
-        Lives and works in Buenos Aires, Argentina <br>
+        Lives and works in Buenos Aires, Argentina 
+      </div> 
+      <div class="d-flex justify-content-flex-start" style="height: 60px;">
+        <div class="vr"></div>
+      </div>   
 
-                    <h5>Education </h5>
+      
+      
+     
+        <div class="div-education" data-aos="zoom-in">
+          <div>
+        <h5>Education </h5>
+        <p>
         Master’s Degree in Art History(in progress) Universidad de Buenos Aires <br>
         Proyecto PAC 2014 (Contemporary Art Practices), a critique, analysis and art production program         at Gachi Prieto Art Gallery <br>(Faculty: Rodrigo Alonso, Rafael Cippolini, Valeria Gonzalez,       Eduardo Stupía, Andrés Waissman) <br>
         Visual Art Studies with Sergio Bazán (2008-2013) and Diana Aisenberg (2012-2014) <br>
         Attended Workshops with Eduardo Stupía, Diego Bianchi and Alejandra Seeber at Universidad       Torcuato Di Tella (2011 and 2013) <br> <br>
-        Master’s Degree in Economics, Universidad de Buenos Aires, 1998 <br><br>
+        Master’s Degree in Economics, Universidad de Buenos Aires, 1998 
+       </p>
+        </div>  
+      </div> 
+     
 
+        
+        <div>
+          <div class="d-flex justify-content-flex-end" style="height: 60px;">
+            <div class="vr"></div>
+            
+          </div>
+
+         <div data-aos="fade-right">  
+              
         <h5>Solo Exhibitions </h5>
         Erosión / Confusión Galería / 2017 <br>
-        Volame a la Luna / Centro Cultural Recoleta / 2010 <br> <br>
+        Volame a la Luna / Centro Cultural Recoleta / 2010 
+       </div> 
 
+      <div class="d-flex justify-content-flex-start" style="height: 30px;">
+        <div class="vr"></div>
+      </div>
+
+        <div data-aos="fade-down-right">
         <h5>Group Exhibitions (Selection) </h5>
         Premio Fortabat / 2019 <br>
         47 Salón de Tucumán /Museo Timoteo Navarro/ 2019 <br>
@@ -98,19 +132,43 @@
         Bicho II / La Casona de los Olivera /2011 <br>
         6to Concurso Nacional de Pintura / UADE / 2011 <br>
         TRUSPUT / UTDT / 2011 <br> <br>
+      </div>
+              <div>
+        <div class="d-flex justify-content-start" style="height: 30px;">
+          <div class="vr"></div>
+        </div>
+          
 
-        <h5>Press </h5>
-        “Los Carniceros: sólo pintura en San Isidro”, Diario La Nación , 28.09.2012 <br>
-        “El Paso que lleva del taller a la muestra” , Diario La Nación, 25.07.2010
-        </p>
+        <div data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">
+              
+          <h5>Press </h5>
+          <p>“Los Carniceros: sólo pintura en San Isidro”, Diario La Nación , 28.09.2012 <br>
+          “El Paso que lleva del taller a la muestra” , Diario La Nación, 25.07.2010
+          </p> 
+         </div> 
+
+     
+      </div>
+    </div>
+
     </article>
   </section>
+  
   
 
     <!-- fin  Biografía -->    
 
     <!--bootstrap -->
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <!-- Aos -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
+    </script>
 
 </body>
 </html>
