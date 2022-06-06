@@ -1,26 +1,11 @@
 /*--------------- estructura común a todas las páginas---------------------------------  */
  *{
-
-    /* background-color: #ffffff; */
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
     list-style: none;
     text-decoration: none;
     margin: 0;
 }
-
-/* .caja-logo-enlaces {
-    display: grid;
-    grid-template-columns: .2fr 1fr;
-    grid-template-rows: 70%;
-    position: sticky;
-    top:0;
-    z-index:30; 
-    height: 55px;
-    margin-bottom: 10px;
-    padding-top: 5px;
- 
-} */
 
 
 .enlaces {
@@ -30,7 +15,6 @@
   font-size: 0.9em;
   color: rgb(138, 138, 138);
  
-  
 }
 
 .nombre {
@@ -48,7 +32,6 @@
     top: 0px;
     z-index: 20;
 }
-
 
 
 /*---------------  fin estructura común a todas las páginas---------------------------------  */
@@ -71,8 +54,6 @@
 
 .img {
    width: 42%;
-   /* margin-left: 100px;
-   margin-top: 20px; */
    
  }
 
@@ -92,7 +73,6 @@
 .carrousel-2018 {
     position:sticky;
      top: 40px;
-   
     
 }
 
@@ -122,6 +102,8 @@
     align-items: flex-end;
     margin-bottom:30px;
 }
+
+/*---- Responsive imagenes galeria 2022---- */
 
 @media (min-width:360px){
     .img  {
@@ -203,6 +185,8 @@
         background-color: rgb(255, 224, 224);
     }
 }
+
+/*---- Responsive imagenes galeria 2019-2020 ---- */
 
  @media (min-width:280px){
         .img-2019 {
@@ -308,6 +292,8 @@
     }
 }
 
+/*---- Responsive imagenes galeria 2018---- */
+
 @media (min-width:360px){
     .img-2018 {
       width: 80%;
@@ -369,7 +355,7 @@
     }
 }
 
-@media (min-width:120z0px){
+@media (min-width:1200px){
     .img-2018 {
       width: 33%;
       margin-top: 0;
@@ -381,12 +367,9 @@
 }
 
 
-
-
  /*------------------------fin GALERIA-------------------------------------------------------*/
 
 /*-------------------------BIOGRAFIA-------------------------------------------------------- */
-
 
 
 .container-article {
@@ -422,8 +405,6 @@
 .container-biografia {
     margin-left:15px;
     margin-bottom: 25px;
-    /* position: sticky; */
-    /* top: 10px; */
        
  }
 
@@ -490,198 +471,27 @@
     transform: translatey(-10%);
   
 }
-    /* margin-top: 0px;
-    padding: 0;
-    background-attachment: fixed;
-    background-position: center;
-    position: fixed;
-    top: 10px;
-    background-size: 50%;
-    background-repeat: no-repeat, no-repeat; */
-   
-
-
-
-/* .contacto-foto2 {
-    width: 50%;
-}
- */
-
- /* .container-vector {
-    z-index:1;
-    background-color: gray;
-    width: 80%;
-    background: url("imagenes/imagenes taller/imagenTaller2.jpg") repeat center right;
-    background-size:cover;
-    display: flex;
-    background-position: left top;
-    margin-right: 60%;
-    position: absolute;
-    left: 120PX;
-    background-color: #b9b9b9;
-
-
-} 
-
-.container-contacto-foto2 {
-    margin-left: 50%;
-    margin-top: 0;
-} */
-
-
-/* .container-form {
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    margin-top: -30px;
-    width: 100%;
-
-    top: 10px;
-    z-index: 0;
-} */
-
-
-
-
-
-/* .conteiner-logos-imagen{
-    display: grid;
-    grid-template-columns: 40% 50%;
-    grid-template-rows:50%;
-    
- 
-} */
-
-
-
-/*
-.caja-logos {
-    display: grid;
-    grid-template-columns: 50%;
-    grid-template-rows: 0.5fr;
-    margin-top: 10%;
-    margin-left: 95%;
-        
-}
-
-.container-vector {
-    display: flex;
-    justify-content: center;
-    
-  
-}
-
-
-.logo {
-   margin: 3%;
-   width: 20px;  
-}
-
-
-.vector-mail {
-    width: 15px; 
-    margin: 5px;
-
- }
-
-
-.container-link-basilio {
-    display: flex;
-    justify-content: center;
-    margin-right: 120px;
-    margin-top: -18.5%;
-    width: 90%;
-   
-}
-
-.container-palabra {
-    display: flex;
-    justify-content: center;
-}   
-
-.container-link-basilio:hover {
-    cursor: pointer;
-      
-}   
-   
- .container-palabra-basilio{
-    margin-right: 5px;
-    
-
-}
-
-
-.container-link-basilio span {
-    padding: 10px;
-     animation: changeColor 3s infinite;  */
-  
- 
-
-/* 
-
-@keyframes changeColor {
-   0% {
-       color: transparent;
-       background-color: #292929;
-       transition: ease;
-
-  
-   }
-   10% {
-       color: rgb(228, 224, 224);
-       background-color: #030118;
-       transition: ease-in-out;
-      
-
-     
-   }
-
-   25% {
-       color: rgb(140, 140, 168);
-       background-color: rgb(139, 111, 111);
-       transition: linear;
-
-      
-   }
-
-   30% {
-    background-color: rgb(85, 81, 81);
-    color: rgb(189, 189, 255);
-    transition: ease;
-         
-
-   }
-   50% {
-
-      color: rgb(140, 140, 168);
-      background-color: rgb(5, 4, 4);
-      transition: ease-in-out;
-       
-   }
-   100% {
-    background-color: rgb(29, 214, 199);
-     color: rgb(248, 229, 229);
-     transition: linear;
-     border-radius: 30%;
-     
-
-   }
-} */
-
 
 /*----------------------fin CONTACTO--------------------------------------------------------- */
 
 
 /*---------------------- NOVEDADES---------------------------------------------------------- */
-
+.body-novedades {
+    background-color: rgb(255, 2155, 250);
+}
 .container-row {
     display: flex;
     justify-content:flex-end;
+    
 }
 
+.container {
+    padding-right: 100px;
+}
 
 .container-novedades {
    margin-left: 10px;
+   
 }
 
 .container-novedades h4 {
@@ -702,10 +512,9 @@
     justify-content: flex-start !important;
     position:sticky;
     top:46px;
-    color: black !important;
+    color: white !important;
   
 }
-
 
 #navbar-example2 {
     border-radius: 5px;
@@ -716,7 +525,6 @@
     margin-left: -20px;
  
 }
-
 
 .nav {
     transition: all 2s;
@@ -763,6 +571,7 @@
 }
 
 
+
  /*-------------------fin NOVEDADES---------------------------------------------------------- */
 
 
@@ -777,8 +586,7 @@
 
 .body-tienda {
     background-color: #e9e0e0;
-   
-    
+       
 }
 
 .container-tienda {
@@ -844,7 +652,6 @@
 }
 
 
-
 @media (min-width: 912px) {
     .container-tienda {
     margin-left: 10%;
@@ -867,63 +674,6 @@
 }
 
 
-/* 
-} 
-
-.container-li {
-    cursor: pointer;
-} 
-
-.container-li:hover .imagenes-tienda,
-.container-li:hover .descripcion,
-.container-li:hover {
-    background-color: rgb(234, 234, 234);
-    transition: all .5s;
-}
-
-
-.imagenes-tienda {
-    width: 90%;
-    margin-top: 10px;
-    margin-left: 10px;
-  
-     
-}
-
-.container-li {
-    border: solid 1px  rgb(219, 210, 210);
-
-}
-
-.container-li a {
-    display: flex;
-    justify-content: center;
-
-}
-
-
-.container-busqueda {
-    grid-row:1/4;
-   
-}
-.container-busqueda p, .lupa {
-    position: sticky;
-    top:100px;
-}
-
-.boton-buscar {
-    color: gray;
-}
-
-.boton-buscar:hover {
-    color: black;
-    cursor: pointer;
-}
-
-.lupa   {
-    width:12px;
-    margin-left: 5px;
-}
   /*--------------------------fin Tienda---------------------------------------------------- */
 
 
