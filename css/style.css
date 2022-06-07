@@ -412,10 +412,6 @@
 
 /*------------------------ CONTACTO--------------------------------------------------------- */
 
-.contenedor-formulario1, .contenedor-formulario2 {
-    width: 60%;
-
-}
 
 .container-logos {
     width: 100%;
@@ -426,9 +422,8 @@
 
     
 .container-contacto {
-   margin-top: 15%;
+   margin-top: 5%;
    width: 100%;
-
  
 }
 
@@ -446,9 +441,10 @@
     border:1px solid white;
     border-radius: 5px;
     background-color:rgb(255, 255, 255);
-    height: 50%;
+    height: 60%;
     display: flex;
     align-items: center;
+
 }
 
 .boton-enviar:hover {
@@ -482,24 +478,138 @@
   
 }
 
+/*-------------- Responsive contacto ----------- */
+
+
+
+@media (min-width: 280px) {
+    .container-contacto2 {
+        height:  80%;
+        width: 80%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 60%;
+    }
+
+}
+
+
+@media (min-width: 360px) {
+    .container-contacto2 {
+        height:  100%;
+        width: 80%;
+    }
+     .logo{
+         width:130%;
+                 
+     }
+     .contenedor-wp-ig{
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+     }
+     
+     .boton-enviar {
+         width: 30%;
+     }  
+     .container-contacto {
+         height: 350px;
+     }   
+
+     .container-contacto2{
+        width: 80%;
+     
+     }  
+    
+} 
+
+@media (min-width: 412px) {
+    .container-contacto2 {
+        height:  120%;
+        width: 80%;
+    
+} 
+}
 
 @media (min-width: 414px) {
     .container-contacto2 {
-        height:  500px;
-    }
-    
-    
-    
+        height:  110%;
+        width: 80%;  
+        margin-top: 40%    
+} 
+
+
+}
+@media (min-width: 576px) {
+    .container-contacto2 {
+        height:  100%;
+        width: 80%;  
+        margin-top: 40%    
+} 
+     .logo {
+         width: 40%;
+     }   
+
 }
 
-@media (max-width: 820px) {
+
+
+
+@media (min-width: 768px) {
     .container-contacto2 {
-        width:  75%;
-    }
+        height:  110%;
+        width: 70%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
+@media (min-width: 894px) {
+    .container-contacto2 {
+        height:  110%;
+        width: 60%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .container-contacto2 {
+        height:  100%;
+        width: 65%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
+@media (min-width: 1280px) {
+    .container-contacto2 {
+        height:  120%;
+        width: 65%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
   
 
 
-}
+
 /*----------------------fin CONTACTO--------------------------------------------------------- */
 
 
