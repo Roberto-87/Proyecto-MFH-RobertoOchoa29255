@@ -1,0 +1,35 @@
+@import "components/header";
+@import "components/tienda";
+@import "components/contacto";
+@import "components/novedades";
+@import "components/index-carrousel";
+@import "components/carrousel2019-2020";
+@import "components/carrousel2018";
+@import "base/colors";
+@import "base/listas";
+@import "base/extends";
+@import "base/mixins";
+@import "components/media-queries-index";
+
+/*--------------- estructura común a todas las páginas---------------------------------  */
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+/*---------------  fin estructura común a todas las páginas---------------------------------  */
+
+
+
+
+
+
+
+
+
+
+
+

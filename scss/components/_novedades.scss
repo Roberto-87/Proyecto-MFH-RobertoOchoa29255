@@ -1,0 +1,252 @@
+
+/*---------------------- NOVEDADES---------------------------------------------------------- */
+.body-novedades {
+    background-color: rgb(255, 2155, 250);
+}
+.container-row {
+    display: flex;
+    justify-content:flex-end;
+    
+}
+
+/* .container {
+    padding-right: 100px;
+} */
+
+.container-novedades {
+   margin-left: 10px;
+   position: sticky;
+   top: 0px;
+   width: 100%;
+   
+}
+
+.container-novedades h4 {
+    color: rgb(206, 204, 204);
+    
+}
+
+.row {
+    margin-top:20px ;
+}
+
+
+
+.nav-item-novedades{
+    background-color:#b9b9b9 !important; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start !important;
+    position:sticky;
+    top:46px;
+    color: white !important;
+  
+}
+
+#navbar-example2 {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center !important;
+    position:sticky;
+    top:46px;
+    margin-left: -20px;
+ 
+}
+
+.nav {
+    transition: all 2s;
+}
+
+.nav-link:active {
+    background-color: #ffffff;
+    color: black !important;
+}
+
+.nav-link:hover {
+     color: rgb(143, 136, 164) !important;
+    }
+
+
+
+    @media (min-width: 280px) {
+        .caja-enlaces {
+            position: sticky;
+            top: 0px;
+            padding-top: 10px;
+        }
+        .container-botones-novedades{
+            position: sticky;
+            top: 45px;
+            
+        }  
+        .caja-article{
+            margin-right: 10px;
+        } 
+        .span-boton:active {
+            transform: rotate(600deg);
+            border: none;
+            
+        }  
+        .span-boton:active {
+            transition: all 0.2s !important;
+                 
+        }
+        .container-novedades {
+            margin-bottom: 100%;
+        }
+    
+    
+    }
+
+    @media (min-width: 360px) {
+        .caja-navbar{
+            position: sticky;
+            top: 0;
+            padding-bottom: 5px;
+            padding-top: 20px;
+        }
+        .caja-botones-nav {
+            position: sticky !important;
+            top: 30px !important;
+        }
+
+    }
+
+    @media (min-width: 412px) {
+        .caja-navbar{
+            position: sticky;
+            top: 0;
+            padding-bottom: 5px;
+            padding-top: 20px;
+        }
+        .caja-botones-nav {
+            position: sticky !important;
+            top: 70px !important;
+        }
+
+    }
+
+
+    
+    @media (min-width: 996px) {
+    .imagen3 {
+    
+        height: 50%;
+    }
+    .imagen4 {
+        width: 40%;
+        height: 40%;
+    }
+    .imagen5 {
+        width: 35%;
+        height: 35%;
+    }
+
+    .p-novedades3 {
+        width: 45%;
+    }
+    .p-novedades4 {
+        width: 50%;
+    }
+    .container-novedades {
+        margin-bottom: 20px;
+    }
+    
+    }
+
+@media (min-width: 540px) {
+    .container-novedades {
+        margin-bottom: 75%;
+    }
+    .caja-navbar{
+        position: sticky;
+        top: 0;
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+    .caja-botones-nav {
+        position: sticky !important;
+        top: 70px !important;
+    }
+  
+
+
+}
+
+
+@media (min-width: 820px) {
+    .container-botones-novedades {
+        margin-left:-5%;
+     
+    }
+    .caja-navbar{
+        position: sticky;
+        top: 0;
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+    .caja-botones-nav {
+        position: sticky !important;
+        top: 70px !important;
+    }
+    .container-novedades {
+        margin-bottom: 100%;
+    }
+  
+}
+
+@media (min-width: 1024px) {
+    .container-botones-novedades {
+        margin-left:-5%;
+     
+    }
+    .caja-navbar{
+        position: fix;
+        top: 5px;
+        padding-top: 36px;
+    }
+    .caja-botones-nav {
+        position: sticky !important;
+        top: 70px !important;
+    }
+    .container-novedades {
+        margin-bottom: 100%;
+    }
+  
+}
+
+@media (min-width: 994px) {
+    .container-botones-novedades {
+        margin-left:-5%;
+     
+    }
+    .caja-navbar{
+        position: fixed;
+        top: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+       
+    }
+    .caja-botones-nav {
+        position: sticky !important;
+        top: 50px !important;
+    }
+
+  
+}
+
+
+
+@media (min-width: 1100px){
+    .caja-navbar {
+        width: 100%;
+        
+    }
+}
+
+
+
+
+ /*-------------------fin NOVEDADES---------------------------------------------------------- */

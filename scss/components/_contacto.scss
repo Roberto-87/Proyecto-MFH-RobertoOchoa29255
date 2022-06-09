@@ -1,0 +1,198 @@
+/*------------------------ CONTACTO--------------------------------------------------------- */
+
+
+.container-logos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+              
+}
+
+    
+.container-contacto {
+   margin-top: 5%;
+   width: 100%;
+ 
+}
+
+
+.body-contacto {
+    background-image: url("../imagenes/imagenes-taller/imagenTaller2.jpg"), url("../imagenes/imagenes-taller/imagenTaller1.jpg");;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 45%;
+    
+     
+}
+
+.boton-enviar {
+    border:1px solid white;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    height: 60%;
+    display: flex;
+    align-items: center;
+
+}
+
+.boton-enviar:hover {
+    background-color: gray;
+    border:2px solid gray;
+    color: #ffffff;
+}
+
+
+.boton-enviar:active {
+    background-color:rgb(255, 255, 255);
+    border:2px solid rgb(255, 255, 255);
+    color:gray;
+} 
+
+.logo {
+    width: 60px;
+}
+    
+.container-contacto2 {
+    transition: all 2s;
+    width: 50%;
+    background-color: #c7c7c795;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-contacto2:hover {
+    transform: translatey(-10%);
+  
+}
+
+/*-------------- Responsive contacto ----------- */
+
+
+
+@media (min-width: 280px) {
+    .container-contacto2 {
+        height:  80%;
+        width: 80%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 60%;
+    }
+
+}
+
+
+@media (min-width: 360px) {
+    .container-contacto2 {
+        height:  100%;
+        width: 80%;
+    }
+     .logo{
+         width:130%;
+                 
+     }
+     .contenedor-wp-ig{
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+     }
+     
+     .boton-enviar {
+         width: 30%;
+     }  
+     .container-contacto {
+         height: 350px;
+     }   
+
+     .container-contacto2{
+        width: 80%;
+     
+     }  
+    
+} 
+
+@media (min-width: 412px) {
+    .container-contacto2 {
+        height:  120%;
+        width: 80%;
+    
+} 
+}
+
+@media (min-width: 414px) {
+    .container-contacto2 {
+        height:  110%;
+        width: 80%;  
+        margin-top: 40%    
+} 
+
+
+}
+@media (min-width: 576px) {
+    .container-contacto2 {
+        height:  100%;
+        width: 80%;  
+        margin-top: 40%    
+} 
+     .logo {
+         width: 40%;
+     }   
+
+}
+
+
+
+
+@media (min-width: 768px) {
+    .container-contacto2 {
+        height:  110%;
+        width: 70%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
+@media (min-width: 894px) {
+    .container-contacto2 {
+        height:  110%;
+        width: 60%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .container-contacto2 {
+        height:  100%;
+        width: 65%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
+@media (min-width: 1280px) {
+    .container-contacto2 {
+        height:  120%;
+        width: 60%;  
+        margin-top: 40%    
+} 
+    .logo {
+        width: 50%;
+    } 
+
+}
+
+  
+/*----------------------fin CONTACTO--------------------------------------------------------- */

@@ -1,0 +1,48 @@
+@import "../base/variables";
+
+.caja-navbar{
+      background-color: $bc-header !important;
+      padding: 2px;
+      z-index: 1;
+      position: sticky !important;
+      top: 0px !important;
+    } 
+        .container-fluid {
+        font-size: $brand-font-size;
+        } 
+          .nav-link {
+          font-size: $link-font-size !important;
+          color: $general-font-color;
+          transition: all 1s !important;
+                
+           &:hover {
+           color: ($general-font-color,60%);
+           transform: scale(1.05);
+                    
+            &:active {
+            background-color:lighten($bc-header,20%);
+                    } 
+                }
+              .navbar-nav {
+                
+              }  
+    }
+   
+
+    @media (min-width:280px){
+
+      .caja-navbar {
+          background-color: rgb(255, 255, 255) !important;
+      }
+
+    }
+
+    
+    @media (min-width:1000px){
+
+      .caja-navbar {
+          background-color: $bc-header !important;
+          width: 100% !important;
+      }
+
+    }

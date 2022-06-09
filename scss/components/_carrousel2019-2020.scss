@@ -1,0 +1,113 @@
+
+
+.carrousel-2020 {
+  position:sticky;
+   top: 15px;
+
+}
+
+/*---- Responsive imagenes galeria 2019-2020 ---- */
+
+@media (min-width:280px){
+    .img-2019 {
+      width: 100%;
+}
+    .btn-2019-2020{
+        background-color: transparent;
+        border: none; 
+    }
+} 
+
+@media (min-width:400px){
+.img-2019 {
+  width: 100%;
+  margin-top: 2%;
+}
+.btn-2019-2020{
+    background-color: transparent;
+    border: none; 
+}
+} 
+
+
+
+@media (min-width:540px){
+.img-2019 {
+  width: 80%;
+  margin-top: 2%;
+}
+.btn-2019-2020{
+    background-color: transparent;
+    border: none; 
+}
+} 
+
+@media (min-width:768px){
+.img-2019 {
+  width: 60%;
+  margin-top: 0;
+}
+.btn-2019-2020{
+    border: none; 
+    background-color: rgb(255, 224, 224);
+}
+} 
+
+@media (min-width:820px){
+.img-2019 {
+  width: 55%;
+  margin-top: 0;
+}
+.btn-2019-2020{
+    background-color: rgb(255, 224, 224);
+   
+
+}
+} 
+
+
+
+
+@media (min-width:1024px){
+.img-2019 {
+  width: 45%;
+  margin-top: 0px;
+}
+.btn-2019-2020{
+    background-color: transparent;
+    border: none; 
+}
+}
+
+@media (min-width:1280px){
+.img-2019 {
+  width: 38%;
+  margin-top: -2%;
+}
+.btn-2019-2020{
+    background-color: transparent;
+    border: none; 
+}
+}
+
+@media (min-width:1150px){
+.img-2019 {
+  width: 45%;
+  margin-top: -2%;
+}
+.btn-2019-2020{
+    background-color: transparent;
+    border: none; 
+}
+}
+
+@media (min-width:1200px){
+.img-2019 {
+  width: 42%;
+  margin-top: -2%;
+}
+.btn-2019-2020{
+    background-color: transparent;
+    border: none; 
+}
+}

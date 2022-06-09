@@ -1,0 +1,283 @@
+@mixin displayposition ($display, $gridcolumn, $gridrow, $position, $alineax, $alineay) {
+    display: $display;
+    grid-template-columns: $gridcolumn;
+    grid-template-rows: $gridrow;
+    position: $position;
+    justify-content: $alineax;
+    align-items: $alineay;
+}
+
+@mixin widhtmargin ($width, $mt){
+    width: $width;
+    margin-top: $mt;
+
+}
+
+/*---- Responsive imagenes galeria 2022---- */
+
+@media (min-width:280px){
+
+    .img { 
+        @include widhtmargin(100% !important,1% !important);
+    }
+    .nombre {
+        font-size: ($brand-font-size)+0.5;
+    }
+    .menu-hamburguesa {
+        border: none;
+      
+    }
+    .container-nav:active .span-boton {
+        transform: rotate(600deg);
+        
+    }
+    .span-boton:active {
+        transition: all 0.2s !important;
+             
+    }
+
+    .btn  {
+    border: none;
+}
+
+}
+
+@media (min-width:390px){
+
+    .img {
+        margin-left: 1px;
+    }
+}
+
+@media (min-width:412px){
+
+    .img {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:412px){
+
+    .img {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:500px){
+
+    .img {
+        width: $width-responsive - 10% !important;
+    }
+}
+
+@media (min-width:550px){
+
+    .img {
+        width: $width-responsive - 20% !important;
+    }
+    .btn  {
+        border: none;
+    }
+}
+
+@media (min-width:635px){
+
+    .img {
+        width: $width-responsive - 30% !important;
+    }
+}
+
+@media (min-width:730px){
+
+    .img {
+        width: $width-responsive - 35% !important;
+    }
+}
+
+
+@media (min-width:760px){
+
+    .nombre {
+        font-size: ($brand-font-size)+ 2;
+    }
+    .img {
+        margin-left: 0px;
+        width: $width-responsive - 10% !important;
+    }
+}
+
+@media (min-width:766px){
+
+    .nombre {
+        font-size: ($brand-font-size)+ 2;
+    }
+    .img {
+        margin-left: 0px;
+        width: $width-responsive - 10% !important;
+    }
+}
+
+@media (min-width:767px){
+
+
+    }
+    .img {
+        margin-left: 0px;
+        width: $width-responsive - 10% !important;
+    }
+
+@media (min-width:772px){
+
+    .nombre {
+        font-size: ($brand-font-size)+ 2;
+    }
+    .img {
+        margin-left: 0px;
+        width: $width-responsive - 40% !important;
+    }
+}
+
+@media (min-width:800px){
+
+    .nombre {
+        font-size: ($brand-font-size)+1;
+    }
+    .img {
+     width: $width-responsive - 41% !important;
+    }
+}
+
+@media (min-width:820px){
+
+    .img {
+      width: $width-responsive !important;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+  background-color: none !important;
+}
+}
+
+@media (min-width:824px){
+
+    .img {
+      width: $width-responsive - 40% !important;
+  }
+
+
+}
+
+@media (min-width:844px){
+
+    .img {
+      width: $width-responsive - 45% !important;
+  }
+}
+
+
+@media (min-width:850px){
+
+      .img {
+        width: $width-responsive - 45% !important;
+    }
+}
+
+
+@media (min-width:905px){
+
+  
+    .img {
+        width: $width-responsive - 10% !important;
+    }
+}
+
+@media (min-width:988px){
+
+  
+    .img {
+        width: $width-responsive - 50% !important;
+    }
+}
+
+
+
+@media (min-width:994px){
+
+     .img {
+        margin-left: 0px;
+        @include widhtmargin(47% !important,6% !important)
+    }
+   
+       .carousel-control-prev-icon,
+       .carousel-control-next-icon {
+        background-color: $color-flechas-carrousel !important;
+}
+}
+
+@media (min-width:1024px){
+
+    .img {
+       margin-left: 0px;
+       @include widhtmargin(47% !important,0% !important)
+   }
+  
+}
+
+@media (min-width:1101px){
+
+ 
+    .img {
+      
+        @include widhtmargin(45% !important,6% !important)
+    }
+   
+ 
+}
+
+@media (min-width:1155px){
+
+ 
+    .img {
+      
+        @include widhtmargin(46% !important,5% !important)
+    }
+   
+ }
+
+@media (min-width:1190px){
+
+     .img {
+      
+        @include widhtmargin(44% !important,5% !important)
+    }
+    
+}
+
+
+@media (min-width:1200px){
+
+    .nombre {
+       font-size: ($brand-font-size)+2 ;
+     }
+    .img {
+           @include widhtmargin(40% !important,6.9% !important)
+    }
+    .nav-item-gale {
+        font-size: $link-font-size;
+    }
+}
+
+@media (min-width:1280px){
+
+    .nombre {
+       font-size: ($brand-font-size)+1 ;
+     }
+    .img {
+           @include widhtmargin(40% !important,0% !important);
+     }
+    .nav-item-gale {
+        font-size: $link-font-size+0.1;
+    }
+}
+
+

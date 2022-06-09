@@ -1,0 +1,26 @@
+@mixin displayposition ($display, $gridcolumn, $gridrow, $position, $alineax, $alineay) {
+    display: $display;
+    grid-template-columns: $gridcolumn;
+    grid-template-rows: $gridrow;
+    position: $position;
+    justify-content: $alineax;
+    align-items: $alineay;
+}
+
+@mixin widhtmargin ($width, $mt){
+    width: $width;
+    margin-top: $mt;
+
+}
+    .carrousel-index {
+         @include displayposition(grid,1.5fr,1.5fr,none,none ,none);
+         @include widhtmargin(100%,none);
+        } 
+          .p-epigrafe {
+          @include displayposition(flex !important,none ,none ,none ,flex !important ,flex-end !important);
+          margin-bottom:30px;
+          
+        }
+    
+
+

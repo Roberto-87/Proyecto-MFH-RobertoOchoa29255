@@ -1,0 +1,17 @@
+@mixin displayposition ($display, $gridcolumn, $gridrow, $position, $alineax, $alineay) {
+    display: $display;
+    grid-template-columns: $gridcolumn;
+    grid-template-rows: $gridrow;
+    position: $position;
+    justify-content: $alineax;
+    align-items: $alineay;
+}
+
+@mixin widhtmargin ($width, $mt){
+    width: $width;
+    margin-top: $mt;
+
+}
+
+
+
