@@ -1,11 +1,12 @@
 @import "../base/variables";
-
+ 
 .caja-navbar{
       background-color: $bc-header !important;
       padding: 2px;
       z-index: 1;
       position: sticky !important;
-      top: 0px !important;
+      top: 0px;
+ 
     } 
         .container-fluid {
         font-size: $brand-font-size;
@@ -13,19 +14,17 @@
           .nav-link {
           font-size: $link-font-size !important;
           color: $general-font-color;
-          transition: all 1s !important;
+          transition: all 0.5s !important;
                 
            &:hover {
-           color: ($general-font-color,60%);
-           transform: scale(1.05);
+           color: darken($general-font-color,100%);
+           transform: scale(1.1);
                     
             &:active {
             background-color:lighten($bc-header,20%);
                     } 
-                }
-              .navbar-nav {
-                
-              }  
+}       
+     
     }
    
 
@@ -33,11 +32,14 @@
 
       .caja-navbar {
           background-color: rgb(255, 255, 255) !important;
+          position: sticky!important;
+          top: 0px;
+          padding-top: 10%;
+          padding-bottom: 10%;
+           
       }
-
-    }
-
-    
+   
+       
     @media (min-width:1000px){
 
       .caja-navbar {
@@ -46,3 +48,4 @@
       }
 
     }
+  }

@@ -35,9 +35,8 @@
 
 
 .btn-comprar {
-    transition: all 0.4s;
+    transition: all 0.1s;
     background-color: rgba(160, 42, 42, 0.555)!important;
-    border: rgb(219, 204, 223);
     border-radius: 20px;
     color:rgba(255, 255, 255, 0.95);
 }
@@ -45,16 +44,19 @@
 .btn-comprar:active {
     background-color: rgb(255, 255, 255) !important;
     transform: scale(1.1);
-    border:  rgb(255, 255, 255) !important;
+    border: none !important;
 
 }
 
 .btn-comprar:hover {
     background-color: rgba(212, 177, 177, 0.555);
     color: rgb(20, 20, 20);
- 
 
+} 
+.btn:active {
+    border: transparent !important;
 }
+
 .card-img-top {
     margin-top: 10px;
 }

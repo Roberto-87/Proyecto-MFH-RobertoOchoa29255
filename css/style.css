@@ -4,7 +4,7 @@
   padding: 2px;
   z-index: 1;
   position: sticky !important;
-  top: 0px !important;
+  top: 0px;
 }
 
 .container-fluid {
@@ -14,21 +14,26 @@
 .nav-link {
   font-size: 0.9em !important;
   color: rgb(63, 58, 58);
-  transition: all 1s !important;
+  transition: all 0.5s !important;
 }
 .nav-link:hover {
-  color: rgb(63, 58, 58), 60%;
-  transform: scale(1.05);
+  color: black;
+  transform: scale(1.1);
 }
 .nav-link:hover:active {
   background-color: rgba(255, 255, 255, 0.897);
 }
+
 @media (min-width: 280px) {
   .caja-navbar {
     background-color: rgb(255, 255, 255) !important;
+    position: sticky !important;
+    top: 0px;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 280px) and (min-width: 1000px) {
   .caja-navbar {
     background-color: rgba(238, 236, 236, 0.897) !important;
     width: 100% !important;
@@ -62,9 +67,8 @@
 }
 
 .btn-comprar {
-  transition: all 0.4s;
+  transition: all 0.1s;
   background-color: rgba(160, 42, 42, 0.555) !important;
-  border: rgb(219, 204, 223);
   border-radius: 20px;
   color: rgba(255, 255, 255, 0.95);
 }
@@ -72,12 +76,16 @@
 .btn-comprar:active {
   background-color: rgb(255, 255, 255) !important;
   transform: scale(1.1);
-  border: rgb(255, 255, 255) !important;
+  border: none !important;
 }
 
 .btn-comprar:hover {
   background-color: rgba(212, 177, 177, 0.555);
   color: rgb(20, 20, 20);
+}
+
+.btn:active {
+  border: transparent !important;
 }
 
 .card-img-top {
@@ -365,6 +373,9 @@
   }
   .container-novedades {
     margin-bottom: 100%;
+  }
+  .nav-item-novedades {
+    display: none;
   }
 }
 @media (min-width: 360px) {
