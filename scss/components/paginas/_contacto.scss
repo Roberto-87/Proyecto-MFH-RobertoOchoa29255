@@ -1,0 +1,72 @@
+/*------------------------ CONTACTO--------------------------------------------------------- */
+
+
+.container-logos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+              
+}
+
+    
+.container-contacto {
+   margin-top: 5%;
+   width: 100%;
+ 
+}
+
+
+.body-contacto {
+    background-image: url("../imagenes/imagenes-taller/imagenTaller2.jpg"), url("../imagenes/imagenes-taller/imagenTaller1.jpg");;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 45%;
+    
+     
+}
+
+.boton-enviar {
+    border:1px solid white;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    height: 60%;
+    display: flex;
+    align-items: center;
+
+}
+
+.boton-enviar:hover {
+    background-color: gray;
+    border:2px solid gray;
+    color: #ffffff;
+}
+
+
+.boton-enviar:active {
+    background-color:rgb(255, 255, 255);
+    border:2px solid rgb(255, 255, 255);
+    color:gray;
+} 
+
+.logo {
+    width: 60px;
+}
+    
+.container-contacto2 {
+    transition: all 2s;
+    width: 50%;
+    background-color: #c7c7c795;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px !important;
+}
+
+.container-contacto2:hover {
+    transform: translatey(-10%);
+  
+}
+
+
+  
+/*----------------------fin CONTACTO--------------------------------------------------------- */

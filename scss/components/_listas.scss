@@ -1,8 +1,0 @@
-@mixin widhtmargin ($width, $mt){
-    width: $width;
-    margin-top: $mt;
-
-}
-
-$width-media:
-@include widhtmargin(100% !important,1% !important),

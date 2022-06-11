@@ -1,0 +1,77 @@
+
+/*---- Responsive imagenes galeria 2019-2020 ---- */
+
+.img-2019 {
+  @media (min-width:280px){
+      width: 100%;
+    }
+    @media (min-width:400px){
+        width: 100%;
+        margin-top: 2%;
+      }
+      @media (min-width:540px){
+        width: 80%;
+        margin-top: 2%;
+      }
+       @media (min-width:768px){
+          width: 60%;
+          margin-top: 0;
+        }
+        @media (min-width:820px){
+            width: 55%;
+            margin-top: 0;
+          }
+          @media (min-width:1024px){
+              width: 45%;
+              margin-top: 0px;
+          }
+          @media (min-width:1150px){
+            width: 45%;
+            margin-top: -2%;
+          }
+          @media (min-width:1200px){
+              width: 42%;
+              margin-top: -2%;
+          }
+            @media (min-width:1280px){
+                  width: 38%;
+                  margin-top: -2%;
+                }
+                 }
+                  .btn-2019-2020 {                  
+                 @media (min-width:280px){
+                    background-color: transparent;
+                    border: none; 
+                     }
+                    @media (min-width:400px){
+                      background-color: transparent;
+                      border: none; 
+                        } 
+                        @media (min-width:540px){
+                        background-color: transparent;
+                        border: none; 
+                          }
+                         @media (min-width:768px){
+                           border: none; 
+                           background-color: rgb(255, 224, 224);
+                            }
+                            @media (min-width:820px){
+                               background-color: rgb(255, 224, 224);
+                                } 
+                                @media (min-width:1024px){
+                                  background-color: transparent;
+                                  border: none;   
+                                   } 
+                                   @media (min-width:1280px){
+                                      background-color: transparent;
+                                      border: none; 
+                                       } 
+                                       @media (min-width:1150px){
+                                         background-color: transparent;
+                                         border: none; 
+                                           } 
+                                           @media (min-width:1200px){
+                                              background-color: transparent;
+                                              border: none; 
+                                          }
+                           }

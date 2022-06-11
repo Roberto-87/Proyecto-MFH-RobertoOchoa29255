@@ -1,10 +1,14 @@
 @charset "UTF-8";
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
 .caja-navbar {
-  background-color: rgba(238, 236, 236, 0.897) !important;
+  background: linear-gradient(to left, rgba(52, 224, 18, 0.158) 15%, rgba(116, 62, 53, 0.0666666667) 50%);
   padding: 2px;
   z-index: 1;
   position: sticky !important;
-  top: 0px;
+  top: 10px !important;
 }
 
 .container-fluid {
@@ -13,15 +17,13 @@
 
 .nav-link {
   font-size: 0.9em !important;
-  color: rgb(63, 58, 58);
-  transition: all 0.5s !important;
+  color: rgb(3, 3, 3);
 }
 .nav-link:hover {
   color: black;
-  transform: scale(1.1);
 }
 .nav-link:hover:active {
-  background-color: rgba(255, 255, 255, 0.897);
+  background-color: rgba(187, 180, 180, 0.808);
 }
 
 @media (min-width: 280px) {
@@ -35,14 +37,52 @@
 }
 @media (min-width: 280px) and (min-width: 1000px) {
   .caja-navbar {
-    background-color: rgba(238, 236, 236, 0.897) !important;
+    background-color: rgba(175, 167, 167, 0.808) !important;
     width: 100% !important;
   }
 }
+.container-education, .solo-exhibitions {
+  position: sticky;
+  top: 50px;
+}
+
+.container-article {
+  display: grid;
+  grid-template-columns: 2.9fr;
+  grid-template-rows: 3fr;
+  position: none;
+  justify-content: none;
+  align-items: none;
+  font-size: 0.8em;
+}
+
+.container-biografia {
+  margin-top: 2%;
+}
+
+.solo-exhibitions {
+  z-index: 2;
+  width: 100%;
+  padding: 40px;
+}
+
+.prueba {
+  transition: all 5s;
+}
+
+.container-education {
+  z-index: 1;
+  width: 100%;
+}
+
+.container-biografia {
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
 /*-------------------------- Tienda---------------------------------------------------- */
 .container-tienda {
   gap: 15px;
-  padding-top: 49px;
   color: gray;
 }
 
@@ -82,10 +122,6 @@
 .btn-comprar:hover {
   background-color: rgba(212, 177, 177, 0.555);
   color: rgb(20, 20, 20);
-}
-
-.btn:active {
-  border: transparent !important;
 }
 
 .card-img-top {
@@ -187,109 +223,13 @@
   border-radius: 15px;
   display: flex;
   justify-content: center;
+  margin-top: 0px !important;
 }
 
 .container-contacto2:hover {
   transform: translatey(-10%);
 }
 
-/*-------------- Responsive contacto ----------- */
-@media (min-width: 280px) {
-  .container-contacto2 {
-    height: 80%;
-    width: 80%;
-    margin-top: 40%;
-  }
-  .logo {
-    width: 60%;
-  }
-}
-@media (min-width: 360px) {
-  .container-contacto2 {
-    height: 100%;
-    width: 80%;
-  }
-  .logo {
-    width: 130%;
-  }
-  .contenedor-wp-ig {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .boton-enviar {
-    width: 30%;
-  }
-  .container-contacto {
-    height: 350px;
-  }
-  .container-contacto2 {
-    width: 80%;
-  }
-}
-@media (min-width: 412px) {
-  .container-contacto2 {
-    height: 120%;
-    width: 80%;
-  }
-}
-@media (min-width: 414px) {
-  .container-contacto2 {
-    height: 110%;
-    width: 80%;
-    margin-top: 40%;
-  }
-}
-@media (min-width: 576px) {
-  .container-contacto2 {
-    height: 100%;
-    width: 80%;
-    margin-top: 40%;
-  }
-  .logo {
-    width: 40%;
-  }
-}
-@media (min-width: 768px) {
-  .container-contacto2 {
-    height: 110%;
-    width: 70%;
-    margin-top: 40%;
-  }
-  .logo {
-    width: 50%;
-  }
-}
-@media (min-width: 894px) {
-  .container-contacto2 {
-    height: 110%;
-    width: 60%;
-    margin-top: 40%;
-  }
-  .logo {
-    width: 50%;
-  }
-}
-@media (min-width: 1024px) {
-  .container-contacto2 {
-    height: 100%;
-    width: 65%;
-    margin-top: 40%;
-  }
-  .logo {
-    width: 50%;
-  }
-}
-@media (min-width: 1280px) {
-  .container-contacto2 {
-    height: 120%;
-    width: 60%;
-    margin-top: 40%;
-  }
-  .logo {
-    width: 50%;
-  }
-}
 /*----------------------fin CONTACTO--------------------------------------------------------- */
 /*---------------------- NOVEDADES---------------------------------------------------------- */
 .body-novedades {
@@ -309,6 +249,7 @@
   position: sticky;
   top: 0px;
   width: 100%;
+  z-index: -1;
 }
 
 .container-novedades h4 {
@@ -327,6 +268,12 @@
   position: sticky;
   top: 46px;
   color: white !important;
+  z-index: 2 !important;
+}
+
+.caja-botones-nav {
+  background: transparent !important;
+  padding-top: 20px;
 }
 
 #navbar-example2 {
@@ -388,6 +335,10 @@
   .caja-botones-nav {
     position: sticky !important;
     top: 30px !important;
+  }
+  .nav-item-novedades {
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 412px) {
@@ -497,6 +448,10 @@
   }
 }
 /*-------------------fin NOVEDADES---------------------------------------------------------- */
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
 .carrousel-index {
   display: grid;
   grid-template-columns: 1.5fr;
@@ -506,6 +461,8 @@
   align-items: none;
   width: 100%;
   margin-top: none;
+  margin-top: 15px !important;
+  background-color: rgba(255, 224, 224, 0.027) !important;
 }
 
 .p-epigrafe {
@@ -518,167 +475,33 @@
   margin-bottom: 30px;
 }
 
+.dropdown-item {
+  position: none !important;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end, .carousel-fade .carousel-item.active {
+  z-index: -2;
+}
+
 .carrousel-2020 {
   position: sticky;
-  top: 15px;
+  top: 35px !important;
 }
 
-/*---- Responsive imagenes galeria 2019-2020 ---- */
-@media (min-width: 280px) {
-  .img-2019 {
-    width: 100%;
-  }
-  .btn-2019-2020 {
-    background-color: transparent;
-    border: none;
-  }
-}
-@media (min-width: 400px) {
-  .img-2019 {
-    width: 100%;
-    margin-top: 2%;
-  }
-  .btn-2019-2020 {
-    background-color: transparent;
-    border: none;
-  }
-}
-@media (min-width: 540px) {
-  .img-2019 {
-    width: 80%;
-    margin-top: 2%;
-  }
-  .btn-2019-2020 {
-    background-color: transparent;
-    border: none;
-  }
-}
-@media (min-width: 768px) {
-  .img-2019 {
-    width: 60%;
-    margin-top: 0;
-  }
-  .btn-2019-2020 {
-    border: none;
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 820px) {
-  .img-2019 {
-    width: 55%;
-    margin-top: 0;
-  }
-  .btn-2019-2020 {
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 1024px) {
-  .img-2019 {
-    width: 45%;
-    margin-top: 0px;
-  }
-  .btn-2019-2020 {
-    background-color: transparent;
-    border: none;
-  }
-}
-@media (min-width: 1280px) {
-  .img-2019 {
-    width: 38%;
-    margin-top: -2%;
-  }
-  .btn-2019-2020 {
-    background-color: transparent;
-    border: none;
-  }
-}
-@media (min-width: 1150px) {
-  .img-2019 {
-    width: 45%;
-    margin-top: -2%;
-  }
-  .btn-2019-2020 {
-    background-color: transparent;
-    border: none;
-  }
-}
-@media (min-width: 1200px) {
-  .img-2019 {
-    width: 42%;
-    margin-top: -2%;
-  }
-  .btn-2019-2020 {
-    background-color: transparent;
-    border: none;
-  }
-}
-.carrousel-2018 {
+.solo-exhibitions, .container-education {
   position: sticky;
-  top: 40px;
+  top: 50px;
 }
 
-.img07 {
-  width: 60%;
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: rgba(255, 224, 224, 0.027) !important;
 }
 
-/*---- Responsive imagenes galeria 2018---- */
-@media (min-width: 360px) {
-  .img-2018 {
-    width: 80%;
-  }
-  .btn-2018 {
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 390px) {
-  .img-2018 {
-    width: 80%;
-  }
-  .btn-2018 {
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 540px) {
-  .img-2018 {
-    width: 70%;
-  }
-  .btn-2018 {
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 540px) {
-  .img-2018 {
-    width: 50%;
-  }
-  .btn-2018 {
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 768px) {
-  .img-2018 {
-    width: 45%;
-  }
-  .btn-2018 {
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 1024px) {
-  .img-2018 {
-    width: 40%;
-  }
-  .btn-2018 {
-    background-color: rgb(255, 224, 224);
-  }
-}
-@media (min-width: 1200px) {
-  .img-2018 {
-    width: 33%;
-    margin-top: 0;
-  }
-  .btn-2018 {
-    background-color: rgb(255, 224, 224);
-  }
-}
 /*---- Responsive imagenes galeria 2022---- */
 @media (min-width: 280px) {
   .img {
@@ -736,7 +559,7 @@
 }
 @media (min-width: 730px) {
   .img {
-    width: 65% !important;
+    width: 80% !important;
   }
 }
 @media (min-width: 760px) {
@@ -778,6 +601,9 @@
   .img {
     width: 59% !important;
   }
+  .btn {
+    border: 1px solid rgba(255, 224, 224, 0.027);
+  }
 }
 @media (min-width: 820px) {
   .img {
@@ -813,21 +639,22 @@
     width: 50% !important;
   }
 }
-@media (min-width: 994px) {
+@media (min-width: 984px) {
   .img {
     margin-left: 0px;
     width: 47% !important;
     margin-top: 6% !important;
+    margin-top: 2px !important;
   }
   .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgb(255, 224, 224) !important;
+    background-color: rgba(255, 224, 224, 0.027) !important;
   }
 }
 @media (min-width: 1024px) {
   .img {
     margin-left: 0px;
-    width: 47% !important;
+    width: 45% !important;
     margin-top: 0% !important;
   }
 }
@@ -861,6 +688,18 @@
     font-size: 0.9em;
   }
 }
+@media (min-width: 1260px) {
+  .nombre {
+    font-size: 2em;
+  }
+  .img {
+    width: 40% !important;
+    margin-top: 0% !important;
+  }
+  .nav-item-gale {
+    font-size: 1em;
+  }
+}
 @media (min-width: 1280px) {
   .nombre {
     font-size: 2em;
@@ -873,6 +712,263 @@
     font-size: 1em;
   }
 }
+@media (min-width: 1366px) {
+  .img {
+    width: 40% !important;
+    margin-top: 0% !important;
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 224, 224, 0.027) !important;
+  }
+}
+/*---- Responsive imagenes galeria 2019-2020 ---- */
+@media (min-width: 280px) {
+  .img-2019 {
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .img-2019 {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+@media (min-width: 540px) {
+  .img-2019 {
+    width: 80%;
+    margin-top: 2%;
+  }
+}
+@media (min-width: 768px) {
+  .img-2019 {
+    width: 60%;
+    margin-top: 0;
+  }
+}
+@media (min-width: 820px) {
+  .img-2019 {
+    width: 55%;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .img-2019 {
+    width: 45%;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1150px) {
+  .img-2019 {
+    width: 45%;
+    margin-top: -2%;
+  }
+}
+@media (min-width: 1200px) {
+  .img-2019 {
+    width: 42%;
+    margin-top: -2%;
+  }
+}
+@media (min-width: 1280px) {
+  .img-2019 {
+    width: 38%;
+    margin-top: -2%;
+  }
+}
+
+@media (min-width: 280px) {
+  .btn-2019-2020 {
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (min-width: 400px) {
+  .btn-2019-2020 {
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (min-width: 540px) {
+  .btn-2019-2020 {
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (min-width: 768px) {
+  .btn-2019-2020 {
+    border: none;
+    background-color: rgb(255, 224, 224);
+  }
+}
+@media (min-width: 820px) {
+  .btn-2019-2020 {
+    background-color: rgb(255, 224, 224);
+  }
+}
+@media (min-width: 1024px) {
+  .btn-2019-2020 {
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (min-width: 1280px) {
+  .btn-2019-2020 {
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (min-width: 1150px) {
+  .btn-2019-2020 {
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  .btn-2019-2020 {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+/*---- Responsive imagenes galeria 2018---- */
+@media (min-width: 360px) {
+  .img-2018 {
+    width: 80% !important;
+  }
+}
+@media (min-width: 540px) {
+  .img-2018 {
+    width: 70% !important;
+  }
+}
+@media (min-width: 768px) {
+  .img-2018 {
+    width: 45% !important;
+  }
+}
+@media (min-width: 1024px) {
+  .img-2018 {
+    width: 40% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .img-2018 {
+    width: 35% !important;
+    margin-top: 0;
+  }
+}
+@media (min-width: 360px) {
+  .img-2018 .btn-2018 {
+    background-color: rgb(255, 224, 224);
+  }
+}
+
+/*-------------- Responsive contacto ----------- */
+@media (min-width: 280px) {
+  .container-contacto2 {
+    height: 80%;
+    width: 80%;
+    margin-top: 40%;
+  }
+}
+@media (min-width: 360px) {
+  .container-contacto2 {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media (min-width: 412px) {
+  .container-contacto2 {
+    height: 120%;
+    width: 80%;
+  }
+}
+@media (min-width: 414px) {
+  .container-contacto2 {
+    height: 110%;
+    width: 80%;
+    margin-top: 40%;
+  }
+}
+@media (min-width: 576px) {
+  .container-contacto2 {
+    height: 100%;
+    width: 80%;
+    margin-top: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .container-contacto2 {
+    height: 110%;
+    width: 70%;
+    margin-top: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .container-contacto2 {
+    height: 100%;
+    width: 65%;
+    margin-top: 40%;
+  }
+}
+@media (min-width: 1280px) {
+  .container-contacto2 {
+    height: 120%;
+    width: 60%;
+    margin-top: 40%;
+  }
+}
+.container-contacto2 .logo {
+  width: 50%;
+}
+@media (min-width: 360px) {
+  .container-contacto2 .logo {
+    width: 130%;
+  }
+}
+@media (min-width: 576px) {
+  .container-contacto2 .logo {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .container-contacto2 .logo {
+    width: 50%;
+  }
+}
+@media (min-width: 894px) {
+  .container-contacto2 .logo {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .container-contacto2 {
+    width: 50%;
+  }
+}
+
+.contenedor-wp-ig {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+@media (min-width: 360px) {
+  .boton-enviar {
+    width: 30%;
+  }
+}
+@media (min-width: 360px) and (min-width: 360px) {
+  .container-contacto {
+    height: 350px;
+  }
+}
+.solo-exhibitions, .container-education {
+  position: sticky;
+  top: 50px;
+}
+
 /*--------------- estructura común a todas las páginas---------------------------------  */
 * {
   font-family: "Josefin Sans", sans-serif;

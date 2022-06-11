@@ -1,17 +1,18 @@
 @import "components/header";
-@import "components/tienda";
-@import "components/contacto";
-@import "components/novedades";
-@import "components/index-carrousel";
-@import "components/carrousel2019-2020";
-@import "components/carrousel2018";
-@import "base/colors";
-@import "base/listas";
-@import "base/extends";
-@import "base/mixins";
-@import "components/media-queries-index";
+@import "components/paginas/biografia";
+@import "components/paginas/tienda";
+@import "components/paginas/contacto";
+@import "components/paginas/novedades";
+@import "components/paginas/index-carrousel";
+@import "components/paginas/carrousel2019-2020";
+@import "components/paginas/carrousel2018";
+@import "components/controles-carrousel";
 @import "components/footer";
-
+@import "components/media-queries/media-queries-index";
+@import "components/media-queries/media-queries-galeria2019";
+@import "components/media-queries/media-queries-galeria2018";
+@import "components/media-queries/media-queries-contacto";
+@import "./base/extends";
 
 /*--------------- estructura común a todas las páginas---------------------------------  */
 
@@ -21,6 +22,8 @@
     list-style: none;
     text-decoration: none;
     margin: 0;
+
+    
 }
 
 /*---------------  fin estructura común a todas las páginas---------------------------------  */

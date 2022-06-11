@@ -1,0 +1,22 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+    .carrousel-index {
+         @include displayposition(grid,1.5fr,1.5fr,none,none ,none);
+         @include widhtmargin(100%,none);
+         margin-top: 15px !important;
+         background-color: $color-flechas-carrousel !important;
+         }
+          .p-epigrafe {
+          @include displayposition(flex !important,none ,none ,none ,flex !important ,flex-end !important);
+          margin-bottom:30px;
+        } .dropdown-item {
+          position: none !important;
+            }
+
+            .carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end, .carousel-fade .carousel-item.active {
+               z-index: -2; 
+               }
+    
+
+

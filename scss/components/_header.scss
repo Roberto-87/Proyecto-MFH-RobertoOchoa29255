@@ -1,11 +1,12 @@
 @import "../base/variables";
  
 .caja-navbar{
-      background-color: $bc-header !important;
+      background: $bc-header-gradiant; 
       padding: 2px;
       z-index: 1;
       position: sticky !important;
-      top: 0px;
+      top: 10px !important;
+   
  
     } 
         .container-fluid {
@@ -14,14 +15,12 @@
           .nav-link {
           font-size: $link-font-size !important;
           color: $general-font-color;
-          transition: all 0.5s !important;
                 
            &:hover {
            color: darken($general-font-color,100%);
-           transform: scale(1.1);
-                    
+                          
             &:active {
-            background-color:lighten($bc-header,20%);
+            background-color:lighten($bc-header,5%);
                     } 
 }       
      

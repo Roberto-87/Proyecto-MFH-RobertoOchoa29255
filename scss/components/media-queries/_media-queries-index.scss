@@ -1,3 +1,5 @@
+
+
 @mixin displayposition ($display, $gridcolumn, $gridrow, $position, $alineax, $alineay) {
     display: $display;
     grid-template-columns: $gridcolumn;
@@ -90,7 +92,7 @@
 @media (min-width:730px){
 
     .img {
-        width: $width-responsive - 35% !important;
+        width: $width-responsive - 20% !important;
     }
 }
 
@@ -144,6 +146,9 @@
     }
     .img {
      width: $width-responsive - 41% !important;
+    }
+    .btn  {
+        border: 1px solid $color-flechas-carrousel;
     }
 }
 
@@ -201,11 +206,13 @@
 
 
 
-@media (min-width:994px){
+@media (min-width:984px){
 
      .img {
         margin-left: 0px;
-        @include widhtmargin(47% !important,6% !important)
+        @include widhtmargin(47% !important,6% !important);
+        margin-top: 2px !important;
+
     }
    
        .carousel-control-prev-icon,
@@ -218,7 +225,7 @@
 
     .img {
        margin-left: 0px;
-       @include widhtmargin(47% !important,0% !important)
+       @include widhtmargin(45% !important,0% !important)
    }
   
 }
@@ -267,6 +274,22 @@
     }
 }
 
+
+@media (min-width:1260px){
+
+    .nombre {
+       font-size: ($brand-font-size)+1 ;
+     }
+    .img {
+           @include widhtmargin(40% !important,0% !important);
+     }
+    .nav-item-gale {
+        font-size: $link-font-size+0.1;
+    }
+}
+
+
+
 @media (min-width:1280px){
 
     .nombre {
@@ -281,3 +304,15 @@
 }
 
 
+@media (min-width:1366px){
+
+
+    .img {
+           @include widhtmargin(40% !important,0% !important);
+     }
+     .carousel-control-prev-icon,
+     .carousel-control-next-icon {
+      background-color: $color-flechas-carrousel !important;
+  
+}
+}
