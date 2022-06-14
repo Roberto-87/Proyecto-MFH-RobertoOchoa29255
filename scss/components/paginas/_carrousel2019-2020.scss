@@ -1,5 +1,9 @@
-.carrousel-2020 {
-  position:sticky;
-   top: 35px !important;
+@import "../../base/extends";
 
+.main-galeria{
+  @extend %flexcenterxy;
+ }
+  .carrousel-2020 {
+  @extend %sticky40;
+   width: 90%;
 }

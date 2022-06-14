@@ -9,10 +9,10 @@
     } .container-biografia {
         margin-top: 2%;
       } .solo-exhibitions {
-          @extend %sticky50; 
-          z-index: 2;
-          width: 100%;
-          padding: 40px;
+        @extend %sticky50; 
+        z-index: 2;
+        width: 100%;
+        padding: 40px;
          } .prueba {
             transition: all 5s;
             } .container-education {

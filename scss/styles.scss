@@ -1,4 +1,3 @@
-@import "components/header";
 @import "components/paginas/biografia";
 @import "components/paginas/tienda";
 @import "components/paginas/contacto";
@@ -6,27 +5,30 @@
 @import "components/paginas/index-carrousel";
 @import "components/paginas/carrousel2019-2020";
 @import "components/paginas/carrousel2018";
-@import "components/controles-carrousel";
+
 @import "components/footer";
+@import "components/propiedadescomunes";
+@import "components/header";
+@import "components/botones";
+@import "components/linksdecontacto";
+@import "components/cards-tienda";
+
 @import "components/media-queries/media-queries-index";
 @import "components/media-queries/media-queries-galeria2019";
 @import "components/media-queries/media-queries-galeria2018";
 @import "components/media-queries/media-queries-contacto";
-@import "./base/extends";
+@import "components/media-queries/media-queries-header";
+@import "components/media-queries/media-queries-novedades";
+@import  "components/media-queries/media-queries-galeria2019";
+@import  "components/media-queries/media-queries-controles-carrousel";
+@import  "components/media-queries/media-queries-tienda";
 
-/*--------------- estructura común a todas las páginas---------------------------------  */
 
-*{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
 
-    
-}
 
-/*---------------  fin estructura común a todas las páginas---------------------------------  */
+
+
+
 
 
 

@@ -1,318 +1,45 @@
-
-
-@mixin displayposition ($display, $gridcolumn, $gridrow, $position, $alineax, $alineay) {
-    display: $display;
-    grid-template-columns: $gridcolumn;
-    grid-template-rows: $gridrow;
-    position: $position;
-    justify-content: $alineax;
-    align-items: $alineay;
-}
-
-@mixin widhtmargin ($width, $mt){
-    width: $width;
-    margin-top: $mt;
-
-}
+@import "../../base/mixins";
+@import "../../base/mixins";
 
 /*---- Responsive imagenes galeria 2022---- */
 
-@media (min-width:280px){
-
-    .img { 
-        @include widhtmargin(100% !important,1% !important);
-    }
-    .nombre {
-        font-size: ($brand-font-size)+0.5;
-    }
-    .menu-hamburguesa {
-        border: none;
-      
-    }
-    .container-nav:active .span-boton {
-        transform: rotate(600deg);
-        
-    }
-    .span-boton:active {
-        transition: all 0.2s !important;
+.img {
+    @include media1 ();
+    @include media2 ();
+    @include media3 ();
+    @include media4 ();
+    @include media5 ();
+    @include media6 ();
+    @include media7 ();
+    @include media8 ();
+    @include media9 ();
+    @include media10 ();
+    @include media11 ();
+    @include media12 ();
+    @include media13 ();
+    @include media14 ();
+    @include media15 ();
+    @include media16 ();
+    @include media17 ();
+    @include media18 ();
+    @include media19 ();
+    @include media20 ();
+    @include media21 ();
+    @include media22 ();
+    @include media23 ();
+    @include media24 ();
+    @include media25 ();
+    @include media26 ();
+    @include media27 ();
+    @include media28 ();
+      }  
+              .nav-item-gale {
+                             @media (min-width:820px){
+                             background-color: none !important;
+                             }
+                           }
+                          
+     
              
-    }
-
-    .btn  {
-    border: none;
-}
-
-}
-
-@media (min-width:390px){
-
-    .img {
-        margin-left: 1px;
-    }
-}
-
-@media (min-width:412px){
-
-    .img {
-        margin-left: 0;
-    }
-}
-
-@media (min-width:412px){
-
-    .img {
-        margin-left: 0;
-    }
-}
-
-@media (min-width:500px){
-
-    .img {
-        width: $width-responsive - 10% !important;
-    }
-}
-
-@media (min-width:550px){
-
-    .img {
-        width: $width-responsive - 20% !important;
-    }
-    .btn  {
-        border: none;
-    }
-}
-
-@media (min-width:635px){
-
-    .img {
-        width: $width-responsive - 30% !important;
-    }
-}
-
-@media (min-width:730px){
-
-    .img {
-        width: $width-responsive - 20% !important;
-    }
-}
-
-
-@media (min-width:760px){
-
-    .nombre {
-        font-size: ($brand-font-size)+ 2;
-    }
-    .img {
-        margin-left: 0px;
-        width: $width-responsive - 10% !important;
-    }
-}
-
-@media (min-width:766px){
-
-    .nombre {
-        font-size: ($brand-font-size)+ 2;
-    }
-    .img {
-        margin-left: 0px;
-        width: $width-responsive - 10% !important;
-    }
-}
-
-@media (min-width:767px){
-
-
-    }
-    .img {
-        margin-left: 0px;
-        width: $width-responsive - 10% !important;
-    }
-
-@media (min-width:772px){
-
-    .nombre {
-        font-size: ($brand-font-size)+ 2;
-    }
-    .img {
-        margin-left: 0px;
-        width: $width-responsive - 40% !important;
-    }
-}
-
-@media (min-width:800px){
-
-    .nombre {
-        font-size: ($brand-font-size)+1;
-    }
-    .img {
-     width: $width-responsive - 41% !important;
-    }
-    .btn  {
-        border: 1px solid $color-flechas-carrousel;
-    }
-}
-
-@media (min-width:820px){
-
-    .img {
-      width: $width-responsive !important;
-  }
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-  background-color: none !important;
-}
-}
-
-@media (min-width:824px){
-
-    .img {
-      width: $width-responsive - 40% !important;
-  }
-
-
-}
-
-@media (min-width:844px){
-
-    .img {
-      width: $width-responsive - 45% !important;
-  }
-}
-
-
-@media (min-width:850px){
-
-      .img {
-        width: $width-responsive - 45% !important;
-    }
-}
-
-
-@media (min-width:905px){
-
-  
-    .img {
-        width: $width-responsive - 10% !important;
-    }
-}
-
-@media (min-width:988px){
-
-  
-    .img {
-        width: $width-responsive - 50% !important;
-    }
-}
-
-
-
-@media (min-width:984px){
-
-     .img {
-        margin-left: 0px;
-        @include widhtmargin(47% !important,6% !important);
-        margin-top: 2px !important;
-
-    }
-   
-       .carousel-control-prev-icon,
-       .carousel-control-next-icon {
-        background-color: $color-flechas-carrousel !important;
-}
-}
-
-@media (min-width:1024px){
-
-    .img {
-       margin-left: 0px;
-       @include widhtmargin(45% !important,0% !important)
-   }
-  
-}
-
-@media (min-width:1101px){
-
- 
-    .img {
-      
-        @include widhtmargin(45% !important,6% !important)
-    }
-   
- 
-}
-
-@media (min-width:1155px){
-
- 
-    .img {
-      
-        @include widhtmargin(46% !important,5% !important)
-    }
-   
- }
-
-@media (min-width:1190px){
-
-     .img {
-      
-        @include widhtmargin(44% !important,5% !important)
-    }
-    
-}
-
-
-@media (min-width:1200px){
-
-    .nombre {
-       font-size: ($brand-font-size)+2 ;
-     }
-    .img {
-           @include widhtmargin(40% !important,6.9% !important)
-    }
-    .nav-item-gale {
-        font-size: $link-font-size;
-    }
-}
-
-
-@media (min-width:1260px){
-
-    .nombre {
-       font-size: ($brand-font-size)+1 ;
-     }
-    .img {
-           @include widhtmargin(40% !important,0% !important);
-     }
-    .nav-item-gale {
-        font-size: $link-font-size+0.1;
-    }
-}
-
-
-
-@media (min-width:1280px){
-
-    .nombre {
-       font-size: ($brand-font-size)+1 ;
-     }
-    .img {
-           @include widhtmargin(40% !important,0% !important);
-     }
-    .nav-item-gale {
-        font-size: $link-font-size+0.1;
-    }
-}
-
-
-@media (min-width:1366px){
-
-
-    .img {
-           @include widhtmargin(40% !important,0% !important);
-     }
-     .carousel-control-prev-icon,
-     .carousel-control-next-icon {
-      background-color: $color-flechas-carrousel !important;
-  
-}
-}
+         
+                                                 

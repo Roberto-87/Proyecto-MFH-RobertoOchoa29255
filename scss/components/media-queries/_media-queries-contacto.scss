@@ -1,74 +1,50 @@
-
-/*-------------- Responsive contacto ----------- */
+@import "../../base/mixins";
 
 .container-contacto2{
-    @media (min-width: 280px){ 
-        height:  80%;
-        width: 80%;  
-        margin-top: 40%;    
-        }
-        @media (min-width: 360px) {
-          height:  100%;
-          width: 80%;
-          } 
-          @media (min-width: 412px) {
-            height:  120%;
-            width: 80%;
-              } 
-           @media (min-width: 414px) {
-           height:  110%;
-           width: 80%;  
-           margin-top: 40%    
+          @media (min-width: 280px){ 
+            @include widht-heigh-mt (80%, 80%, 10% !important);
+            }
+            @media (min-width: 360px) {
+            @include widht-heigh-mt (80%, 100%, 10% !important);
             } 
-             @media (min-width: 576px) {
-              height:  100%;
-              width: 80%;  
-              margin-top: 40%    
-                }                
-               @media (min-width: 768px) {
-               height:  110%;
-               width: 70%;  
-               margin-top: 40%    
-                 }
-                 @media (min-width: 1024px) {
-                 height:  100%;
-                 width: 65%;  
-                 margin-top: 40%   
-                  }    
-                  @media (min-width: 1280px) {
-                  height:  120%;
-                  width: 60%;  
-                  margin-top: 40%    
-                    }                               
-                    .logo{
-                      @media (min-width: 360px) {
-                        width:130%;              
-                        } 
-                         @media (min-width: 576px){
-                          width: 40%;
-                          }    
-                           @media (min-width: 768px){
-                           width: 50%;
-                            }
-                             @media (min-width: 894px){
-                             width: 50%;
-                              } 
-                               @media (min-width: 1024px){}
-                                width: 50%;
-                                } 
-                                  @media (min-width: 1280px) {
-                                  width: 50%;
-                                  } 
-                                } 
+            @media (min-width: 412px) {
+            @include widht-heigh-mt (80%, 120%, 5% !important);
+            } 
+            @media (min-width: 576px) {
+            @include widht-heigh-mt (100%, 80%, 20% !important);
+            }                
+            @media (min-width: 768px) {
+            @include widht-heigh-mt (70%, 130%, 20% !important);
+            }
+            @media (min-width: 1024px) {
+            @include widht-heigh-mt (65%, 100%, 2% !important);
+            }    
+            @media (min-width: 1280px) {
+            @include widht-heigh-mt (70%, 100%, 0 !important); 
+            }                               
+              .logo{
+               @media (min-width: 360px) {
+               width:130%;              
+               } 
+               @media (min-width: 576px){
+               width: 40%;
+               }    
+               @media (min-width: 768px){
+               width: 50%;
+               }
+               @media (min-width: 894px){
+               width: 50%;
+               } 
+               @media (min-width: 1024px){}
+               width: 50%;
+               } 
+               @media (min-width: 1280px) {
+               width: 50%;
+               } 
+               } 
                                   
                             
-     .contenedor-wp-ig{
-         width: 100%;
-         display: flex !important;
-         justify-content: space-around !important;
-    
-        }
-        @media (min-width: 360px) {
+         @media (min-width: 360px) {
         .boton-enviar {
          width: 30%;
           } 

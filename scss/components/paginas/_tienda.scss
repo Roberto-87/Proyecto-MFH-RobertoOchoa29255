@@ -1,119 +1,13 @@
 
-
-  /*-------------------------- Tienda---------------------------------------------------- */
-
-  .container-tienda {
-    gap: 15px;
-    color: gray;
-
-
-}
-
-.body-tienda {
-    background-color: #e9e0e0;
-       
-}
-
-.container-tienda {
-    margin-top: 15px;
-}
-
-.tienda-card {
-    transition: all 0.3s;
-    background-color: rgba(0, 0, 0, 0.062);
-    width: 60%;
-    border-radius: 25px;
-    
-}
-
-.tienda-card:hover {
-    transform: scale(1.04); 
-    background-color: rgb(239, 239, 239);
-
-}    
-
-
-.btn-comprar {
-    transition: all 0.1s;
-    background-color: rgba(160, 42, 42, 0.555)!important;
-    border-radius: 20px;
-    color:rgba(255, 255, 255, 0.95);
-}
-
-.btn-comprar:active {
-    background-color: rgb(255, 255, 255) !important;
-    transform: scale(1.1);
-    border: none !important;
-
-}
-
-.btn-comprar:hover {
-    background-color: rgba(212, 177, 177, 0.555);
-    color: rgb(20, 20, 20);
-
-} 
-
-.card-img-top {
-    margin-top: 10px;
-}
-
-@media (min-width: 280px) {
-    .container-tienda {
-        margin-bottom:30%;
-     
+    .body-tienda {
+        background-color: #e9e0e0;
+        
     }
-}
+        .container-tienda {
+            gap: 15px;
+            color: gray;
+            margin-top: 15px;
+
+        }
 
 
-@media (min-width: 360px) {
-    .container-tienda {
-        margin-bottom:80%;
-     
-    }
-}
-@media (min-width: 375px) {
-    .container-tienda {
-        margin-bottom:25%;
-     
-    }
-}
-
-@media (min-width: 412px) {
-    .container-tienda {
-        margin-bottom:80%;
-     
-    }
-}
-
-
-@media (min-width: 540px) {
-    .container-tienda {
-        margin-bottom:30%;
-     
-    }
-}
-
-
-@media (min-width: 912px) {
-    .container-tienda {
-    margin-left: 10%;
-    margin-bottom: 85%; 
-    }
-}
-
-@media (min-width: 1024px) {
-    .container-tienda {
-    margin-left: 10%;
-    margin-bottom: 5%;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container-tienda {
-    margin-left: 10%;
-    margin-bottom: 19%;
-    }
-}
-
-
-  /*--------------------------fin Tienda---------------------------------------------------- */

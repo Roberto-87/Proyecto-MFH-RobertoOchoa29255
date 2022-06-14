@@ -2,76 +2,32 @@
 /*---- Responsive imagenes galeria 2019-2020 ---- */
 
 .img-2019 {
-  @media (min-width:280px){
-      width: 100%;
-    }
-    @media (min-width:400px){
-        width: 100%;
-        margin-top: 2%;
-      }
-      @media (min-width:540px){
-        width: 80%;
-        margin-top: 2%;
-      }
-       @media (min-width:768px){
-          width: 60%;
-          margin-top: 0;
-        }
-        @media (min-width:820px){
-            width: 55%;
-            margin-top: 0;
-          }
-          @media (min-width:1024px){
-              width: 45%;
-              margin-top: 0px;
-          }
-          @media (min-width:1150px){
-            width: 45%;
-            margin-top: -2%;
-          }
-          @media (min-width:1200px){
-              width: 42%;
-              margin-top: -2%;
-          }
-            @media (min-width:1280px){
-                  width: 38%;
-                  margin-top: -2%;
-                }
-                 }
-                  .btn-2019-2020 {                  
-                 @media (min-width:280px){
-                    background-color: transparent;
-                    border: none; 
-                     }
-                    @media (min-width:400px){
-                      background-color: transparent;
-                      border: none; 
-                        } 
-                        @media (min-width:540px){
-                        background-color: transparent;
-                        border: none; 
-                          }
-                         @media (min-width:768px){
-                           border: none; 
-                           background-color: rgb(255, 224, 224);
-                            }
-                            @media (min-width:820px){
-                               background-color: rgb(255, 224, 224);
-                                } 
-                                @media (min-width:1024px){
-                                  background-color: transparent;
-                                  border: none;   
-                                   } 
-                                   @media (min-width:1280px){
-                                      background-color: transparent;
-                                      border: none; 
-                                       } 
-                                       @media (min-width:1150px){
-                                         background-color: transparent;
-                                         border: none; 
-                                           } 
-                                           @media (min-width:1200px){
-                                              background-color: transparent;
-                                              border: none; 
-                                          }
-                           }
+  @include media1 ();
+  @include media2 ();
+  @include media3 ();
+  @include media4 ();
+  @include media5 ();
+  @include media6 ();
+  @include media7 ();
+  @include media8 ();
+  @include media9 ();
+  @include media10 ();
+  @include media11 ();
+  @include media12 ();
+  @include media13 ();
+  @include media14 ();
+  @include media15 ();
+  @include media16 ();
+  @include media17 ();
+  @include media18 ();
+  @include media19 ();
+  @include media20 ();
+  @media (min-width:1000px ) {
+    width: 55% !important;
+  }
+  @media (min-width:1280px ) {
+    width: 42% !important;
+  }
+  
+}           
+   

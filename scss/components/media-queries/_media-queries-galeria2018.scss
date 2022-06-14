@@ -2,28 +2,35 @@
 /*---- Responsive imagenes galeria 2018---- */
 
 .img-2018 {
-    @media (min-width:360px){
-      width: 80% !important;
-    }  
-       @media (min-width:540px){
-            width: 70% !important;
+            @include media1 ();
+            @include media2 ();
+            @include media3 ();
+            @include media4 ();
+            @include media5 ();
+            @include media6 ();
+            @include media7 ();
+            @include media8 ();
+            @include media9 ();
+            @include media10 ();
+            @include media11 ();
+            @include media12 ();
+            @include media13 ();
+            @include media14 ();
+            @include media15 ();
+            @include media16 ();
+            @include media17 ();
+            @include media18 ();
+            @include media19 ();
+            @include media20 ();
+            @media (min-width:1000px ) {
+              width: 35% !important;
+            }
+            @media (min-width:1280px ) {
+              width: 30% !important;
+            }
+            
           }
-            @media (min-width:768px){
-                width: 45% !important;
-                }
-  
-                @media (min-width:1024px){
-                    width: 40% !important;
-                }  
+     
+
                 
-                @media (min-width:1200px){
-                    width: 35% !important;
-                    margin-top: 0;
-                    } 
-                      .btn-2018 {
-                       @media (min-width:360px){
-                           background-color: rgb(255, 224, 224);
-                        }
-                      }    
-                    }
-                     
+                  

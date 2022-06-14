@@ -1,0 +1,83 @@
+@import "../base/extends";
+
+/* formulario de contacto- botón enviar */
+
+.boton-enviar {
+    border:1px solid white;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    height: 60%;
+    @extend %flexcenterxy;
+     &:hover {
+       background-color: gray;
+       border:2px solid gray;
+       color: #ffffff;
+    } &:active {
+    background-color:rgb(255, 255, 255);
+    border:2px solid rgb(255, 255, 255);
+    color:gray;
+} 
+}
+
+/* fin formulario de contacto- botón enviar */
+
+
+/* sección novedades: botones de navegación de títulos*/
+
+.caja-botones-nav {
+  background: transparent !important;
+  padding-top: 20px;
+
+} 
+    .nav {
+      transition: all 2s;
+    }
+    .nav-link:active {
+      background-color: #ffffff;
+      color: black !important;
+    }
+    .nav-link:hover {
+      color: rgb(143, 136, 164) !important;
+    }
+    #navbar-example2 {
+      border-radius: 5px;
+      display: flex;
+      justify-content: center !important;
+      position:sticky;
+      top:46px;
+      margin-left: -20px;
+  
+    }
+    .nav-item-novedades{
+      background-color:#b9b9b9 !important; 
+      border-radius: 20px;
+      display: flex;
+      justify-content: flex-start !important;
+      position:sticky;
+      top:46px;
+      color: white !important;
+      z-index: 2 !important;
+
+    }
+/* sección novedades: botones de navegación de títulos*/
+
+/* sección tienda: botón comprar*/
+
+    .btn-comprar {
+      transition: all 0.1s;
+      background-color: rgba(160, 42, 42, 0.555)!important;
+      border-radius: 20px;
+      color:rgba(255, 255, 255, 0.95);
+      
+      &:active {
+      background-color: rgb(255, 255, 255) !important;
+      transform: scale(1.1);
+      border: none !important;
+      }
+      &:hover{
+      background-color: rgba(212, 177, 177, 0.555);
+      color: rgb(20, 20, 20);
+      }
+    } 
+
+/* fin sección tienda: botón comprar*/

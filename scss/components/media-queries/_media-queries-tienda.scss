@@ -1,0 +1,23 @@
+
+  .container-tienda {
+    @media (min-width: 280px) {
+     margin-bottom:10px !important;
+    }
+
+    @media (min-width: 820px) {
+     margin-bottom:35px !important;
+      
+    }
+
+    @media (min-width: 912px) {
+     margin-bottom:25% !important;
+     margin-left: 10% !important;
+     
+    }
+    @media (min-width: 912px) {
+     margin-bottom:10px !important;
+    
+    }
+}
+
+
