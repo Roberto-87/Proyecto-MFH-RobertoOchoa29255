@@ -1,6 +1,7 @@
 
 @import "../../base/extends";
 @import "../../base/variables";
+@import "../../base/listas";
 
 .body-novedades {
    background-color:lighten($bc-body,59%); 
@@ -16,7 +17,7 @@
        z-index: -1 ;
     }
       .container-novedades h4 {
-        color: #b9b9b9;        
+        color: map-get($map: $colores, $key:"gris2");        
     }
       .row {
         margin-top:20px ;

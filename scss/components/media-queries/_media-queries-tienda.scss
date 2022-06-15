@@ -1,23 +1,33 @@
+@import "../../base/mixins";
+
 
   .container-tienda {
     @media (min-width: 280px) {
-     margin-bottom:10px !important;
-    }
-
-    @media (min-width: 820px) {
-     margin-bottom:35px !important;
+      @include bottom-left (70%, 2px)
+   }
+    
+    @media (min-width: 400px) {
+      @include bottom-left (80%, 0px)
       
     }
-
-    @media (min-width: 912px) {
-     margin-bottom:25% !important;
-     margin-left: 10% !important;
+    @media (min-width: 820px) {
+      @include bottom-left (80%, 10%)
      
     }
+
     @media (min-width: 912px) {
-     margin-bottom:10px !important;
-    
+      @include bottom-left (90%, 10%)
+     
     }
+    @media (min-width: 1000px) {
+      @include bottom-left (5%, 15%)
+      
+     }
+     @media (min-width: 1280px) {
+      @include bottom-left (20%, 5%)
+      
+     }  
+
 }
 
 

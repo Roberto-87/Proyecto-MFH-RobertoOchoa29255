@@ -1,21 +1,22 @@
 @import "../base/extends";
+@import "../base/listas";
 
 /* formulario de contacto- botón enviar */
 
 .boton-enviar {
     border:1px solid white;
     border-radius: 5px;
-    background-color:rgb(255, 255, 255);
+    background-color: map-get($map:$colores, $key:"blanco0");
     height: 60%;
     @extend %flexcenterxy;
      &:hover {
-       background-color: gray;
-       border:2px solid gray;
-       color: #ffffff;
+       background-color: map-get($map:$colores, $key:"gris0");
+       border:2px solid map-get($map:$colores, $key:"gris0");
+       color: map-get($map:$colores, $key:"blanco0");
     } &:active {
-    background-color:rgb(255, 255, 255);
+    background-color:map-get($map: $colores, $key: "blanco0");
     border:2px solid rgb(255, 255, 255);
-    color:gray;
+    color:map-get($map:$colores, $key:"gris0");
 } 
 }
 
@@ -33,11 +34,11 @@
       transition: all 2s;
     }
     .nav-link:active {
-      background-color: #ffffff;
-      color: black !important;
+      background-color: map-get($map: $colores, $key:"blanco0" );
+      color: map-get($map: $colores, $key:"negro0" )!important;
     }
     .nav-link:hover {
-      color: rgb(143, 136, 164) !important;
+      color: map-get($map: $colores, $key:"gris3" ) !important;
     }
     #navbar-example2 {
       border-radius: 5px;
@@ -49,13 +50,13 @@
   
     }
     .nav-item-novedades{
-      background-color:#b9b9b9 !important; 
+      background-color:map-get($map: $colores, $key:"gris2" ) !important; 
       border-radius: 20px;
       display: flex;
       justify-content: flex-start !important;
       position:sticky;
       top:46px;
-      color: white !important;
+      color: map-get($map: $colores, $key:"blanco0") !important;
       z-index: 2 !important;
 
     }
@@ -65,18 +66,18 @@
 
     .btn-comprar {
       transition: all 0.1s;
-      background-color: rgba(160, 42, 42, 0.555)!important;
+      background-color: map-get($map: $colores, $key:"rojo1")!important;
       border-radius: 20px;
-      color:rgba(255, 255, 255, 0.95);
+      color:map-get($map: $colores, $key:"blanco3") ;
       
       &:active {
-      background-color: rgb(255, 255, 255) !important;
+      background-color: map-get($map: $colores, $key:"blanco1")  !important;
       transform: scale(1.1);
       border: none !important;
       }
       &:hover{
-      background-color: rgba(212, 177, 177, 0.555);
-      color: rgb(20, 20, 20);
+      background-color: map-get($map: $colores, $key:"gris4") ;
+      color: map-get($map: $colores, $key:"negro1") 
       }
     } 
 

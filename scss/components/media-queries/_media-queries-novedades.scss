@@ -1,10 +1,16 @@
 
 
-@media (min-width: 280px) {
+
+ .nav-item-novedades {
+        display: none;
+
+
+
     .caja-enlaces {
         position: sticky;
         top: 0px;
         padding-top: 10px;
+        
     }
 
     .caja-article{
@@ -20,21 +26,13 @@
              
     }
     .container-novedades {
-        margin-bottom: 10px !important;
+        margin-bottom: 22% !important;
     }
-    .nav-item-novedades {
-        display: none;
+   
+}
 
-}
-}
 
 @media (min-width: 360px) {
-    .caja-navbar{
-        position: sticky;
-        top: 0;
-        padding-bottom: 5px;
-        padding-top: 20px;
-    }
     .caja-botones-nav {
         position: sticky !important;
         top: 30px !important;
@@ -49,12 +47,12 @@
 }
 
 @media (min-width: 412px) {
-    .caja-navbar{
-        position: sticky;
-        top: 0;
-        padding-bottom: 5px;
-        padding-top: 20px;
-    }
+    // .caja-navbar{
+    //     position: sticky;
+    //     top: 0;
+    //     padding-bottom: 5px;
+    //     padding-top: 20px;
+    // }
     .caja-botones-nav {
         position: sticky !important;
         top: 70px !important;
@@ -115,12 +113,12 @@
     margin-left:-5%;
  
 }
-.caja-navbar{
-    position: sticky;
-    top: 0;
+ .caja-navbar{
+     position: sticky;
+     top: 0;
     padding-bottom: 5px;
-    padding-top: 20px;
-}
+     padding-top: 20px;
+ }
 .caja-botones-nav {
     position: sticky !important;
     top: 70px !important;
@@ -136,11 +134,11 @@
     margin-left:-5%;
  
 }
-.caja-navbar{
-    position: fix;
-    top: 5px;
-    padding-top: 36px;
-}
+ .caja-navbar{
+     position: fixed;
+     top: 5px;
+     padding-top: 36px;
+ }
 .caja-botones-nav {
     position: sticky !important;
     top: 70px !important;
@@ -156,31 +154,37 @@
     margin-left:-5%;
  
 }
-.caja-navbar{
-    position: fixed;
+ .caja-navbar{
+     position: fixed;
     top: 0;
     padding: 0;
-    display: flex;
+     display: flex;
     justify-content: flex-end;
-    width: 70%;
+     width: 70%;
    
-}
+ }
 .caja-botones-nav {
     position: sticky !important;
     top: 50px !important;
 }
 
 
-}
+
+ 
 
 
-
-@media (min-width: 1100px){
-.caja-navbar {
-    width: 100%;
+ @media (min-width: 1100px){
+ .caja-navbar {
+   width: 100%;
     
+ }
 }
 }
+
+
+
+
+
 
 
 

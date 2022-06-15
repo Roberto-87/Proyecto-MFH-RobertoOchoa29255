@@ -66,7 +66,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 
 .container-tienda {
   gap: 15px;
-  color: gray;
+  color: rgb(143, 136, 164);
   margin-top: 15px;
 }
 
@@ -257,8 +257,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   margin: 0;
 }
 
-/*---------------  fin estructura común a todas las páginas---------------------------------  */
-/* 
+/*---------------  fin estructura común a todas las páginas---------------------------------  */ /* 
 colores utilizados antes: 
 $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /* $general-font-color:rgb(63, 58, 58); */
@@ -267,7 +266,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   padding: 2px;
   z-index: 1;
   position: sticky !important;
-  top: 0 !important;
+  top: 0px !important;
   width: 100% !important;
   height: 70px !important;
   padding-top: 10px !important;
@@ -278,6 +277,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   display: flex !important;
   align-items: center !important;
   justify-content: space-around;
+  position: sticky;
 }
 
 h1 {
@@ -294,6 +294,11 @@ h1 {
 .nav-link:hover:active {
   background: radial-gradient(circle, rgba(238, 174, 202, 0.388) 0%, rgba(148, 188, 233, 0.221) 100%);
   border-radius: 35px;
+}
+.nav-link .span-boton:active {
+  transform: rotate(600deg);
+  border: none;
+  transition: all 0.2s !important;
 }
 
 .solo-exhibitions, .container-education {
@@ -321,18 +326,18 @@ h1 {
 .boton-enviar {
   border: 1px solid white;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   height: 60%;
 }
 .boton-enviar:hover {
-  background-color: gray;
-  border: 2px solid gray;
-  color: #ffffff;
+  background-color: rgb(128, 127, 127);
+  border: 2px solid rgb(128, 127, 127);
+  color: white;
 }
 .boton-enviar:active {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border: 2px solid rgb(255, 255, 255);
-  color: gray;
+  color: rgb(128, 127, 127);
 }
 
 /* fin formulario de contacto- botón enviar */
@@ -347,7 +352,7 @@ h1 {
 }
 
 .nav-link:active {
-  background-color: #ffffff;
+  background-color: white;
   color: black !important;
 }
 
@@ -932,36 +937,29 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     height: 50% !important;
   }
 }
-@media (min-width: 280px) {
-  .caja-enlaces {
-    position: sticky;
-    top: 0px;
-    padding-top: 10px;
-  }
-  .caja-article {
-    margin-right: 10px;
-  }
-  .span-boton:active {
-    transform: rotate(600deg);
-    border: none;
-  }
-  .span-boton:active {
-    transition: all 0.2s !important;
-  }
-  .container-novedades {
-    margin-bottom: 10px !important;
-  }
-  .nav-item-novedades {
-    display: none;
-  }
+.nav-item-novedades {
+  display: none;
 }
+.nav-item-novedades .caja-enlaces {
+  position: sticky;
+  top: 0px;
+  padding-top: 10px;
+}
+.nav-item-novedades .caja-article {
+  margin-right: 10px;
+}
+.nav-item-novedades .span-boton:active {
+  transform: rotate(600deg);
+  border: none;
+}
+.nav-item-novedades .span-boton:active {
+  transition: all 0.2s !important;
+}
+.nav-item-novedades .container-novedades {
+  margin-bottom: 22% !important;
+}
+
 @media (min-width: 360px) {
-  .caja-navbar {
-    position: sticky;
-    top: 0;
-    padding-bottom: 5px;
-    padding-top: 20px;
-  }
   .caja-botones-nav {
     position: sticky !important;
     top: 30px !important;
@@ -972,12 +970,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   }
 }
 @media (min-width: 412px) {
-  .caja-navbar {
-    position: sticky;
-    top: 0;
-    padding-bottom: 5px;
-    padding-top: 20px;
-  }
   .caja-botones-nav {
     position: sticky !important;
     top: 70px !important;
@@ -1043,7 +1035,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     margin-left: -5%;
   }
   .caja-navbar {
-    position: fix;
+    position: fixed;
     top: 5px;
     padding-top: 36px;
   }
@@ -1072,7 +1064,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     top: 50px !important;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 994px) and (min-width: 1100px) {
   .caja-navbar {
     width: 100%;
   }
@@ -1206,25 +1198,95 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   }
 }
 
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
+/*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
+/*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
 @media (min-width: 280px) {
   .container-tienda {
-    margin-bottom: 10px !important;
+    margin-bottom: 70%;
+    margin-left: 2px;
+  }
+}
+@media (min-width: 400px) {
+  .container-tienda {
+    margin-bottom: 80%;
+    margin-left: 0px;
   }
 }
 @media (min-width: 820px) {
   .container-tienda {
-    margin-bottom: 35px !important;
+    margin-bottom: 80%;
+    margin-left: 10%;
   }
 }
 @media (min-width: 912px) {
   .container-tienda {
-    margin-bottom: 25% !important;
-    margin-left: 10% !important;
+    margin-bottom: 90%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1000px) {
+  .container-tienda {
+    margin-bottom: 5%;
+    margin-left: 15%;
+  }
+}
+@media (min-width: 1280px) {
+  .container-tienda {
+    margin-bottom: 20%;
+    margin-left: 5%;
+  }
+}
+
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
+/*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
+/*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
+@media (min-width: 280px) {
+  .container-article {
+    margin-bottom: 20%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 350px) {
+  .container-article {
+    margin-bottom: 60%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 412px) {
+  .container-article {
+    margin-bottom: 75%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .container-article {
+    margin-bottom: 55%;
+    margin-left: 0;
   }
 }
 @media (min-width: 912px) {
-  .container-tienda {
-    margin-bottom: 10px !important;
+  .container-article {
+    margin-bottom: 85%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .container-article {
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .container-article {
+    margin-bottom: 15%;
+    margin-left: 0;
   }
 }
 
