@@ -1,11 +1,33 @@
+.caja-navbar {
 @media (min-width:280px){
-
-    .caja-navbar {
-        position: sticky!important;
-        top: 0px;
-        padding-top: 10%;
-        padding-bottom: 10%;
-        height: 50% !important; 
+        position: sticky !important;
+        top: 0px !important;
+        padding-top: 8% !important;
+/*         padding-bottom: 10% !important; */
+         height: 50% !important; 
     } 
-    
-  }
+    @media (min-width:760px) {
+        padding-top: 5% !important; 
+    }
+    @media (min-width:1000px) {
+        padding-top: 1% !important; 
+    }
+}
+    .menu-hamburguesa {
+        border: none;
+
+        &:active { 
+
+        @media (min-width:280px){
+        transform: rotate(300deg);
+        border: none !important;
+        transition: all 0.2s !important;
+        border: none !important;
+        }
+    }    
+    .container-fluid h1 {
+       @media (min-width:820px){
+       margin-left: 1.5% !important;
+        } 
+    }
+}

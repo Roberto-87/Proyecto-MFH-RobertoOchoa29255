@@ -2,15 +2,12 @@
  
  .caja-navbar{
       background: $bc-header-gradiant;
-      padding: 2px;
       z-index: 1;
       position: sticky !important;
       top: 0px !important;
       width: 100% !important;
       height: 70px !important;
-      padding-top: 10px !important;
-      padding-bottom: 5px !important;
-      }   
+       }   
         .container-fluid {
 
         display: flex !important;
@@ -24,13 +21,14 @@
           .nav-link {
           font-size: $link-font-size !important;
           color: $general-font-color;
-                
+                         
            &:hover {
            color: darken($general-font-color,100%);
                           
             &:active {
             background:($bc-header-gradiant);
-            border-radius:35px;  
+            border-radius:45px; 
+            transition: all 0.1s; 
              } 
             }
             .span-boton:active {

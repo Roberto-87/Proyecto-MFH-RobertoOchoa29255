@@ -1,190 +1,49 @@
+@import "../../base/mixins";
 
-
-
- .nav-item-novedades {
-        display: none;
-
-
-
-    .caja-enlaces {
-        position: sticky;
-        top: 0px;
-        padding-top: 10px;
-        
-    }
-
-    .caja-article{
-        margin-right: 10px;
-    } 
-    .span-boton:active {
-        transform: rotate(600deg);
-        border: none;
-        
-    }  
-    .span-boton:active {
-        transition: all 0.2s !important;
-             
-    }
-    .container-novedades {
-        margin-bottom: 22% !important;
-    }
-   
-}
-
-
-@media (min-width: 360px) {
-    .caja-botones-nav {
-        position: sticky !important;
-        top: 30px !important;
-    }
     .nav-item-novedades {
-        display: flex;
-        justify-content: center;
-    
-
+    @media (min-width:0px){
+    display: none;
+        }
+    @media (min-width:370px){
+    display: block;
+            }
     }
 
-}
-
-@media (min-width: 412px) {
-    // .caja-navbar{
-    //     position: sticky;
-    //     top: 0;
-    //     padding-bottom: 5px;
-    //     padding-top: 20px;
-    // }
-    .caja-botones-nav {
-        position: sticky !important;
-        top: 70px !important;
+    #nav-botones-novedades {
+    @media (min-width:375px){
+    @include sticky-top (sticky, 12%)
     }
-
-}
-
-
-
-@media (min-width: 996px) {
-.imagen3 {
-
-    height: 50%;
-}
-.imagen4 {
-    width: 40%;
-    height: 40%;
-}
-.imagen5 {
-    width: 35%;
-    height: 35%;
-}
-
-.p-novedades3 {
-    width: 45%;
-}
-.p-novedades4 {
-    width: 50%;
-}
-.container-novedades {
-    margin-bottom: 20px;
-}
-
-}
-
-@media (min-width: 540px) {
-.container-novedades {
-    margin-bottom: 75%;
-}
-.caja-navbar{
-    position: sticky;
-    top: 0;
-    padding-bottom: 5px;
-    padding-top: 20px;
-}
-.caja-botones-nav {
-    position: sticky !important;
-    top: 70px !important;
-}
-
-
-
-}
-
-
-@media (min-width: 820px) {
-.container-botones-novedades {
-    margin-left:-5%;
- 
-}
- .caja-navbar{
-     position: sticky;
-     top: 0;
-    padding-bottom: 5px;
-     padding-top: 20px;
- }
-.caja-botones-nav {
-    position: sticky !important;
-    top: 70px !important;
-}
-.container-novedades {
-    margin-bottom: 100%;
-}
-
-}
-
-@media (min-width: 1024px) {
-.container-botones-novedades {
-    margin-left:-5%;
- 
-}
- .caja-navbar{
-     position: fixed;
-     top: 5px;
-     padding-top: 36px;
- }
-.caja-botones-nav {
-    position: sticky !important;
-    top: 70px !important;
-}
-.container-novedades {
-    margin-bottom: 100%;
-}
-
-}
-
-@media (min-width: 994px) {
-.container-botones-novedades {
-    margin-left:-5%;
- 
-}
- .caja-navbar{
-     position: fixed;
-    top: 0;
-    padding: 0;
-     display: flex;
-    justify-content: flex-end;
-     width: 70%;
-   
- }
-.caja-botones-nav {
-    position: sticky !important;
-    top: 50px !important;
-}
-
-
-
- 
-
-
- @media (min-width: 1100px){
- .caja-navbar {
-   width: 100%;
-    
- }
-}
-}
-
-
-
-
-
-
-
-
+    @media (min-width:390px){
+        @include sticky-top (sticky, 10%)
+    }
+    @media (min-width:500px){
+        @include sticky-top (sticky, 14%)
+    }
+    @media (min-width:540px){
+        @include sticky-top (sticky, 15%)
+    }
+    @media (min-width:600px){
+        @include sticky-top (sticky, 18%)
+    }
+    @media (min-width:540px){
+        @include sticky-top (sticky, 14%)
+    }
+    @media (min-width:620px){
+        @include sticky-top (sticky, 16%)
+    }
+    @media (min-width:680px){
+        @include sticky-top (sticky, 18%)
+    }
+    @media (min-width:768px){
+        @include sticky-top (sticky, 8.5%)
+       }
+     @media (min-width:912px){
+     @include sticky-top (sticky, 8%)
+    }
+    @media (min-width:915px){
+    @include sticky-top (sticky, 15%)
+    }
+    @media (min-width:1200px){
+        @include sticky-top (sticky, 10%)
+        }
+} 

@@ -28,6 +28,14 @@
 
 }
 
+@mixin sticky-top ($position,$top){
+   position: $position;
+   top: $top;
+
+}
+
+
+
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 
 @mixin media1 (){

@@ -144,7 +144,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 
 .container-novedades {
-  margin-left: 10px;
   position: sticky;
   top: 0px;
   width: 100%;
@@ -257,20 +256,22 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   margin: 0;
 }
 
-/*---------------  fin estructura común a todas las páginas---------------------------------  */ /* 
+.disclaimer {
+  display: none;
+}
+
+/*---------------  fin estructura común a todas las páginas---------------------------------  */
+/* 
 colores utilizados antes: 
 $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /* $general-font-color:rgb(63, 58, 58); */
 .caja-navbar {
   background: radial-gradient(circle, rgba(238, 174, 202, 0.388) 0%, rgba(148, 188, 233, 0.221) 100%);
-  padding: 2px;
   z-index: 1;
   position: sticky !important;
   top: 0px !important;
   width: 100% !important;
   height: 70px !important;
-  padding-top: 10px !important;
-  padding-bottom: 5px !important;
 }
 
 .container-fluid {
@@ -293,7 +294,8 @@ h1 {
 }
 .nav-link:hover:active {
   background: radial-gradient(circle, rgba(238, 174, 202, 0.388) 0%, rgba(148, 188, 233, 0.221) 100%);
-  border-radius: 35px;
+  border-radius: 45px;
+  transition: all 0.1s;
 }
 .nav-link .span-boton:active {
   transform: rotate(600deg);
@@ -341,14 +343,13 @@ h1 {
 }
 
 /* fin formulario de contacto- botón enviar */
-/* sección novedades: botones de navegación de títulos*/
+/* sección novedades: botones de navegación de títulos el resto de las propiedades están dadas a nivel de media queries */
 .caja-botones-nav {
   background: transparent !important;
-  padding-top: 20px;
 }
 
-.nav {
-  transition: all 2s;
+.nav-link {
+  transition: all 1.6s;
 }
 
 .nav-link:active {
@@ -357,25 +358,20 @@ h1 {
 }
 
 .nav-link:hover {
-  color: rgb(143, 136, 164) !important;
+  color: black !important;
 }
 
-#navbar-example2 {
+#nav-botones-novedades {
   border-radius: 5px;
   display: flex;
   justify-content: center !important;
-  position: sticky;
-  top: 46px;
-  margin-left: -20px;
 }
 
 .nav-item-novedades {
-  background-color: #b9b9b9 !important;
+  background-color: rgba(199, 199, 199, 0.5843137255) !important;
   border-radius: 20px;
   display: flex;
   justify-content: flex-start !important;
-  position: sticky;
-  top: 46px;
   color: white !important;
   z-index: 2 !important;
 }
@@ -931,144 +927,130 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 280px) {
   .caja-navbar {
     position: sticky !important;
-    top: 0px;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    top: 0px !important;
+    padding-top: 8% !important;
+    /*         padding-bottom: 10% !important; */
     height: 50% !important;
   }
 }
-.nav-item-novedades {
-  display: none;
+@media (min-width: 760px) {
+  .caja-navbar {
+    padding-top: 5% !important;
+  }
 }
-.nav-item-novedades .caja-enlaces {
-  position: sticky;
-  top: 0px;
-  padding-top: 10px;
-}
-.nav-item-novedades .caja-article {
-  margin-right: 10px;
-}
-.nav-item-novedades .span-boton:active {
-  transform: rotate(600deg);
-  border: none;
-}
-.nav-item-novedades .span-boton:active {
-  transition: all 0.2s !important;
-}
-.nav-item-novedades .container-novedades {
-  margin-bottom: 22% !important;
+@media (min-width: 1000px) {
+  .caja-navbar {
+    padding-top: 1% !important;
+  }
 }
 
-@media (min-width: 360px) {
-  .caja-botones-nav {
-    position: sticky !important;
-    top: 30px !important;
-  }
-  .nav-item-novedades {
-    display: flex;
-    justify-content: center;
-  }
+.menu-hamburguesa {
+  border: none;
 }
-@media (min-width: 412px) {
-  .caja-botones-nav {
-    position: sticky !important;
-    top: 70px !important;
-  }
-}
-@media (min-width: 996px) {
-  .imagen3 {
-    height: 50%;
-  }
-  .imagen4 {
-    width: 40%;
-    height: 40%;
-  }
-  .imagen5 {
-    width: 35%;
-    height: 35%;
-  }
-  .p-novedades3 {
-    width: 45%;
-  }
-  .p-novedades4 {
-    width: 50%;
-  }
-  .container-novedades {
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 540px) {
-  .container-novedades {
-    margin-bottom: 75%;
-  }
-  .caja-navbar {
-    position: sticky;
-    top: 0;
-    padding-bottom: 5px;
-    padding-top: 20px;
-  }
-  .caja-botones-nav {
-    position: sticky !important;
-    top: 70px !important;
+@media (min-width: 280px) {
+  .menu-hamburguesa:active {
+    transform: rotate(300deg);
+    border: none !important;
+    transition: all 0.2s !important;
+    border: none !important;
   }
 }
 @media (min-width: 820px) {
-  .container-botones-novedades {
-    margin-left: -5%;
+  .menu-hamburguesa .container-fluid h1 {
+    margin-left: 1.5% !important;
   }
-  .caja-navbar {
+}
+
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
+/*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
+/*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
+@media (min-width: 0px) {
+  .nav-item-novedades {
+    display: none;
+  }
+}
+@media (min-width: 370px) {
+  .nav-item-novedades {
+    display: block;
+  }
+}
+
+@media (min-width: 375px) {
+  #nav-botones-novedades {
     position: sticky;
-    top: 0;
-    padding-bottom: 5px;
-    padding-top: 20px;
-  }
-  .caja-botones-nav {
-    position: sticky !important;
-    top: 70px !important;
-  }
-  .container-novedades {
-    margin-bottom: 100%;
+    top: 12%;
   }
 }
-@media (min-width: 1024px) {
-  .container-botones-novedades {
-    margin-left: -5%;
-  }
-  .caja-navbar {
-    position: fixed;
-    top: 5px;
-    padding-top: 36px;
-  }
-  .caja-botones-nav {
-    position: sticky !important;
-    top: 70px !important;
-  }
-  .container-novedades {
-    margin-bottom: 100%;
+@media (min-width: 390px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 10%;
   }
 }
-@media (min-width: 994px) {
-  .container-botones-novedades {
-    margin-left: -5%;
-  }
-  .caja-navbar {
-    position: fixed;
-    top: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    width: 70%;
-  }
-  .caja-botones-nav {
-    position: sticky !important;
-    top: 50px !important;
+@media (min-width: 500px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 14%;
   }
 }
-@media (min-width: 994px) and (min-width: 1100px) {
-  .caja-navbar {
-    width: 100%;
+@media (min-width: 540px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 15%;
   }
 }
+@media (min-width: 600px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 18%;
+  }
+}
+@media (min-width: 540px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 14%;
+  }
+}
+@media (min-width: 620px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 16%;
+  }
+}
+@media (min-width: 680px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 18%;
+  }
+}
+@media (min-width: 768px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 8.5%;
+  }
+}
+@media (min-width: 912px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 8%;
+  }
+}
+@media (min-width: 915px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 15%;
+  }
+}
+@media (min-width: 1200px) {
+  #nav-botones-novedades {
+    position: sticky;
+    top: 10%;
+  }
+}
+
 /*---- Responsive imagenes galeria 2019-2020 ---- */
 @media (min-width: 280px) {
   .img-2019 {
