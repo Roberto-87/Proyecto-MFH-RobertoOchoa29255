@@ -1,6 +1,9 @@
 @import "../../base/variables";
 @import "../../base/mixins";
 
+.body-galeria{
+ background-color: transparent;       
+    }
     .carrousel-index {
          @include displayposition(grid,1.5fr,1.5fr,none,none ,none);
          @include widhtmargin(100%,none);

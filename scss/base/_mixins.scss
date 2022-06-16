@@ -15,6 +15,12 @@
 
 }
 
+@mixin paddingyradius ($pad, $rad){
+   padding: $pad;
+   border-radius: $rad;
+
+}
+
 @mixin widht-heigh-mt ($width,$height, $mt){
    width: $width;
    height: $height;
@@ -38,22 +44,26 @@
 
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 
+
+
 @mixin media1 (){
    @media (min-width:($medidaminima + 80px)){
     width: $width-responsive !important;
+    margin-top: 15px;
 
    }
 }
 @mixin media2 (){
     @media (min-width:($medidaminima + 50px)){
      width: $width-responsive !important;
-     
+
     }
  }
 
  @mixin media3 (){
     @media (min-width:($medidaminima + 100px)){
      width: $width-responsive !important;
+     margin-top: 2px;
      
     }
  }
@@ -61,13 +71,14 @@
  @mixin media4 (){
     @media (min-width:($medidaminima + 150px)){
      width:$width-responsive !important;
-     
+         
     }   
  }
 
  @mixin media5 (){
     @media (min-width:($medidaminima + 200px)){
      width: $width-responsive !important;
+    
      
     }
  }
@@ -82,9 +93,12 @@
  @mixin media7 (){
     @media (min-width:($medidaminima + 300px)){
      width: $width-responsive !important;
+     margin-top: 0;
      
     }
  }
+
+
 
  @mixin media8 (){
     @media (min-width:($medidaminima + 350px)){
@@ -117,6 +131,7 @@
  @mixin media12 (){
     @media (min-width:($medidaminima + 550px)){
      width: $width-responsive - 40% !important;
+     margin-top: 4px;
      
     }
  }
@@ -204,6 +219,7 @@
     }
  }
 
+
 //  Medida Ipad:
 
  @mixin media25 (){
@@ -217,14 +233,15 @@
 
  @mixin media26 (){
     @media (min-width:($medidaminima + 824px)){
-     width: $width-responsive - 54% !important;
+     width: $width-responsive - 60% !important;
+     margin-top: 0px;
      
     }
  } 
 
  @mixin media27 (){
     @media (min-width:($medidaminima + 1080px)){
-     width: $width-responsive !important;
+     width: $width-responsive - 5% !important;
      
     }
  } 
@@ -233,10 +250,12 @@
 
 @mixin media28 (){
     @media (min-width:($medidaminima + 1050px)){
-     width: $width-responsive - 61% !important;
+     width: $width-responsive - 66% !important;
      
     }
  } 
+
+
 
 /*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
 

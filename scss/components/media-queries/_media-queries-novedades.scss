@@ -10,11 +10,14 @@
     }
 
     #nav-botones-novedades {
-    @media (min-width:375px){
+    @media (min-width:370px){
     @include sticky-top (sticky, 12%)
     }
     @media (min-width:390px){
         @include sticky-top (sticky, 10%)
+    }
+    @media (min-width:400px){
+        @include sticky-top (sticky, 12%)
     }
     @media (min-width:500px){
         @include sticky-top (sticky, 14%)
@@ -36,6 +39,9 @@
     }
     @media (min-width:768px){
         @include sticky-top (sticky, 8.5%)
+       }
+       @media (min-width:774px){
+        @include sticky-top (sticky, 12%)
        }
      @media (min-width:912px){
      @include sticky-top (sticky, 8%)
