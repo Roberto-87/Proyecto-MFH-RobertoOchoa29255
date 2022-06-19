@@ -11,6 +11,11 @@
     @include media5 ();
     @include media6 ();
     @include media7 ();
+    @media (min-width:540px){
+      width: $width-responsive - 10% !important;
+      
+     }
+    
     @include media8 ();
     @include media9 ();
     @include media10 ();

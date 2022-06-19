@@ -2,16 +2,11 @@
 
 .container-logos, .container-row, .container-footer {
   @media (min-width: 280px) {
-   @include widhtmargin (92%, 35%)
+   @include widhtmargin (100%, 25%)
 }
 
-@media (min-width: 360px) {
-    @include widhtmargin (67%, 15%)
- }
-
-
 @media (min-width: 375px) {
-    @include widhtmargin (80%, 20%)
+    @include widhtmargin (99%, 15%)
  }
  @media (min-width: 390px) {
     @include widhtmargin (99%, 15%)

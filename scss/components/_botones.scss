@@ -4,9 +4,9 @@
 /* formulario de contacto- botón enviar */
 
 .boton-enviar {
-    border:1px solid white;
+    border: 0.1px solid "gris2";
     border-radius: 5px;
-    background-color: map-get($map:$colores, $key:"blanco0");
+    background-color: map-get($map:$colores, $key:"gris2");
     height: 60%;
     @extend %flexcenterxy;
     margin-top: 8px;
@@ -16,9 +16,9 @@
        border:2px solid map-get($map:$colores, $key:"gris0");
        color: map-get($map:$colores, $key:"blanco0");
     } &:active {
-    background-color:map-get($map: $colores, $key: "blanco0");
-    border:2px solid rgb(255, 255, 255);
-    color:map-get($map:$colores, $key:"gris0");
+       background-color:map-get($map: $colores, $key: "blanco0");
+       border:2px solid rgb(255, 255, 255);
+       color:map-get($map:$colores, $key:"gris0");
 } 
 }
 

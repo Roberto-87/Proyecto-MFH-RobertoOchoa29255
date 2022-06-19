@@ -9,7 +9,7 @@
   top: 40px;
 }
 
-.boton-enviar, .main-galeria, .container-contacto2 {
+.container-contacto2, .boton-enviar, .main-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.boton-enviar, .main-galeria, .container-contacto2 {
+.container-contacto2, .boton-enviar, .main-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,22 +97,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   background-size: 45%;
 }
 
-.container-contacto {
-  margin-top: 5%;
-  width: 100%;
-}
-
-.container-contacto2 {
-  transition: all 2s;
-  width: 50%;
-  background-color: rgba(199, 199, 199, 0.5843137255);
-  border-radius: 15px;
-  margin-top: 0px !important;
-}
-.container-contacto2:hover {
-  transform: translatey(-10%);
-}
-
 .solo-exhibitions, .container-education {
   position: sticky;
   top: 50px;
@@ -123,7 +107,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.boton-enviar, .main-galeria, .container-contacto2 {
+.container-contacto2, .boton-enviar, .main-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +195,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.boton-enviar, .main-galeria, .container-contacto2 {
+.container-contacto2, .boton-enviar, .main-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +220,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.boton-enviar, .container-contacto2, .main-galeria {
+.container-contacto2, .boton-enviar, .main-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,7 +245,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.boton-enviar, .container-contacto2, .main-galeria {
+.container-contacto2, .boton-enviar, .main-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,6 +336,7 @@ h1 {
 }
 .nav-link:hover {
   color: black;
+  transform: scale(1.1);
 }
 .nav-link:hover:active {
   background: radial-gradient(circle, rgba(238, 174, 202, 0.388) 0%, rgba(148, 188, 233, 0.221) 100%);
@@ -374,7 +359,7 @@ h1 {
   top: 40px;
 }
 
-.boton-enviar, .container-contacto2, .main-galeria {
+.container-contacto2, .boton-enviar, .main-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,9 +372,9 @@ h1 {
 
 /* formulario de contacto- botón enviar */
 .boton-enviar {
-  border: 1px solid white;
+  border: 0.1px solid "gris2";
   border-radius: 5px;
-  background-color: white;
+  background-color: #b9b9b9;
   height: 60%;
   margin-top: 8px;
   padding: 1px;
@@ -512,6 +497,22 @@ h1 {
   margin-top: 10px;
 }
 
+.container-contacto {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.container-contacto2 {
+  transition: all 2s;
+  width: 50%;
+  background-color: rgba(199, 199, 199, 0.5843137255);
+  border-radius: 15px;
+  margin-top: 0px !important;
+}
+.container-contacto2:hover {
+  transform: translatey(-10%);
+}
+
 /* 
 colores utilizados antes: 
 $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
@@ -561,6 +562,11 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   .img {
     width: 100% !important;
     margin-top: 0;
+  }
+}
+@media (min-width: 540px) {
+  .img {
+    width: 90% !important;
   }
 }
 @media (min-width: 550px) {
@@ -681,6 +687,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 280px) {
   .img-2019 {
     width: 100%;
+    margin-top: 10px;
   }
 }
 @media (min-width: 250px) {
@@ -922,6 +929,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /* $general-font-color:rgb(63, 58, 58); */
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 /*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
+/*  ---------------------media queries form de contacto */
 @media (min-width: 280px) {
   .container-contacto2 {
     width: 80%;
@@ -950,24 +958,45 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     margin-top: 20% !important;
   }
 }
+@media (min-width: 646px) {
+  .container-contacto2 {
+    width: 80%;
+    height: 80%;
+    margin-top: 20% !important;
+  }
+}
+@media (min-width: 768px) {
+  .container-contacto2 {
+    width: 80%;
+    height: 460px;
+    margin-top: 20% !important;
+  }
+}
 @media (min-width: 912px) {
   .container-contacto2 {
     width: 70%;
-    height: 130%;
+    height: 500px;
     margin-top: 20% !important;
   }
 }
 @media (min-width: 1024px) {
   .container-contacto2 {
     width: 65%;
-    height: 100%;
+    height: 500px;
     margin-top: 2% !important;
   }
 }
 @media (min-width: 1280px) {
   .container-contacto2 {
-    width: 50%;
-    height: 100%;
+    width: 60%;
+    height: 380px;
+    margin-top: 0 !important;
+  }
+}
+@media (min-width: 1300px) {
+  .container-contacto2 {
+    width: 70%;
+    height: 500px;
     margin-top: 0 !important;
   }
 }
@@ -1030,6 +1059,12 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     margin-top: 25%;
   }
 }
+@media (min-width: 575px) {
+  .container-contacto2 .logo-tele {
+    margin-top: 95%;
+    width: 35px;
+  }
+}
 @media (min-width: 768px) {
   .container-contacto2 .logo-tele {
     margin-top: 50%;
@@ -1042,10 +1077,22 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     width: 40px;
   }
 }
+@media (min-width: 800px) {
+  .container-contacto2 .logo-tele {
+    margin-top: 65%;
+    width: 40px;
+  }
+}
 @media (min-width: 1280px) {
   .container-contacto2 .logo-tele {
-    margin-top: 40%;
-    width: 70%;
+    margin-top: 55%;
+    width: 80%;
+  }
+}
+@media (min-width: 1300px) {
+  .container-contacto2 .logo-tele {
+    margin-top: 70%;
+    width: 85%;
   }
 }
 
@@ -1074,6 +1121,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 760px) {
   .caja-navbar {
     padding-top: 5% !important;
+    width: 100%;
   }
 }
 @media (min-width: 1000px) {
@@ -1091,6 +1139,13 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     border: none !important;
     transition: all 0.2s !important;
     border: none !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 820px) {
+  .menu-hamburguesa:active {
+    margin-right: 100% !important;
   }
 }
 @media (min-width: 820px) {
@@ -1216,6 +1271,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 280px) {
   .img-2019 {
     width: 100%;
+    margin-top: 10px;
   }
 }
 @media (min-width: 250px) {
@@ -1388,6 +1444,24 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     margin-left: 1px;
   }
 }
+@media (min-width: 768px) {
+  .container-tienda {
+    margin-bottom: 2px;
+    margin-left: 35px !important;
+  }
+}
+@media (min-width: 820px) {
+  .container-tienda {
+    margin-bottom: 2px;
+    margin-left: 8% !important;
+  }
+}
+@media (min-width: 912px) {
+  .container-tienda {
+    margin-bottom: 2px;
+    margin-left: 10% !important;
+  }
+}
 
 /* 
 colores utilizados antes: 
@@ -1417,20 +1491,14 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /*- media queries del footer para todas las secciones y medidas, excepto las indicadas más abajo que debieron ser reajustadas- */
 @media (min-width: 280px) {
   .container-logos, .container-row, .container-footer {
-    width: 92%;
-    margin-top: 35%;
-  }
-}
-@media (min-width: 360px) {
-  .container-logos, .container-row, .container-footer {
-    width: 67%;
-    margin-top: 15%;
+    width: 100%;
+    margin-top: 25%;
   }
 }
 @media (min-width: 375px) {
   .container-logos, .container-row, .container-footer {
-    width: 80%;
-    margin-top: 20%;
+    width: 99%;
+    margin-top: 15%;
   }
 }
 @media (min-width: 390px) {

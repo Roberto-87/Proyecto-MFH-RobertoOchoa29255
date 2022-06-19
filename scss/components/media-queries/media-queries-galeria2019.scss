@@ -4,6 +4,7 @@
 .img-2019 {
   @media (min-width:280px){
      width: 100%;
+     margin-top: 10px;
    }
   @include media2 ();
   @include media3 ();

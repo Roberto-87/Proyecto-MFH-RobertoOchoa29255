@@ -1,5 +1,6 @@
 @import "../../base/mixins";
 
+/*  ---------------------media queries form de contacto */
 .container-contacto2{
           @media (min-width: 280px){ 
             @include widht-heigh-mt (80%, 80%, 10% !important);
@@ -12,16 +13,25 @@
             } 
             @media (min-width: 576px) {
             @include widht-heigh-mt (100%, 80%, 20% !important);
-            }                
+            } 
+            @media (min-width: 646px) {
+              @include widht-heigh-mt (80%, 80%, 20% !important);
+              } 
+            @media (min-width: 768px) {
+              @include widht-heigh-mt (80%, 460px, 20% !important);
+              }                
             @media (min-width: 912px) {
-            @include widht-heigh-mt (70%, 130%, 20% !important);
+            @include widht-heigh-mt (70%, 500px, 20% !important);
             }
             @media (min-width: 1024px) {
-            @include widht-heigh-mt (65%, 100%, 2% !important);
+            @include widht-heigh-mt (65%, 500px, 2% !important);
             }    
             @media (min-width: 1280px) {
-            @include widht-heigh-mt (50%, 100%, 0 !important); 
-            }       
+            @include widht-heigh-mt (60%, 380px, 0 !important); 
+            }    
+            @media (min-width: 1300px) {
+              @include widht-heigh-mt (70%, 500px, 0 !important); 
+              }       
             .contenedor-wp-ig {
               @media (min-width:375px){
               display:flex;
@@ -67,7 +77,11 @@
                   @media (min-width: 412px){
                     margin-top: 25%;
                     }  
-
+                    
+                  @media (min-width: 575px){
+                    margin-top: 95%;
+                    width: 35px;
+                    }  
                 @media (min-width: 768px){
                   margin-top: 50%;
                   width:38px;
@@ -76,11 +90,19 @@
                     margin-top: 60%;
                     width:40px;
                     }  
+                    
+                  @media (min-width: 800px){
+                    margin-top: 65%;
+                    width:40px;
+                    }  
                   @media (min-width: 1280px){
-                  margin-top: 40%;
-                  width: 70%;
-                 
-                      }  
+                  margin-top: 55%;
+                  width: 80%;
+                   }
+                   @media (min-width: 1300px){
+                    margin-top: 70%;
+                    width: 85%;
+                     }  
                }
               }
                                   

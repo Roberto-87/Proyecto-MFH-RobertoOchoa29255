@@ -7,14 +7,14 @@
       top: 0px !important;
       width: 100% !important;
       height: 70px !important;
-       }   
-        .container-fluid {
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-around;
-        position: sticky;
-        
+    }   
+    .container-fluid {
+      
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-around;
+      position: sticky;
+      
         } h1 {
           font-size: 2rem;
         }
@@ -23,7 +23,8 @@
           color: $general-font-color;
                          
            &:hover {
-           color: darken($general-font-color,100%);
+           color: darken($general-font-color, 100%);
+           transform: scale(1.1);
                           
             &:active {
             background:($bc-header-gradiant);
@@ -35,10 +36,11 @@
             transform: rotate(600deg);
             border: none;
             transition: all 0.2s !important;
-               
+                     
       }
-     
+
     }
+
    
 
 
