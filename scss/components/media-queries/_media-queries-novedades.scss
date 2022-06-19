@@ -1,5 +1,7 @@
 @import "../../base/mixins";
 
+    
+
     .nav-item-novedades {
     @media (min-width:0px){
     display: none;
@@ -9,6 +11,17 @@
             }
     }
 
+    .container-novedades {
+        @media (min-width:280px){  
+            margin-bottom: 12%;
+    }
+    .container-novedades {
+        @media (min-width:1024px){  
+            margin-bottom: 2%;
+    }
+}
+    }
+    
     #nav-botones-novedades {
     @media (min-width:370px){
     @include sticky-top (sticky, 12%)

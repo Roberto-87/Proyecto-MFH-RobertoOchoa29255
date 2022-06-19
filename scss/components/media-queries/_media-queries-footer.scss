@@ -1,3 +1,5 @@
+/*- media queries del footer para todas las secciones y medidas, excepto las indicadas más abajo que debieron ser reajustadas- */
+
 .container-logos, .container-row, .container-footer {
   @media (min-width: 280px) {
    @include widhtmargin (92%, 35%)
@@ -36,6 +38,12 @@
  }
 }
 
+
+/*-------------------------------- fin mediaqueries footer todas las secciones--------------------------------- */
+
+/*----------------------------- reajuste media queries sección obras 2018------------------------------------- */
+
+
 .container-footer-2018 {
     @media (min-width: 280px) {
         @include widhtmargin (99%, 0)
@@ -52,7 +60,10 @@
      }
 
 }
+/*----------------------------- reajuste media queries fin sección obras 2018----------------------------------- */
 
+
+/*----------------------------- reajuste media queries sección obras 2019------------------------------------- */
 
 .container-footer-2019 {
     @media (min-width: 280px) {
@@ -65,6 +76,9 @@
         @include widhtmargin (99%, -10px)
      }
     }
+/*----------------------------- reajuste media queries fin sección obras 2019------------------------------------- */    
+
+/*----------------------------- reajuste media queries sección biografía------------------------------------- */    
 
 .container-footer-biografia{
     @media (min-width: 280px) {
@@ -77,4 +91,29 @@
         @include widhtmargin (100%, 6%);
 }
 
+}
+
+/*--------------------------fin reajuste media queries sección biografía------------------------------------- */ 
+
+/*----------------------------- reajuste media queries sección novedades------------------------------------- */  
+.container-footer-novedades {
+   @media (min-width: 280px) {
+      @include widhtmargin (100%, 10%);
+   }
+   @media (min-width: 912px) {
+      @include widhtmargin (100%, -10px);
+   }
+   @media (min-width: 912px) {
+      @include widhtmargin (100%, 0);
+   }
+}
+/*----------------------------- fin reajuste media queries sección novedades------------------------------------- */  
+
+.container-footer-tienda{
+@media (min-width: 280px) {
+   @include widhtmargin (100%, 10%);
+}
+@media (min-width: 768px) {
+   @include widhtmargin (100%, 5%);
+}
 }

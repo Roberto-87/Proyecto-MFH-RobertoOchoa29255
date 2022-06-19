@@ -3,10 +3,10 @@
 
   .container-tienda {
     @media (min-width: 280px) {
-      @include bottom-left (70%, 2px)
-   }
+      @include bottom-left (2px, 1px)
+    }
     
-    @media (min-width: 400px) {
+  /*   @media (min-width: 400px) {
       @include bottom-left (80%, 0px)
       
     }
@@ -24,9 +24,9 @@
       
      }
      @media (min-width: 1280px) {
-      @include bottom-left (20%, 5%)
+     margin-left: 5%;
       
-     }  
+     }   */
 
 }
 

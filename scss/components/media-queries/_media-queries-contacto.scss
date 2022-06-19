@@ -13,18 +13,26 @@
             @media (min-width: 576px) {
             @include widht-heigh-mt (100%, 80%, 20% !important);
             }                
-            @media (min-width: 768px) {
+            @media (min-width: 912px) {
             @include widht-heigh-mt (70%, 130%, 20% !important);
             }
             @media (min-width: 1024px) {
             @include widht-heigh-mt (65%, 100%, 2% !important);
             }    
             @media (min-width: 1280px) {
-            @include widht-heigh-mt (70%, 100%, 0 !important); 
-            }                               
+            @include widht-heigh-mt (50%, 100%, 0 !important); 
+            }       
+            .contenedor-wp-ig {
+              @media (min-width:375px){
+              display:flex;
+              justify-content: space-around !important;
+              width: 100%;
+            }     
+                               
               .logo{
                @media (min-width: 360px) {
-               width:130%;              
+               width:130%; 
+               margin: 20%;             
                } 
                @media (min-width: 576px){
                width: 40%;
@@ -42,18 +50,54 @@
                width: 50%;
                } 
                } 
+               .logo-tele {
+                @media (min-width: 280px){
+                  width:25%;
+                  margin-top: 4%;
+                  }
+                  @media (min-width: 360px){
+                    width:30px;
+                    margin-top: 5px;
+                    }
+
+                @media (min-width: 375px){
+                  width:30px;
+                  margin-top: 5px;
+                  }
+                  @media (min-width: 412px){
+                    margin-top: 25%;
+                    }  
+
+                @media (min-width: 768px){
+                  margin-top: 50%;
+                  width:38px;
+                  }
+                  @media (min-width: 912px){
+                    margin-top: 60%;
+                    width:40px;
+                    }  
+                  @media (min-width: 1280px){
+                  margin-top: 40%;
+                  width: 70%;
+                 
+                      }  
+               }
+              }
                                   
-                            
-         @media (min-width: 360px) {
-        .boton-enviar {
-         width: 30%;
+        .boton-enviar {                    
+          @media (min-width: 360px) {
+         .container-contacto {
+          height: 350px;
+          }   
+         @media (min-width: 768px) {
+          width: 30%;
+          margin-top: 4%;
+          padding: 2px;
           } 
-         @media (min-width: 360px) {
-        .container-contacto {
-         height: 350px;
-         }   
+          
         }
-    }
+        }
+    
            
           
 
