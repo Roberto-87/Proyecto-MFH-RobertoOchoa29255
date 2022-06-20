@@ -1636,7 +1636,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 1200px) {
   .container-footer-biografia {
     width: 100%;
-    margin-top: 1%;
+    margin-top: 0;
   }
 }
 
