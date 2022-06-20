@@ -12,7 +12,7 @@
     @include media6 ();
     @include media7 ();
     @media (min-width:540px){
-      width: $width-responsive - 10% !important;
+      width: $width-responsive  !important;
       
      }
     
@@ -45,7 +45,16 @@
                              }
                            }
                           
-     
+                           .container-img-carrousel {
+                            @media (min-width:1024px){
+                               margin-left: 30%;
+                            }
+                            .container-img-carrousel {
+                              @media (min-width:1200px){
+                                 margin-left: 75% !important;
+                              }
+                          }
+                        }
              
          
                                                  

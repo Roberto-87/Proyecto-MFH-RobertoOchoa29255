@@ -138,7 +138,7 @@
 
  @mixin media13 (){
     @media (min-width:($medidaminima + 600px)){
-     width: $width-responsive - 45% !important;
+     width: $width-responsive !important;
      
     }
  }
