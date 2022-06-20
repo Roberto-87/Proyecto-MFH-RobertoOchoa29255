@@ -46,8 +46,12 @@
                            }
                           
                            .container-img-carrousel {
+                            @media (min-width:360px){
+                               margin-top: 20px;
+                           }
                             @media (min-width:1024px){
-                               margin-left: 30%;
+                               margin-left: 35.5%;
+                               margin-top: 10px;
                             }
                             .container-img-carrousel {
                               @media (min-width:1200px){

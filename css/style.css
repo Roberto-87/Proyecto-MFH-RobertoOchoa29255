@@ -34,6 +34,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   justify-content: none;
   align-items: none;
   font-size: 0.8em;
+  background-color: rgb(220, 216, 216);
 }
 
 .container-biografia {
@@ -56,7 +57,11 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 
 .container-biografia {
-  margin-left: 15px;
+  width: 100%;
+}
+
+.img2bio {
+  width: 50%;
 }
 
 .body-tienda {
@@ -683,9 +688,15 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   }
 }
 
+@media (min-width: 360px) {
+  .container-img-carrousel {
+    margin-top: 20px;
+  }
+}
 @media (min-width: 1024px) {
   .container-img-carrousel {
-    margin-left: 30%;
+    margin-left: 35.5%;
+    margin-top: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -921,6 +932,11 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 1150px) {
   .img-2018 {
     width: 100% -50% !important;
+  }
+}
+@media (min-width: 768px) {
+  .img-2018 {
+    width: 75% !important;
   }
 }
 @media (min-width: 1000px) {
@@ -1615,6 +1631,12 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   .container-footer-biografia {
     width: 100%;
     margin-top: 6%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-footer-biografia {
+    width: 100%;
+    margin-top: 1%;
   }
 }
 
