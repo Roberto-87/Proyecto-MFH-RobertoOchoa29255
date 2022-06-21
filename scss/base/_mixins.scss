@@ -193,17 +193,13 @@
 
  @mixin media21 (){
     @media (min-width:($medidaminima + 1000px)){
-     width: $width-responsive - 60% !important;
+     width: $width-responsive - 40% !important;
+     position: st;
+      top: 10px;
      
     }
  }
 
- @mixin media22 (){
-    @media (min-width:($medidaminima + 1050px)){
-     width: $width-responsive - 60% !important;
-     
-    }
- }
 
  @mixin media23 (){
     @media (min-width:($medidaminima + 1100px)){
@@ -250,7 +246,7 @@
 
 @mixin media28 (){
     @media (min-width:($medidaminima + 1050px)){
-     width: $width-responsive - 66% !important;
+     width: 37%!important;
      
     }
  } 

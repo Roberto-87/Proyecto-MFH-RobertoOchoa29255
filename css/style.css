@@ -377,7 +377,7 @@ h1 {
 
 /* formulario de contacto- botón enviar */
 .boton-enviar {
-  border: 0.1px solid "gris2";
+  border: solid 1px grey;
   border-radius: 5px;
   background-color: #b9b9b9;
   height: 60%;
@@ -386,7 +386,6 @@ h1 {
 }
 .boton-enviar:hover {
   background-color: rgb(128, 127, 127);
-  border: 2px solid rgb(128, 127, 127);
   color: white;
 }
 .boton-enviar:active {
@@ -642,12 +641,9 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 @media (min-width: 1200px) {
   .img {
-    width: 40% !important;
-  }
-}
-@media (min-width: 1250px) {
-  .img {
-    width: 40% !important;
+    width: 60% !important;
+    position: st;
+    top: 10px;
   }
 }
 @media (min-width: 1300px) {
@@ -678,7 +674,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 @media (min-width: 1250px) {
   .img {
-    width: 34% !important;
+    width: 37% !important;
   }
 }
 
@@ -695,7 +691,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 @media (min-width: 1024px) {
   .container-img-carrousel {
-    margin-left: 35.5%;
+    margin-left: 32%;
     margin-top: 10px;
   }
 }
@@ -1561,7 +1557,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 1024px) {
   .container-logos, .container-row, .container-footer {
     width: 99%;
-    margin-top: 3%;
+    margin-top: 0.2%;
   }
 }
 
@@ -1609,7 +1605,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 1280px) {
   .container-footer-2019 {
     width: 99%;
-    margin-top: -10px;
+    margin-top: -21px;
   }
 }
 
@@ -1636,7 +1632,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 1200px) {
   .container-footer-biografia {
     width: 100%;
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 }
 

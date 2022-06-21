@@ -4,7 +4,7 @@
 /* formulario de contacto- botón enviar */
 
 .boton-enviar {
-    border: 0.1px solid "gris2";
+    border: solid 1px grey;
     border-radius: 5px;
     background-color: map-get($map:$colores, $key:"gris2");
     height: 60%;
@@ -13,7 +13,7 @@
     padding: 1px;
      &:hover {
        background-color: map-get($map:$colores, $key:"gris0");
-       border:2px solid map-get($map:$colores, $key:"gris0");
+      //  border:2px solid map-get($map:$colores, $key:"gris2");
        color: map-get($map:$colores, $key:"blanco0");
     } &:active {
        background-color:map-get($map: $colores, $key: "blanco0");

@@ -29,7 +29,7 @@
  }
 
  @media (min-width: 1024px) {
-    @include widhtmargin (99%, 3%)
+    @include widhtmargin (99%, 0.2%)
  }
 }
 
@@ -68,7 +68,7 @@
         @include widhtmargin (99%, 0)
      }
      @media (min-width: 1280px) {
-        @include widhtmargin (99%, -10px)
+        @include widhtmargin (99%, -21px)
      }
     }
 /*----------------------------- reajuste media queries fin sección obras 2019------------------------------------- */    
@@ -86,7 +86,7 @@
         @include widhtmargin (100%, 6%);
 }
      @media (min-width: 1200px) {
-       @include widhtmargin (100%, 0);
+       @include widhtmargin (100%, 0!important);
 }
 }
 
