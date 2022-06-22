@@ -2,7 +2,8 @@
 @import "../../base/mixins";
 
 .body-galeria{
- background-color: transparent;       
+ //background-color: transparent;       
+ background: $bc-gradiant4;
     }
     .carrousel-index {
          @include displayposition(grid,1.5fr,1.5fr,none,none ,none);

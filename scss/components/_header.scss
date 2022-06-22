@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/listas";
  
  .caja-navbar{
       background: $bc-header-gradiant;
@@ -17,11 +18,16 @@
       
       
         } h1 {
-          font-size: 2rem;
+          font-size: 1.7rem;
+          font-family: map-get($map: $tipografias, $key: "tipoLink3" );
+          color: map-get($map: $colores, $key: "gris8" );
+          
+          
         }
           .nav-link {
-          font-size: $link-font-size !important;
-          color: $general-font-color;
+          font-size: 0.8rem !important;
+          color:map-get($map: $colores, $key: "gris3" );
+          font-family: map-get($map: $tipografias, $key: "tipoLink3" );
                          
            &:hover {
            color: darken($general-font-color, 100%);

@@ -26,6 +26,14 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /* $general-font-color:rgb(63, 58, 58); */
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 /*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
+.body-biografia {
+  background: radial-gradient(circle, rgba(42, 229, 226, 0.113) 10%, rgba(215, 198, 207, 0.033) 60%);
+}
+
 .container-article {
   display: grid;
   grid-template-columns: 2.9fr;
@@ -34,7 +42,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   justify-content: none;
   align-items: none;
   font-size: 0.8em;
-  background-color: rgb(220, 216, 216);
 }
 
 .container-biografia {
@@ -65,12 +72,11 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 
 .body-tienda {
-  background-color: #e9e0e0;
+  background: radial-gradient(ellipse at left, rgba(69, 5, 230, 0.039) 20%, rgba(222, 73, 14, 0.096) 50%);
 }
 
 .container-tienda {
   gap: 15px;
-  color: rgb(143, 136, 164);
   margin-top: 15px;
 }
 
@@ -128,7 +134,7 @@ colores utilizados antes:
 $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /* $general-font-color:rgb(63, 58, 58); */
 .body-novedades {
-  background-color: rgba(250, 250, 250, 0.944);
+  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
 }
 
 .container-novedades {
@@ -157,7 +163,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 /*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
 .body-galeria {
-  background-color: transparent;
+  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
 }
 
 .carrousel-index {
@@ -211,6 +217,14 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   justify-content: flex-end;
 }
 
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
+.body-2019 {
+  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
+}
+
 .carrousel-2020 {
   width: 90%;
 }
@@ -234,6 +248,14 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 .container-logos, .container-footer, .container-row {
   display: flex;
   justify-content: flex-end;
+}
+
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
+.body-2018 {
+  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
 }
 
 .carrousel-2020 {
@@ -300,7 +322,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 
 /*--------------- estructura común a todas las páginas---------------------------------  */
 * {
-  font-family: "Josefin Sans", sans-serif;
   list-style: none;
   text-decoration: none;
   margin: 0;
@@ -332,12 +353,14 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-family: "Staatliches";
+  color: rgba(37, 36, 36, 0.736);
 }
 
 .nav-link {
-  font-size: 0.9em !important;
-  color: rgb(3, 3, 3);
+  font-size: 0.8rem !important;
+  font-family: "Staatliches";
 }
 .nav-link:hover {
   color: black;
@@ -400,16 +423,17 @@ h1 {
   background: transparent !important;
 }
 
-.nav-link {
+.boton-novedades {
   transition: all 1.6s;
+  font-family: "Roboto";
 }
 
-.nav-link:active {
+.boton-novedades:active {
   background-color: white;
   color: black !important;
 }
 
-.nav-link:hover {
+.boton-novedades:hover {
   color: black !important;
 }
 
@@ -492,6 +516,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.062);
   width: 60%;
   border-radius: 25px;
+  font-family: "Montserrat";
 }
 .tienda-card:hover {
   transform: scale(1.04);

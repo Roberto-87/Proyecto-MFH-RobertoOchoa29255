@@ -1,14 +1,17 @@
 @import "../../base/extends";
 @import "../../base/mixins";
 @import "../../base/listas";
+@import "../../base/variables";
 
-
-
-
+.body-biografia{
+  background: $bc-gradiant5;
+ 
+}
 .container-article {
     @include displayposition(grid,2.9fr,3fr,none,none ,none);
     font-size: 0.8em;  
-    background-color: map-get($map: $colores, $key: "blanco4")
+    // background-color: map-get($map: $colores, $key: "blanco4")
+
     } .container-biografia {
         margin-top: 2%;
         // background-image: url(/imagenes/imagen-contacto1.jpeg);

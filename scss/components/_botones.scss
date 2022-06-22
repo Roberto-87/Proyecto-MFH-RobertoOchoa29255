@@ -30,31 +30,29 @@
 .caja-botones-nav {
   background: transparent !important;
   // padding-top: 20px;
-
+  
 } 
-    .nav-link {
-      transition: all 1.6s;
+.boton-novedades{
+  transition: all 1.6s;
+  font-family: map-get($map: $tipografias, $key: "tipoLink1")
     }    
-    .nav-link:active {
+    .boton-novedades:active {
       background-color: map-get($map: $colores, $key:"blanco0" );
       color: map-get($map: $colores, $key:"negro0" )!important;
     }
-    .nav-link:hover {
+    .boton-novedades:hover {
       color: map-get($map: $colores, $key:"negro0" ) !important;
     }
     #nav-botones-novedades {
       border-radius: 5px;
       display: flex;
       justify-content: center !important;
+      
      
     }
     .nav-item-novedades{
       background-color:map-get($map: $colores, $key:"gris1" ) !important; 
       border-radius: 20px;
-      // display: flex;
-      // justify-content: flex-start !important;
-      // position:sticky;
-      // top:46px;
       color: map-get($map: $colores, $key:"blanco0") !important;
       z-index: 2 !important;
 

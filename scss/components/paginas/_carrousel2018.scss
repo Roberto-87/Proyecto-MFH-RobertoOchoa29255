@@ -1,5 +1,9 @@
 @import "../../base/extends";
+@import "../../base/variables";
 
+.body-2018{
+  background: $bc-gradiant4;
+}
 .main-galeria{
   @extend %flexcenterxy;
  }
