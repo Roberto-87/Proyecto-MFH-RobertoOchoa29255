@@ -1,9 +1,4 @@
 @charset "UTF-8";
-.container-education, .solo-exhibitions {
-  position: sticky;
-  top: 50px;
-}
-
 .carrousel-2020 {
   position: sticky;
   top: 40px;
@@ -34,7 +29,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   background: radial-gradient(circle, rgba(42, 229, 226, 0.113) 10%, rgba(215, 198, 207, 0.033) 60%);
 }
 
-.container-article {
+.section {
   display: grid;
   grid-template-columns: 2.9fr;
   grid-template-rows: 3fr;
@@ -44,36 +39,8 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   font-size: 0.8em;
 }
 
-.container-biografia {
+.section__article {
   margin-top: 2%;
-}
-
-.solo-exhibitions {
-  z-index: 2;
-  width: 100%;
-  padding: 40px;
-}
-
-.prueba {
-  transition: all 5s;
-}
-
-.container-education {
-  z-index: 1;
-  width: 100%;
-}
-
-.container-biografia {
-  width: 100%;
-}
-
-.img2bio {
-  width: 50%;
-}
-
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
 }
 
 .carrousel-2020 {
@@ -106,11 +73,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 .container-tienda {
   gap: 1em;
   margin-top: 1em;
-}
-
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
 }
 
 .carrousel-2020 {
@@ -160,11 +122,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 
 .disclaimer {
   display: none;
-}
-
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
 }
 
 .carrousel-2020 {
@@ -276,11 +233,6 @@ h1 {
   color: rgba(75, 69, 69, 0.599);
 }
 
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
-}
-
 .carrousel-2020 {
   position: sticky;
   top: 40px;
@@ -368,11 +320,6 @@ h1 {
 }
 
 /* fin sección tienda: botón comprar*/
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
-}
-
 .carrousel-2020 {
   position: sticky;
   top: 40px;
@@ -417,9 +364,12 @@ h1 {
   transform: translatey(-10%);
 }
 
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
+.contenedor-name {
+  margin-bottom: -1em !important;
+}
+
+.contenedor-mail {
+  margin-bottom: -1em !important;
 }
 
 .carrousel-2020 {
@@ -497,6 +447,25 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 .tienda-card .card-img-top {
   margin-top: 10px;
+}
+
+.sectionContainerDivExito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.sectionContainerDivExito .containerExito {
+  border: 1px solid transparent;
+  border-radius: 35px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10%;
+  margin-top: 10%;
+  background: radial-gradient(ellipse at left, rgba(69, 5, 230, 0.039) 20%, rgba(222, 73, 14, 0.096) 50%);
 }
 
 /* 
@@ -987,7 +956,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 @media (min-width: 1280px) {
   .container-contacto2 {
-    width: 60%;
+    width: 50%;
     height: 23em;
     margin-top: 0 !important;
   }
@@ -997,6 +966,11 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
     width: 70%;
     height: 25em;
     margin-top: 0 !important;
+  }
+}
+@media (min-width: 1280px) {
+  .container-contacto2 .mb-3 {
+    margin-left: 10%;
   }
 }
 @media (min-width: 375px) {
@@ -1082,8 +1056,8 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 @media (min-width: 1280px) {
   .container-contacto2 .logo-tele {
-    margin-top: 55%;
-    width: 80%;
+    margin-top: 36%;
+    width: 78%;
   }
 }
 @media (min-width: 1300px) {
@@ -1444,19 +1418,19 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 /*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
 @media (min-width: 350px) {
-  .container-article {
+  .section {
     margin: 0 5px 0;
     padding: 0;
   }
 }
 @media (min-width: 1024px) {
-  .container-article {
+  .section {
     margin-bottom: 5%;
     margin-left: 0;
   }
 }
 @media (min-width: 1280px) {
-  .container-article {
+  .section {
     margin-bottom: 2%;
     margin-left: 0;
   }

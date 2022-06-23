@@ -1,4 +1,4 @@
-.caja-navbar {
+.nav {
 @media (min-width:280px){
         position: sticky !important;
         top: 0px !important;
@@ -14,7 +14,7 @@
         padding-top: 1% !important; 
     }
 }
-    .menu-hamburguesa {
+       .nav__button {
         border: none;
 
         &:active { 
@@ -32,7 +32,7 @@
         @media (min-width:820px){
         margin-right: 100% !important;
     }   
-}   .container-fluid h1 {
+}     .nav__brand {
        @media (min-width:820px){
        margin-left: 1.5% !important;
         } 

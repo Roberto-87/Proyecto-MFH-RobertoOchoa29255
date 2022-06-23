@@ -27,11 +27,16 @@
             @include widht-heigh-mt (65%, 25em, 2% !important);
             }    
             @media (min-width: 1280px) {
-            @include widht-heigh-mt (60%, 23em, 0 !important); 
+            @include widht-heigh-mt (50%, 23em, 0 !important); 
             }    
             @media (min-width: 1300px) {
               @include widht-heigh-mt (70%, 25em, 0 !important); 
-              }       
+              }   
+              .mb-3 {
+                @media (min-width: 1280px) {
+                margin-left: 10%;
+            }    
+          }
             .contenedor-wp-ig {
               @media (min-width:375px){
               display:flex;
@@ -94,8 +99,8 @@
                     width:2.5em;
                     }  
                   @media (min-width: 1280px){
-                  margin-top: 55%;
-                  width: 80%;
+                  margin-top: 36%;
+                  width: 78%;
                    }
                    @media (min-width: 1300px){
                     margin-top: 70%;

@@ -1,21 +1,18 @@
 @import "../../base/mixins";
 
-    .container-article {
- 
-    @media (min-width: 350px) {
+    .section {
+     @media (min-width: 350px) {
        margin: 0 5px 0;
        padding: 0;
     }
-  
-
-    @media (min-width: 1024px) {
-        @include bottom-left (5%, 0)
+       @media (min-width: 1024px) {
+       @include bottom-left (5%, 0)
     }
-    @media (min-width: 1280px) {
-        @include bottom-left (2%, 0)
+       @media (min-width: 1280px) {
+       @include bottom-left (2%, 0)
     }
 }
-     .img2bio{
+     .section__img2{
         @media (min-width: 280px) {
        
     }

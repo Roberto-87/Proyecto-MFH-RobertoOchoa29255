@@ -1,7 +1,7 @@
 @import "../base/variables";
 @import "../base/listas";
  
- .caja-navbar{
+ .nav {
       background: $bc-header-gradiant;
       z-index: 1;
       position: sticky !important;
@@ -9,7 +9,7 @@
       width: 100% !important;
       height: 2em !important;
     }   
-    .container-fluid {
+    .nav__div {
       
       display: flex !important;
       align-items: center !important;
@@ -17,14 +17,14 @@
       position: sticky;
       
       
-        } h1 {
+        } .nav__brand {
           font-size: 1.7rem;
           font-family: map-get($map: $tipografias, $key: "tipoLink3" );
           color: map-get($map: $colores, $key: "gris8" );
           
           
         }
-          .nav-link {
+          .nav__a {
           font-size: 0.8rem !important;
           color:map-get($map: $colores, $key: "gris3");
           font-family: map-get($map: $tipografias, $key: "tipoLink3" );
@@ -39,7 +39,7 @@
             transition: all 0.1s; 
              } 
             }
-            .span-boton:active {
+            .nav__burger:active {
             transform: rotate(600deg);
             border: none;
             transition: all 0.2s !important;

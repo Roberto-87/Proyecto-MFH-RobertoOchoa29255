@@ -62,81 +62,92 @@
 
 <body class="body-contacto">
 
-    <!-----------------------------Nav---------------------------------------------------->
+       <!-----------------------------Nav---------------------------------------------------->
 
-    <nav class="navbar navbar-expand-lg bg-light caja-navbar">
-      <div class="container-fluid">
-        <h1> Maria Ferrari Hardoy</h1>
-          <div class="container-nav">
-        <button class="navbar-toggler menu-hamburguesa"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon span-boton"></span>
-        </button>
+
+       <nav class="navbar navbar-expand-lg bg-light caja-navbar nav">
+        <div class="container-fluid nav__div">
+          <h1 class="nav__brand"> Maria Ferrari Hardoy</h1>
+            <div class="nav__div2">
+          <button class="navbar-toggler menu-hamburguesa nav__button"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon span-boton nav__burger"></span>
+          </button>
+            </div>
+         <div class="enlaces nav__div3">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-9 nav__ul">
+              </li>
+              <li class="nav-item-gale nav__li">
+                <a class="nav-link nav__a" href="../index.html">Galeria</a>
+              </li>
+              <li class="nav-item-gale nav__li">
+                <a class="nav-link nav__a" href="../paginas/biografia.html">Biografia</a>
+              </li>
+              <li class="nav-item-gale nav__li">
+                <a class="nav-link nav__ak" href="../paginas/novedades.html">Novedades</a>
+              </li>
+              <!-- <li class="nav-item-gale nav__li__link">
+                <a class="nav-link nav__a" href="../paginas/taller.html">Taller</a>
+              </li> -->
+              <li class="nav-item-gale nav__li">
+                <a class="nav-link nav__a" href="../paginas/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item-gale nav__li">
+                <a class="nav-link nav__a" href="../paginas/contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-       <div class="enlaces">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-9">
-            </li>
-            <li class="nav-item-gale">
-              <a class="nav-link" href="../index.html">Galeria</a>
-            </li>
-            <li class="nav-item-gale">
-              <a class="nav-link" href="../paginas/biografia.html">Biografia</a>
-            </li>
-            <li class="nav-item-gale">
-              <a class="nav-link" href="../paginas/novedades.html">Novedades</a>
-            </li>
-            <!-- <li class="nav-item-gale">
-              <a class="nav-link" href="../paginas/taller.html">Taller</a>
-            </li> -->
-            <li class="nav-item-gale">
-              <a class="nav-link" href="../paginas/tienda.html">Tienda</a>
-            </li>
-            <li class="nav-item-gale">
-              <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-            </li>
-          </ul>
+          
         </div>
+        </div>
+      </nav>
+      
+      
         
-      </div>
-      </div>
-    </nav>
+      <!------------------------------ fin Nav --------------------------------------------------------------------------->
   <!---------------------Formulario contacto--------------------------------------------------->
 
     <main class="container-contacto d-flex justify-content-center">
        <section class="row container-contacto2">
             
-         <div class="mb-3 col-sm-12 col-md-12 col-lg-12 col-xl-10 contenedor-form1">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
+        <form action="form.php" name="contacto" method="POST">
+          <div class="mb-3 col-sm-12 col-md-12 col-lg-12 col-xl-10 contenedor-name">
+            <label for="full-name" class="form-label form-nombre"></label>
+            <input type="text" id="name" class="form-control" name="name"  placeholder="nombre">
+          </div>
+
+            <div class="mb-3 col-sm-12 col-md-12 col-lg-12 col-xl-10 contenedor-mail">
+              <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="mail" class="form-control" name="mail" id="mail" placeholder="mail@ejemplo.com">
+           </div>
 
             <div class="mb-3 mb-3 col-sm-12 col-md-12 col-lg-12 col-xl-10 h-50 contenedor-form2">
-              <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control text-area-contacto" id="exampleFormControlTextarea1" rows="3">Dejanos un mensaje!</textarea>
-
-          <div class="container container-logos-boton">
-                <div class="row div-logos flex-row-reverse">
-
-               <button class="boton-enviar col-xl-4 col-md-4 col-sm-10 col-lg-4">Enviar</button>
-               
-              <div class="w-50 contenedor-wp-ig">
-               <a class="logo-instagram col-xl-4 col-md-4 col-sm-6 col-lg-4" href="https://instagram.com ">
-               <img class= "logo" src="../imagenes/instagram-svgrepo-com.svg" alt="instagram">
-             
-               <a class="logo-whatsap p col-xl-4 col-md-4 col-sm-6 col-lg-4" href=https://api.whatsapp.com/send?phone=1123456789&text=hola!>
-              <img class= "logo" src="../imagenes/whatsapp-svgrepo-com.svg" alt="Whatsapp">
-              </a> 
-        
-                <a class="logo-footer" href="https://telegram.org/">
-               <img class= "logo-tele" src="../imagenes/telegram-svgrepo-com.svg" alt="telegram">
-              </div>
-
-          <div>
-              </div>
-            </div>
-          </article>    
-      </section>
-    </main>
+              <label for="exampleFormControlTextarea1" class="form-label contenedor-text"></label>
+              <textarea class="form-control text-area-contacto" id="text" name="text" rows="3">Dejanos un mensaje!</textarea>
+                <div class="container container-logos-boton">
+                  <div class="row div-logos flex-row-reverse">
+                    
+                    <button input type="submit" name="enviar" id="enviar" value="enviar"  class="boton-enviar col-xl-4 col-md-4 col-sm-10 col-lg-4">Enviar</button>
+                    
+                    <div class="w-50 contenedor-wp-ig">
+                      <a class="logo-instagram col-xl-4 col-md-4 col-sm-6 col-lg-4" href="https://instagram.com ">
+                        <img class= "logo" src="../imagenes/instagram-svgrepo-com.svg" alt="instagram">
+                        
+                        <a class="logo-whatsap p col-xl-4 col-md-4 col-sm-6 col-lg-4" href=https://api.whatsapp.com/send?phone=1123456789&text=hola!>
+                          <img class= "logo" src="../imagenes/whatsapp-svgrepo-com.svg" alt="Whatsapp">
+                        </a> 
+                        
+                        <a class="logo-footer" href="https://telegram.org/">
+                          <img class= "logo-tele" src="../imagenes/telegram-svgrepo-com.svg" alt="telegram">
+                        </div>
+                        
+                            <div>
+                         </div>
+                      </div>
+                  </article>    
+                </form>     
+              </section>
+          </main>
 
   <!------------------------fin formulario de contacto-------------->
 
