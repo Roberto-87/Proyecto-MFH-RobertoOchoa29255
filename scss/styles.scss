@@ -1,30 +1,28 @@
-@import "components/paginas/biografia";
-@import "components/paginas/tienda";
-@import "components/paginas/contacto";
-@import "components/paginas/novedades";
-@import "components/paginas/index-carrousel";
-@import "components/paginas/carrousel2019-2020";
-@import "components/paginas/carrousel2018";
+@import "./pages/biografia";
+@import "./pages/contacto";
+@import "./pages/tienda";
+@import "./pages/novedades";
+@import "./pages/propiedadescomunes";
 
-@import "components/footer";
-@import "components/propiedadescomunes";
-@import "components/header";
-@import "components/botones";
-@import "components/linksdecontacto";
-@import "components/cards-tienda";
-@import "components/form-contacto";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/botones";
+@import "./components/linksdecontacto";
+@import "./components/form-contacto";
+@import "./components/carrouseles";
+@import "./components/cards-tienda";
 
-@import "components/media-queries/media-queries-index";
-@import "components/media-queries/media-queries-galeria2019";
-@import "components/media-queries/media-queries-galeria2018";
-@import "components/media-queries/media-queries-contacto";
-@import "components/media-queries/media-queries-header";
-@import "components/media-queries/media-queries-novedades";
-@import  "components/media-queries/media-queries-galeria2019";
-@import  "components/media-queries/media-queries-controles-carrousel";
-@import  "components/media-queries/media-queries-tienda";
-@import  "components/media-queries/media-queries-biografia";
-@import  "components/media-queries/media-queries-footer";
+@import "abstracts/media-queries/media-queries-index";
+@import "abstracts/media-queries/media-queries-galeria2019";
+@import "abstracts/media-queries/media-queries-galeria2018";
+@import "abstracts/media-queries/media-queries-contacto";
+@import "abstracts/media-queries/media-queries-header";
+@import "abstracts/media-queries/media-queries-novedades";
+@import  "abstracts/media-queries/media-queries-galeria2019";
+@import  "abstracts/media-queries/media-queries-controles-carrousel";
+@import  "abstracts/media-queries/media-queries-tienda";
+@import  "abstracts/media-queries/media-queries-biografia";
+@import  "abstracts/media-queries/media-queries-footer";
 
 
 

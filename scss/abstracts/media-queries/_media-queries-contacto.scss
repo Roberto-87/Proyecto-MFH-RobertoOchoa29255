@@ -18,19 +18,19 @@
               @include widht-heigh-mt (80%, 80%, 20% !important);
               } 
             @media (min-width: 768px) {
-              @include widht-heigh-mt (80%, 460px, 20% !important);
+              @include widht-heigh-mt (80%, 25em, 20% !important);
               }                
             @media (min-width: 912px) {
-            @include widht-heigh-mt (70%, 500px, 20% !important);
+            @include widht-heigh-mt (70%, 30em, 20% !important);
             }
             @media (min-width: 1024px) {
-            @include widht-heigh-mt (65%, 500px, 2% !important);
+            @include widht-heigh-mt (65%, 25em, 2% !important);
             }    
             @media (min-width: 1280px) {
-            @include widht-heigh-mt (60%, 380px, 0 !important); 
+            @include widht-heigh-mt (60%, 23em, 0 !important); 
             }    
             @media (min-width: 1300px) {
-              @include widht-heigh-mt (70%, 500px, 0 !important); 
+              @include widht-heigh-mt (70%, 25em, 0 !important); 
               }       
             .contenedor-wp-ig {
               @media (min-width:375px){
@@ -66,13 +66,12 @@
                   margin-top: 4%;
                   }
                   @media (min-width: 360px){
-                    width:30px;
+                    width:1.9em;
                     margin-top: 5px;
                     }
 
                 @media (min-width: 375px){
-                  width:30px;
-                  margin-top: 5px;
+                   margin-top: 5px;
                   }
                   @media (min-width: 412px){
                     margin-top: 25%;
@@ -88,12 +87,11 @@
                   }
                   @media (min-width: 912px){
                     margin-top: 60%;
-                    width:40px;
-                    }  
+                  }  
                     
                   @media (min-width: 800px){
                     margin-top: 65%;
-                    width:40px;
+                    width:2.5em;
                     }  
                   @media (min-width: 1280px){
                   margin-top: 55%;
@@ -109,7 +107,7 @@
         .boton-enviar {                    
           @media (min-width: 360px) {
          .container-contacto {
-          height: 350px;
+          height: 15em;
           }   
          @media (min-width: 768px) {
           width: 30%;

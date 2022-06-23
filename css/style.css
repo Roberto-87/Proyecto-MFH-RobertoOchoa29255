@@ -9,7 +9,7 @@
   top: 40px;
 }
 
-.container-contacto2, .boton-enviar, .main-galeria {
+.main-galeria, .container-contacto2, .boton-enviar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,15 +71,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   width: 50%;
 }
 
-.body-tienda {
-  background: radial-gradient(ellipse at left, rgba(69, 5, 230, 0.039) 20%, rgba(222, 73, 14, 0.096) 50%);
-}
-
-.container-tienda {
-  gap: 15px;
-  margin-top: 15px;
-}
-
 .solo-exhibitions, .container-education {
   position: sticky;
   top: 50px;
@@ -90,7 +81,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.container-contacto2, .boton-enviar, .main-galeria {
+.main-galeria, .container-contacto2, .boton-enviar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,6 +99,15 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   background-size: 45%;
 }
 
+.body-tienda {
+  background: radial-gradient(ellipse at left, rgba(69, 5, 230, 0.039) 20%, rgba(222, 73, 14, 0.096) 50%);
+}
+
+.container-tienda {
+  gap: 1em;
+  margin-top: 1em;
+}
+
 .solo-exhibitions, .container-education {
   position: sticky;
   top: 50px;
@@ -118,7 +118,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.container-contacto2, .boton-enviar, .main-galeria {
+.main-galeria, .container-contacto2, .boton-enviar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,51 +149,17 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 
 .row {
-  margin-top: 20px;
+  margin-top: 1em;
 }
 
-/* 
-colores utilizados antes: 
-$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
-/* $general-font-color:rgb(63, 58, 58); */
-/* 
-colores utilizados antes: 
-$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
-/* $general-font-color:rgb(63, 58, 58); */
-/*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
-/*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
-.body-galeria {
-  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
 }
 
-.carrousel-index {
-  display: grid;
-  grid-template-columns: 1.5fr;
-  grid-template-rows: 1.5fr;
-  position: none;
-  justify-content: none;
-  align-items: none;
-  width: 100%;
-  margin-top: none;
-  margin-top: 15px !important;
-}
-
-.p-epigrafe {
-  display: flex !important;
-  grid-template-columns: none;
-  grid-template-rows: none;
-  position: none;
-  justify-content: flex !important;
-  align-items: flex-end !important;
-  margin-bottom: 30px;
-}
-
-.dropdown-item {
-  position: none !important;
-}
-
-.carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end, .carousel-fade .carousel-item.active {
-  z-index: -2;
+.disclaimer {
+  display: none;
 }
 
 .solo-exhibitions, .container-education {
@@ -206,73 +172,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   top: 40px;
 }
 
-.container-contacto2, .boton-enviar, .main-galeria {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-logos, .container-footer, .container-row {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* 
-colores utilizados antes: 
-$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
-/* $general-font-color:rgb(63, 58, 58); */
-.body-2019 {
-  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
-}
-
-.carrousel-2020 {
-  width: 90%;
-}
-
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
-}
-
-.carrousel-2020 {
-  position: sticky;
-  top: 40px;
-}
-
-.container-contacto2, .boton-enviar, .main-galeria {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-logos, .container-footer, .container-row {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* 
-colores utilizados antes: 
-$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
-/* $general-font-color:rgb(63, 58, 58); */
-.body-2018 {
-  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
-}
-
-.carrousel-2020 {
-  width: 90%;
-}
-
-.solo-exhibitions, .container-education {
-  position: sticky;
-  top: 50px;
-}
-
-.carrousel-2020 {
-  position: sticky;
-  top: 40px;
-}
-
-.container-contacto2, .boton-enviar, .main-galeria {
+.main-galeria, .container-contacto2, .boton-enviar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,18 +220,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   margin-bottom: 10px;
 }
 
-/*--------------- estructura común a todas las páginas---------------------------------  */
-* {
-  list-style: none;
-  text-decoration: none;
-  margin: 0;
-}
-
-.disclaimer {
-  display: none;
-}
-
-/*---------------  fin estructura común a todas las páginas---------------------------------  */
 /* 
 colores utilizados antes: 
 $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
@@ -342,7 +230,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
   position: sticky !important;
   top: 0px !important;
   width: 100% !important;
-  height: 70px !important;
+  height: 2em !important;
 }
 
 .container-fluid {
@@ -368,13 +256,24 @@ h1 {
 }
 .nav-link:hover:active {
   background: radial-gradient(circle, rgba(238, 174, 202, 0.388) 0%, rgba(148, 188, 233, 0.221) 100%);
-  border-radius: 45px;
+  border-radius: 1.5em;
   transition: all 0.1s;
 }
 .nav-link .span-boton:active {
   transform: rotate(600deg);
   border: none;
   transition: all 0.2s !important;
+}
+
+.dropdown-menu {
+  background: radial-gradient(rgba(238, 174, 202, 0.095) 0%, rgba(148, 188, 233, 0.083) 100%);
+}
+
+.dropdown-item {
+  position: none !important;
+  font-family: "Staatliches";
+  font-size: 0.7rem;
+  color: rgba(75, 69, 69, 0.599);
 }
 
 .solo-exhibitions, .container-education {
@@ -387,7 +286,7 @@ h1 {
   top: 40px;
 }
 
-.container-contacto2, .boton-enviar, .main-galeria {
+.main-galeria, .container-contacto2, .boton-enviar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,7 +378,7 @@ h1 {
   top: 40px;
 }
 
-.container-contacto2, .main-galeria, .boton-enviar {
+.main-galeria, .container-contacto2, .boton-enviar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -501,31 +400,7 @@ h1 {
   justify-content: space-around !important;
 }
 
-.logo {
-  width: 60px;
-}
-
-.logo-tele {
-  width: 35px;
-  margin-top: 4px;
-}
-
 /* fin logos instagram y whatsapp sección contacto */
-.tienda-card {
-  transition: all 0.3s;
-  background-color: rgba(0, 0, 0, 0.062);
-  width: 60%;
-  border-radius: 25px;
-  font-family: "Montserrat";
-}
-.tienda-card:hover {
-  transform: scale(1.04);
-  background-color: rgb(239, 239, 239);
-}
-.tienda-card .card-img-top {
-  margin-top: 10px;
-}
-
 .container-contacto {
   margin-top: 5%;
   width: 100%;
@@ -542,12 +417,88 @@ h1 {
   transform: translatey(-10%);
 }
 
+.solo-exhibitions, .container-education {
+  position: sticky;
+  top: 50px;
+}
+
+.carrousel-2020 {
+  position: sticky;
+  top: 40px;
+}
+
+.main-galeria, .boton-enviar, .container-contacto2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-row, .container-footer, .container-logos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 
+colores utilizados antes: 
+$bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
+/* $general-font-color:rgb(63, 58, 58); */
 /* 
 colores utilizados antes: 
 $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /* $general-font-color:rgb(63, 58, 58); */
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 /*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
+/* estilos carousel 2018 y carousel 2019-2020 */
+.body-2018, .body-2019, .body-galeria {
+  background: radial-gradient(circle, rgba(211, 210, 214, 0.902) 20%, rgba(229, 228, 228, 0.125) 40%);
+}
+
+.carrousel-2020 {
+  width: 90%;
+}
+
+/* estilos carousel 2022 */
+.carrousel-index {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 1.5fr;
+  position: none;
+  justify-content: none;
+  align-items: none;
+  width: 100%;
+  margin-top: none;
+  margin-top: 15px !important;
+}
+
+.p-epigrafe {
+  display: flex !important;
+  grid-template-columns: none;
+  grid-template-rows: none;
+  position: none;
+  justify-content: flex !important;
+  align-items: flex-end !important;
+  margin-bottom: 30px;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end, .carousel-fade .carousel-item.active {
+  z-index: -6 !important;
+}
+
+.tienda-card {
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.062);
+  width: 60%;
+  border-radius: 25px;
+  font-family: "Montserrat";
+}
+.tienda-card:hover {
+  transform: scale(1.04);
+  background-color: rgb(239, 239, 239);
+}
+.tienda-card .card-img-top {
+  margin-top: 10px;
+}
+
 /* 
 colores utilizados antes: 
 $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
@@ -1016,35 +967,35 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 768px) {
   .container-contacto2 {
     width: 80%;
-    height: 460px;
+    height: 25em;
     margin-top: 20% !important;
   }
 }
 @media (min-width: 912px) {
   .container-contacto2 {
     width: 70%;
-    height: 500px;
+    height: 30em;
     margin-top: 20% !important;
   }
 }
 @media (min-width: 1024px) {
   .container-contacto2 {
     width: 65%;
-    height: 500px;
+    height: 25em;
     margin-top: 2% !important;
   }
 }
 @media (min-width: 1280px) {
   .container-contacto2 {
     width: 60%;
-    height: 380px;
+    height: 23em;
     margin-top: 0 !important;
   }
 }
 @media (min-width: 1300px) {
   .container-contacto2 {
     width: 70%;
-    height: 500px;
+    height: 25em;
     margin-top: 0 !important;
   }
 }
@@ -1092,13 +1043,12 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 }
 @media (min-width: 360px) {
   .container-contacto2 .logo-tele {
-    width: 30px;
+    width: 1.9em;
     margin-top: 5px;
   }
 }
 @media (min-width: 375px) {
   .container-contacto2 .logo-tele {
-    width: 30px;
     margin-top: 5px;
   }
 }
@@ -1122,13 +1072,12 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 912px) {
   .container-contacto2 .logo-tele {
     margin-top: 60%;
-    width: 40px;
   }
 }
 @media (min-width: 800px) {
   .container-contacto2 .logo-tele {
     margin-top: 65%;
-    width: 40px;
+    width: 2.5em;
   }
 }
 @media (min-width: 1280px) {
@@ -1146,7 +1095,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 
 @media (min-width: 360px) {
   .boton-enviar .container-contacto {
-    height: 350px;
+    height: 15em;
   }
 }
 @media (min-width: 360px) and (min-width: 768px) {
@@ -1463,29 +1412,6 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 /* $general-font-color:rgb(63, 58, 58); */
 /*------------------------------------------- mixin media queries galeria: ---------------------------------------------*/
 /*-------------------------------------------fin mixin media queries galeria---------------------------------------------*/
-.container-tienda {
-  /*   @media (min-width: 400px) {
-      @include bottom-left (80%, 0px)
-
-    }
-    @media (min-width: 820px) {
-      @include bottom-left (80%, 10%)
-
-    }
-
-    @media (min-width: 912px) {
-      @include bottom-left (90%, 10%)
-
-    }
-    @media (min-width: 1000px) {
-      @include bottom-left (5%, 15%)
-
-     }
-     @media (min-width: 1280px) {
-     margin-left: 5%;
-
-     }   */
-}
 @media (min-width: 280px) {
   .container-tienda {
     margin-bottom: 2px;
@@ -1495,7 +1421,7 @@ $bc-header-gradiant: linear-gradient(to bottom, #cddce0 0%, #ffecf633 100%);*/
 @media (min-width: 768px) {
   .container-tienda {
     margin-bottom: 2px;
-    margin-left: 35px !important;
+    margin-left: 3em !important;
   }
 }
 @media (min-width: 820px) {
